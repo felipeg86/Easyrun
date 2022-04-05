@@ -42,8 +42,8 @@ También resulta pertinente la construcción de un viaje de usuario para definir
 
 El siguiente diagrama de bloques describe el funcionamiento de Easyrun, definiendo las relaciones y organización de todo el proceso interno, sus entradas y sus salidas.
 
-![Imagen](https://github.com/felipeg86/Easyrun/blob/f477d76969d25cc3099a68529fd86a292dfde2ce/Images/Diagrama%20de%20bloques_1.jpg) 
-![Imagen](https://github.com/felipeg86/Easyrun/blob/f477d76969d25cc3099a68529fd86a292dfde2ce/Images/Diagrama%20de%20bloques_2.jpg) 
+![Imagen](https://github.com/felipeg86/Easyrun/blob/ca067636eb22f11a325dc4f5554fbd1dd7c24521/Images/Diagrama%20de%20bloques_1.jpg) 
+![Imagen](https://github.com/felipeg86/Easyrun/blob/ca067636eb22f11a325dc4f5554fbd1dd7c24521/Images/Diagrama%20de%20bloques_2.jpg) 
 
 ## [Diseño de la PCB](https://github.com/felipeg86/Easyrun/tree/main/Circuit%20Design)
 ## [Código del microcontrolador](https://github.com/felipeg86/Easyrun/tree/main/Micropython)
