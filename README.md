@@ -32,7 +32,7 @@ Sin embargo, se excluyen del proyecto otros requerimientos fuera del alcance.
 
 Con el fin de determinar un camino viable para el proyecto, se plantea un diagrama de bloques general con el fin de aclarara las variables y perifericos que intervienen en la solución. Dentro de este diagrama, se busca aclara que partes componen el sistema de manera poco específica y con esto fijar los componentes que se deben tener en cuenta en el diseño del sistema embebido.
 
-![Imagen](https://github.com/felipeg86/Easyrun/blob/main/Images/DiagramaBloques%20-%20General.jpg)
+![Imagen](https://github.com/felipeg86/Easyrun/blob/7021e59d89bb2bfd1115d05f9bedde976ee1c1a8/Images/Diagrama%20General.jpg)
 
 También resulta pertinente la construcción de un viaje de usuario para definir primordialmente las funcionalidades y posibles soluciones que se pueden plantear al problema. La siguiente figura representa de manera superficial los pasos que un estudiante debe realizar al utilizar el servicio. Clasificando cada proceso dentro de la estación que se hace.
 
