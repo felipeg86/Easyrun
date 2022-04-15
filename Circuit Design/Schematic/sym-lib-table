@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ESP8266-12E_ESP-12E)(type Legacy)(uri ${KIPRJMOD}/libraries/ESP8266-12E_ESP-12E/ESP8266-12E_ESP-12E.lib)(options "")(descr ""))
+)
