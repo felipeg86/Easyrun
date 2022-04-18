@@ -7,26 +7,29 @@ Integrantes:
 * Ana Milena Espinosa Jiménez
 * Laura Valentina Moreno Castro
 * Johan Stevens Higuera Espinel
+* Omar Andrés Cely Villate
 * Juan Felipe González Pardo
 
-## Descripción Funcional ##
+## Requerimientos Funcionales ##
 
-Dentro de las funcionalidades que podría abarcar este tipo de proyecto, se acota el alcance a las siguientes funcionalidades: 
+El sistema debe ser capaz como mínimo de satisfacer los siguientes requisitos:
 
-* Reconocimiento RFID del carnet estudiantil como único requisito para utilizar el servicio. 
-* Desbloqueo y aseguramiento automático de la bicicleta. 
-* Interacción bidireccional con la base de datos.
-* Sistema de evaluación del estado de la bicileta.
-* Conexión entre estaciones.
-* Alimentación del sistema mediante la red eléctrica universitaria.
+* Llevar registro de las bicicletas activas en el sistema, así como su disponibilidad y condición general.
+* Presentar una interfaz de usuario para la selección, entrega y reporte del estado de la bicileta.
+* Reconocer a través de RFID el carnet estudiantil como único requisito para utilizar el servicio. 
+* Asegurar y liberar automáticamente las bicicletas que se solicitan y entregan en el sistema. 
+* Comunicar bidireccionalmente el estado de las bicicleras y los usuarios con la base de datos.
+* Utilizar la información de la base de datos para cordinar los préstamos entre estaciones.
+* Notificar a los operarios cuando se llene o vacíe el cupo de las estaciones de modo que puedan redistribuir las bicicletas.
 
-## Descripción no Funcional ##
+## Requerimientos no Funcionales ##
 
-Sin embargo, se excluyen del proyecto otros requerimientos fuera del alcance.
-
-* Implementación de más de dos puesto de prestamo y entrega.
-* Alimentación del sistema con fuentes externas renovables (solar).
-* Automatización de la redistribución de bicicletas entre las estaciones. 
+* Permitir el uso de perfiles diferenciados para usuarios y administradores.
+* Tener un apropiado manejo de la información y datos personales de los usuarios.
+* Utilizar únicamente bandas ISM del espectro.
+* Alimentarse de la red eléctrica de la universidad.
+* Presentar una eficiencia de potencia (Entrada salida) superior al 80%.
+* Tener un factor de potencia superior a 0.9 en concordancia con la regulación colombiana.
 
 ## Descripción general y viaje del cliente ##
 
