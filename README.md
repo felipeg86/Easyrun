@@ -48,12 +48,13 @@ El siguiente diagrama de bloques describe el funcionamiento de Easyrun, definien
 ![Imagen](https://github.com/felipeg86/Easyrun/blob/ca067636eb22f11a325dc4f5554fbd1dd7c24521/Images/Diagrama%20de%20bloques_1.jpg) 
 ![Imagen](https://github.com/felipeg86/Easyrun/blob/ca067636eb22f11a325dc4f5554fbd1dd7c24521/Images/Diagrama%20de%20bloques_2.jpg) 
 
-## [Diseño de la PCB](https://github.com/felipeg86/Easyrun/tree/main/Circuit%20Design)
-## [Código del microcontrolador](https://github.com/felipeg86/Easyrun/tree/main/Micropython)
-## [Diseño de la carcaza](https://github.com/felipeg86/Easyrun/tree/main/Case%20Design)
-
 ## Diagrama de Despliegue del proyecto ##
 
 Los nodos de hardware, sus comunicaciones y los componentes que se ejecutan en cada uno de ellos se presentan en el diagrama siguiente.
 
 ![Imagen](https://github.com/felipeg86/Easyrun/blob/main/Images/Diagrama%20sistema.png)
+
+
+## [Diseño de la PCB](https://github.com/felipeg86/Easyrun/tree/main/Circuit%20Design)
+## [Código del microcontrolador](https://github.com/felipeg86/Easyrun/tree/main/Micropython)
+## [Diseño de la carcaza](https://github.com/felipeg86/Easyrun/tree/main/Case%20Design)
