@@ -9,6 +9,7 @@ Integrantes:
 * Johan Stevens Higuera Espinel
 * Omar Andrés Cely Villate
 * Juan Felipe González Pardo
+* Kishvari Osorio Delgado
 
 ## Requerimientos Funcionales ##
 
