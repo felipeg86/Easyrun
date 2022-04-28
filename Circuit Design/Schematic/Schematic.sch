@@ -13,22 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L ESP8266-12E_ESP-12E:ESP8266-12E_ESP-12E U1
-U 1 1 6259BF87
-P 6350 3550
-F 0 "U1" H 6350 4417 50  0000 C CNN
-F 1 "ESP8266-12E_ESP-12E" H 6350 4326 50  0000 C CNN
-F 2 "XCVR_ESP8266-12E/ESP-12E" H 6350 3550 50  0001 L BNN
-F 3 "" H 6350 3550 50  0001 L BNN
-F 4 "AI-Thinker" H 6350 3550 50  0001 L BNN "MANUFACTURER"
-	1    6350 3550
-	1    0    0    -1  
-$EndComp
-Text HLabel 7175 2950 2    50   Input ~ 0
-3v3
-Wire Wire Line
-	7175 2950 7050 2950
 $Sheet
 S 2225 1225 775  775 
 U 6259D68B
@@ -40,19 +24,6 @@ F4 "Ph" I L 2225 1425 50
 F5 "N" I L 2225 1625 50 
 F6 "R_Gnd" I L 2225 1825 50 
 $EndSheet
-$Comp
-L power:GND #PWR?
-U 1 1 625A0879
-P 7150 4250
-F 0 "#PWR?" H 7150 4000 50  0001 C CNN
-F 1 "GND" H 7155 4077 50  0000 C CNN
-F 2 "" H 7150 4250 50  0001 C CNN
-F 3 "" H 7150 4250 50  0001 C CNN
-	1    7150 4250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 4250 7050 4250
 $Comp
 L Connector:Conn_01x03_Male Conn_Power
 U 1 1 625A3C7E
@@ -119,12 +90,40 @@ Wire Wire Line
 	2175 3200 1950 3200
 Wire Wire Line
 	2175 3300 1950 3300
-Text GLabel 7175 3250 2    50   Output ~ 0
-Prog_Rx
-Wire Wire Line
-	7050 3250 7175 3250
-Text GLabel 5475 3150 0    50   Input ~ 0
+$Comp
+L RF_Module:ESP32-WROOM-32 U1
+U 1 1 626B0839
+P 5675 3150
+F 0 "U1" H 5675 4731 50  0000 C CNN
+F 1 "ESP32-WROOM-32" H 5675 4640 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 5675 1650 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 5375 3200 50  0001 C CNN
+	1    5675 3150
+	1    0    0    -1  
+$EndComp
+Text GLabel 6400 2250 2    50   Input ~ 0
 Prog_Tx
 Wire Wire Line
-	5475 3150 5650 3150
+	6400 2250 6275 2250
+Text GLabel 6400 2050 2    50   Output ~ 0
+Prog_Rx
+Wire Wire Line
+	6400 2050 6275 2050
+Text HLabel 5800 1750 2    50   Input ~ 0
+3v3
+Wire Wire Line
+	5675 1750 5800 1750
+$Comp
+L power:GND #PWR?
+U 1 1 626B993A
+P 5675 4625
+F 0 "#PWR?" H 5675 4375 50  0001 C CNN
+F 1 "GND" H 5680 4452 50  0000 C CNN
+F 2 "" H 5675 4625 50  0001 C CNN
+F 3 "" H 5675 4625 50  0001 C CNN
+	1    5675 4625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5675 4625 5675 4550
 $EndSCHEMATC
