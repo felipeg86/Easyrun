@@ -10,6 +10,7 @@ Integrantes:
 * Omar Andrés Cely Villate
 * Juan Felipe González Pardo
 * Kishvari Osorio Delgado
+* Johan Sebastian Molina Martinez
 
 ## Requerimientos Funcionales ##
 
