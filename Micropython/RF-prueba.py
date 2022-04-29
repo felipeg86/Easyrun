@@ -8,7 +8,7 @@ from machine import SoftSPI
 
 sck1 = Pin(18, Pin.OUT)
 mosi1 = Pin(23, Pin.OUT)
-miso1 = Pin(21, Pin.OUT)
+miso1 = Pin(19, Pin.OUT)
 spi1 = SoftSPI(baudrate=100000, polarity=0, phase=0, sck=sck1, mosi=mosi1, miso=miso1)
 #spi2 = SoftSPI(baudrate=100000, polarity=0, phase=0, sck=sck1, mosi=mosi1, miso=miso1)
 

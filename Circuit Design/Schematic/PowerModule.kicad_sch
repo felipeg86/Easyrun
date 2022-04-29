@@ -1,0 +1,50 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid c01d25cd-f4bb-4ef3-b5ea-533a2a4ddb2b)
+
+  (paper "A4")
+
+  (title_block
+    (title "PowerModule")
+    (date "2022-04-15")
+    (company "UNAL")
+    (comment 1 "Easyrun")
+  )
+
+  (lib_symbols
+  )
+
+
+  (hierarchical_label "R_Gnd" (shape input) (at 29.21 72.39 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 2f215f15-3d52-4c91-93e6-3ea03a95622f)
+  )
+  (hierarchical_label "N" (shape input) (at 29.21 67.945 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 61fe293f-6808-4b7f-9340-9aaac7054a97)
+  )
+  (hierarchical_label "5v0" (shape output) (at 274.32 62.865 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 63ff1c93-3f96-4c33-b498-5dd8c33bccc0)
+  )
+  (hierarchical_label "3v3" (shape output) (at 274.32 67.31 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 9e1b837f-0d34-4a18-9644-9ee68f141f46)
+  )
+  (hierarchical_label "Ph" (shape input) (at 29.21 64.135 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid b88717bd-086f-46cd-9d3f-0396009d0996)
+  )
+
+  (sheet (at 66.04 82.55) (size 27.305 17.145) (fields_autoplaced)
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-0000626b3c33)
+    (property "Sheet name" "Ramp_Generator" (id 0) (at 66.04 81.8384 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "Ramp_Generator.kicad_sch" (id 1) (at 66.04 100.2796 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+)
