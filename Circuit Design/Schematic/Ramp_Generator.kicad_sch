@@ -391,7 +391,7 @@
     (uuid df68c26a-03b5-4466-aecf-ba34b7dce6b7)
   )
 
-  (symbol (lib_id "Device:R") (at 29.21 78.74 0)
+  (symbol (lib_id "Device:R") (at 29.21 78.74 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000626b4dc0)
     (property "Reference" "R+_div1" (id 0) (at 30.988 77.5716 0)
@@ -410,7 +410,7 @@
     (pin "2" (uuid bb7bde0b-c41d-4f6c-b4b8-cd20135b382b))
   )
 
-  (symbol (lib_id "LF353DRE4:LF353DRE4") (at 95.885 84.455 0)
+  (symbol (lib_id "LF353DRE4:LF353DRE4") (at 95.885 84.455 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000626b4dca)
     (property "Reference" "OpAmp_Triang" (id 0) (at 95.885 67.437 0))
@@ -466,7 +466,7 @@
     (pin "1" (uuid 6f47c759-d5c0-4ea4-9a91-b73ca572c801))
   )
 
-  (symbol (lib_id "Device:R") (at 44.45 78.74 0)
+  (symbol (lib_id "Device:R") (at 44.45 78.74 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000626bb8c0)
     (property "Reference" "R+_div2" (id 0) (at 46.228 77.5716 0)
