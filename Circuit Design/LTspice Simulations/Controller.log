@@ -1,0 +1,95 @@
+Circuit: * C:\users\omar\My Documents\University\IX_Semester\Disenio\Easyrun\Circuit Design\LTspice Simulations\Controller.asc
+
+WARNING: Node N009 is floating.
+
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+Gmin = 1.08884
+vernier = 0.03125
+vernier = 0.015625
+Gmin = 1.03122
+vernier = 0.0078125
+vernier = 0.0104167
+vernier = 0.00520833
+Gmin = 1.01988
+vernier = 0.00260417
+vernier = 0.00347222
+Gmin = 1.01305
+vernier = 0.00173611
+vernier = 0.00231481
+vernier = 0.00115741
+Gmin = 1.01114
+vernier = 0.00154321
+vernier = 0.000771604
+Gmin = 1.0091
+vernier = 0.00102881
+vernier = 0.000514403
+Gmin = 1.00748
+vernier = 0.00068587
+vernier = 0.000514403
+Gmin = 1.00627
+vernier = 0.00068587
+vernier = 0.000514402
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source stepping succeeded in finding the operating point.
+
+Heightened Def Con from 1e-009 ++to 1.14062e-009
+Heightened Def Con from 1.19916e-009 +++to 1.33978e-009
+Heightened Def Con from 7.92178e-005 to 7.92178e-005
+Heightened Def Con from 0.0250818 to 0.0250818
+Heightened Def Con from 0.0250818 to 0.0250818
+Heightened Def Con from 0.0250818 to 0.0250818
+Heightened Def Con from 0.0441448 to 0.0441448
+Heightened Def Con from 0.0668432 ++to 0.0668432
+Heightened Def Con from 0.0668432 to 0.0668432
+Heightened Def Con from 0.266799 to 0.266799
+Heightened Def Con from 0.2668 ++++to 0.2668
+Heightened Def Con from 0.2668 +++++to 0.2668
+Heightened Def Con from 0.2668 +to 0.2668
+Heightened Def Con from 0.2668 to 0.2668
+Heightened Def Con from 0.441716 to 0.441716
+Heightened Def Con from 0.441716 +to 0.441716
+Heightened Def Con from 0.441716 to 0.441716
+Heightened Def Con from 0.441716 to 0.441716
+Heightened Def Con from 0.441716 +++++++++++++++++++to 0.441716
+Heightened Def Con from 0.441716 ++++++++++++to 0.441716
+Heightened Def Con from 0.441716 to 0.441716
+Heightened Def Con from 0.441716 to 0.441716
+Heightened Def Con from 0.533466 to 0.533466
+Heightened Def Con from 0.533466 +++++++to 0.533466
+Heightened Def Con from 0.533466 to 0.533466
+Heightened Def Con from 0.533466 to 0.533466
+Heightened Def Con from 0.533466 +to 0.533466
+
+Date: Thu May 05 10:09:36 2022
+Total elapsed time: 1.776 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 105750
+traniter = 99270
+tranpoints = 23129
+accept = 16243
+rejected = 6970
+matrix size = 117
+fillins = 288
+solver = Normal
+Thread vector: 5.7/4.5[2] 2.1/2.1[1] 0.9/1.5[1] 0.5/1.4[1]  2592/500
+Matrix Compiler1: 18.54 KB object code size  3.3/1.8/[0.8]
+Matrix Compiler2: 14.98 KB object code size  3.9/4.2/[0.6]
+
