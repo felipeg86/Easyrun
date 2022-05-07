@@ -1,6 +1,5 @@
-Circuit: * C:\users\omar\My Documents\University\IX_Semester\Disenio\Easyrun\Circuit Design\LTspice Simulations\Controller.asc
+Circuit: * C:\users\omar\My Documents\University\IX_Semester\Disenio\Easyrun\Circuit Design\LTspice Simulations\Draft1.asc
 
-WARNING: Node N004 is floating.
 WARNING: Node NC_09 is floating.
 
 WARNING: Less than two connections to node NC_04.  This node is used by V:U1:§DT.
@@ -39,7 +38,7 @@ Source Step = 3.0303%
 vernier = 0.25
 Source stepping failed
 
-Pseudo Transient failed in finding the operating point at 13.6492 µs.
+Pseudo Transient failed in finding the operating point at 13.6307 µs.
 Trouble finding operating point....skipping operating point for Transient analysis.
 Ignoring empty pin current: Ix(ea1:1)
 Ignoring empty pin current: Ix(ea1:2)
@@ -60,17 +59,17 @@ Ignoring empty pin current: Ix(u2:2)
 Ignoring empty pin current: Ix(u2:3)
 Ignoring empty pin current: Ix(u2:4)
 Ignoring empty pin current: Ix(u2:5)
-Changing Tseed to 9.76562e-012
-Changing Tseed to 9.76562e-014
-Changing Tseed to 9.76562e-011
+Changing Tseed to 9.76562e-013
 Changing Tseed to 9.76562e-015
-Changing Tseed to 9.76562e-010
+Changing Tseed to 9.76562e-012
 Changing Tseed to 9.76562e-016
-Changing Tseed to 9.76562e-009
+Changing Tseed to 9.76563e-011
 Changing Tseed to 9.76562e-017
-Changing Tseed to 9.76562e-008
+Changing Tseed to 9.76562e-010
 Changing Tseed to 9.76562e-018
-Changing Tseed to 9.76562e-007
+Changing Tseed to 9.76562e-009
 Changing Tseed to 9.76563e-019
+Changing Tseed to 9.76563e-008
+Changing Tseed to 9.76563e-020
 Fatal Error: Analysis:  Time step too small; initial timepoint: trouble with node "nc_03"
 
