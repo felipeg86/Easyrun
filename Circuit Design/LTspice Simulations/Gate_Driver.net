@@ -1,0 +1,22 @@
+* C:\users\omar\My Documents\University\IX_Semester\Disenio\Easyrun\Circuit Design\LTspice Simulations\Gate_Driver.asc
+R1 vOO 0 100
+C1 vOO 0 1µ Rser=1m
+L1 Vs vOO 20µ Rser=56m
+D1 0 Vs 1N5819
+M1 N001 PWM_o Vs Vs IRFZ44N
+V1 N001 0 10
+XU1 NC_01 PWM_o 0 0 0 PWM_in 12v0 N002 Vs 12v0 0 IR2110
+C2 N002 Vs 0.47µ
+D2 12v0 N002 TDZ6_8B
+V2 PWM_in 0 PULSE(0 5 0 0 0 6.25u 12.5u)
+V3 5v0 0 5
+V4 12v0 0 12
+.model D D
+.lib C:\users\omar\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\omar\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1m uic
+.lib C:\users\omar\My Documents\University\IX_Semester\Disenio\Easyrun\Circuit Design\LTspice Simulations\IR2110.net
+.backanno
+.end

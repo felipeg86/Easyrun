@@ -1,0 +1,21 @@
+Circuit: * C:\users\omar\My Documents\University\IX_Semester\Disenio\Easyrun\Circuit Design\LTspice Simulations\Rectifier.asc
+
+Per .tran options, skipping operating point for transient analysis.
+
+Date: Sat May 07 20:01:28 2022
+Total elapsed time: 0.077 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 3529
+traniter = 3529
+tranpoints = 1239
+accept = 1186
+rejected = 53
+matrix size = 10
+fillins = 8
+solver = Normal
+Matrix Compiler1: 880 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: 890 bytes object code size  0.1/0.1/[0.1]
+
