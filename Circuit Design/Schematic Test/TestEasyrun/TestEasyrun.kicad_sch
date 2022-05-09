@@ -3594,6 +3594,12 @@
     (path "/6ee20d1c-a46d-41e5-9769-e0e93e111749"
       (reference "R_prog1") (unit 1) (value "47") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/453fbb47-8f6e-4620-aa1b-00d9aeeefedc"
+      (reference "Rdiv1_3v3") (unit 1) (value "100k") (footprint "")
+    )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/fb7bb9e5-77c0-40cb-a453-5cc5de91cbce"
+      (reference "Rdiv2_3v3") (unit 1) (value "51k") (footprint "")
+    )
     (path "/7a371838-7673-4e2a-955b-9b6e37993916"
       (reference "U1") (unit 1) (value "ESP32-WROOM-32") (footprint "RF_Module:ESP32-WROOM-32")
     )
