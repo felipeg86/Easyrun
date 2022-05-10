@@ -3,4 +3,5 @@
   (lib (name "Connector_Faston")(type "Legacy")(uri "${KIPRJMOD}/Libraries/62409-1_Connector_Faston/62409-1.lib")(options "")(descr ""))
   (lib (name "TL494CDR")(type "Legacy")(uri "${KIPRJMOD}/Libraries/TL494CDR_PWM/TL494CDR.lib")(options "")(descr ""))
   (lib (name "LM5104M")(type "Legacy")(uri "${KIPRJMOD}/Libraries/LM5104M/LM5104M.lib")(options "")(descr ""))
+  (lib (name "TP4056")(type "Legacy")(uri "${KIPRJMOD}/Libraries/TP4056_Bcharge/TP4056.lib")(options "")(descr ""))
 )

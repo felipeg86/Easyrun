@@ -426,6 +426,10 @@
     [
       "9bce1351-630b-4fdc-893b-fabe3cbde6e4",
       "PWM_Generator_3v3"
+    ],
+    [
+      "5ded5e05-91c3-4914-acd8-46f44022acc0",
+      "Battery Charge"
     ]
   ],
   "text_variables": {}

@@ -3344,6 +3344,7 @@
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283" (page "2"))
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/07478b9d-a11f-4af8-aaf6-52968cd7dd25" (page "3"))
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/9bce1351-630b-4fdc-893b-fabe3cbde6e4" (page "4"))
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0" (page "5"))
   )
 
   (symbol_instances
@@ -3395,16 +3396,31 @@
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/9bce1351-630b-4fdc-893b-fabe3cbde6e4/0507dd1c-cec3-4098-95c5-ce244d5b63b9"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/248036d8-3854-4916-b17c-506fb589c4bc"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/30ba3a07-5f74-4568-9e85-09909e90f674"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/07478b9d-a11f-4af8-aaf6-52968cd7dd25/3d8067ed-b85e-484a-ab07-5bbd12b471f8"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/3dd5f45b-a515-4010-ad31-e5528fb1f121"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/41a404c5-ead0-4268-8070-bab0666e3df4"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/434d1f64-9426-46b1-a8a9-ec57ea594547"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/9bce1351-630b-4fdc-893b-fabe3cbde6e4/52ca2a8e-814a-4d7f-b720-d9347ee1fcc4"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/9bce1351-630b-4fdc-893b-fabe3cbde6e4/6391187d-8a6e-420a-9380-ae98b929d232"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/65a0e8c7-3bda-4a2f-9cda-1b7b50e54665"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/07478b9d-a11f-4af8-aaf6-52968cd7dd25/66a5502e-8664-4d62-a8b4-4bba6c3f3b60"
@@ -3431,6 +3447,9 @@
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/b5df3089-a17c-4772-85b4-938fe7a953e0"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/ba4495f4-a3c7-46f6-83cd-c94d1edd8185"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/07478b9d-a11f-4af8-aaf6-52968cd7dd25/bc302092-b846-4b29-850c-d41aafa2b6fb"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
@@ -3452,6 +3471,9 @@
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/fc50dde7-3980-4635-b50b-febb1b23c507"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/c297cc2f-bdf9-4ac6-8db1-5f054cb407ae"
+      (reference "BT?") (unit 1) (value "Battery_Cell") (footprint "")
+    )
     (path "/5ac9e4bc-322c-4ce1-942d-8bdf6f2db28f"
       (reference "Button_Damage1") (unit 1) (value "SW_DIP_x05") (footprint "")
     )
@@ -3469,6 +3491,9 @@
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/07478b9d-a11f-4af8-aaf6-52968cd7dd25/afce454d-cef0-4635-9196-92d9f269c254"
       (reference "CBT_5v0") (unit 1) (value "C") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
+    )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/d39c130d-a9c5-41be-a8ad-94ad0307b4c3"
+      (reference "C_Bat") (unit 1) (value "10u") (footprint "")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/698e9179-5729-436a-8662-0be4e7046557"
       (reference "C_Buck3v3") (unit 1) (value "1u") (footprint "Capacitor_SMD:CP_Elec_6.3x5.8")
@@ -3491,6 +3516,9 @@
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/07478b9d-a11f-4af8-aaf6-52968cd7dd25/aaff19b8-9a60-4d7f-b6a4-dbde8132bdaa"
       (reference "C_DTCS_5v0") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
     )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/dc7d5b25-3ba6-4431-85b4-90b0218afb1f"
+      (reference "C_VccB") (unit 1) (value "10u") (footprint "")
+    )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/ed837a9a-d813-4c14-8779-1ab988171caa"
       (reference "C_rec") (unit 1) (value "100u") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
     )
@@ -3508,6 +3536,12 @@
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/d2f2a2bd-5522-4c4a-b3c9-17f59a0286cb"
       (reference "D_Buck5v0") (unit 1) (value "1N5822") (footprint "Diode_THT:D_DO-201AD_P15.24mm_Horizontal")
+    )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/b4b31f94-7238-4ebb-8945-f8429e813474"
+      (reference "D_GREEN") (unit 1) (value "LED") (footprint "")
+    )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/61395088-d6a5-48f8-bf04-3d49b707028e"
+      (reference "D_RED") (unit 1) (value "LED") (footprint "")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/ba09b7a2-59f0-45b6-95a4-046331578e0c"
       (reference "D_S1") (unit 1) (value "1N5822") (footprint "Diode_THT:D_DO-201AD_P15.24mm_Horizontal")
@@ -3611,11 +3645,23 @@
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/07478b9d-a11f-4af8-aaf6-52968cd7dd25/f3b7375a-1ba5-4555-86aa-f2d4431bb7fc"
       (reference "R_DTC_5v0") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/64f629c7-cdd7-4ad8-bf5c-c40dbcf2e735"
+      (reference "R_GREEN") (unit 1) (value "1k") (footprint "")
+    )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/1b4964d3-02d9-499c-9270-967305e8da20"
+      (reference "R_Prog") (unit 1) (value "1k") (footprint "")
+    )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/4118bc15-9eac-43e3-95c9-f76dd496989b"
+      (reference "R_RED") (unit 1) (value "1k") (footprint "")
+    )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/9bce1351-630b-4fdc-893b-fabe3cbde6e4/6aafb9ec-2c50-474c-b6af-f482d68bf3e8"
       (reference "R_RT_PWM_3v3") (unit 1) (value "6.8k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/07478b9d-a11f-4af8-aaf6-52968cd7dd25/3d29d498-6743-4cbe-9571-c6c1fe0a2ae1"
       (reference "R_RT_PWM_5v0") (unit 1) (value "6.8k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+    )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/4e724cb5-83b7-401e-9ed4-6697e668a5df"
+      (reference "R_Vcc") (unit 1) (value "0.4") (footprint "")
     )
     (path "/6ee20d1c-a46d-41e5-9769-e0e93e111749"
       (reference "R_prog1") (unit 1) (value "47") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
@@ -3628,6 +3674,9 @@
     )
     (path "/7a371838-7673-4e2a-955b-9b6e37993916"
       (reference "U1") (unit 1) (value "ESP32-WROOM-32") (footprint "RF_Module:ESP32-WROOM-32")
+    )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/69efa30c-4540-4ed3-b106-a85fe6cfd8c5"
+      (reference "U_ChargeControler") (unit 1) (value "TP4056") (footprint "TP4056_Bcharge:SOP127P600X175-9N")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/9bce1351-630b-4fdc-893b-fabe3cbde6e4/dcc3daaf-7835-46a8-b807-781775b2b1b3"
       (reference "U_PWM_3v3") (unit 1) (value "TL494CDR") (footprint "TL494CDR_PWM:SOIC127P600X175-16N")
