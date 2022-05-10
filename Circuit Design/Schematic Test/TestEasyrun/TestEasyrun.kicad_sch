@@ -3411,16 +3411,10 @@
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/88f4cff7-9710-4ace-a6dc-ce88ebe85e75"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
-    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/9689be91-c09f-475b-9e60-aa5348b4626b"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/b5df3089-a17c-4772-85b4-938fe7a953e0"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/c39055b2-4ada-4cab-b8de-d48cae01b96f"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/dd9b92b8-b29d-485d-baba-e4e1ab85afd5"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/e4993441-d898-475f-9df2-9e14c01cd8b4"
@@ -3456,9 +3450,6 @@
     (path "/99a27256-a88a-4355-b453-612ad2615aaf"
       (reference "C2") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
     )
-    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/673ec85a-5c8d-45a5-9d2c-70f61d2ed618"
-      (reference "CB_5v0") (unit 1) (value "0.47u") (footprint "")
-    )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/698e9179-5729-436a-8662-0be4e7046557"
       (reference "C_Buck3v3") (unit 1) (value "1u") (footprint "")
     )
@@ -3485,9 +3476,6 @@
     )
     (path "/47f1e5ed-3a1b-4dbd-971b-d6b2b4751745"
       (reference "Conn_Prog1") (unit 1) (value "Conn_01x06_Male") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical")
-    )
-    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/a4aea60d-26a4-4930-a30a-231f09b8289c"
-      (reference "DB_5v0") (unit 1) (value "1N47xxA") (footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/8b9e263d-12ad-4354-953e-637de48b162e"
       (reference "D_Buck3v3") (unit 1) (value "1N5822") (footprint "Diode_THT:D_DO-201AD_P15.24mm_Horizontal")
@@ -3602,9 +3590,6 @@
     )
     (path "/7a371838-7673-4e2a-955b-9b6e37993916"
       (reference "U1") (unit 1) (value "ESP32-WROOM-32") (footprint "RF_Module:ESP32-WROOM-32")
-    )
-    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/fe4d1dfa-9593-495f-89da-d238e0b6e0d7"
-      (reference "U_Driver5v0") (unit 1) (value "IR2110") (footprint "Package_DIP:DIP-14_W7.62mm")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/d901d30c-ba2a-4547-be89-6f6c79550f46"
       (reference "U_PWM_3v3") (unit 1) (value "TL494CDR") (footprint "SOIC127P600X175-16N")
