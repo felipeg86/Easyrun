@@ -3393,6 +3393,9 @@
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/0bc5d6c8-053c-496b-a9bb-399b01ed15bf"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/1a698427-bee3-4162-916f-a0f4eae640b5"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/25795455-6bec-40bb-8cbd-1ab8d440891c"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
@@ -3402,6 +3405,9 @@
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/33a854f6-4a34-4164-9f70-0c71515d33ff"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/4c2e201e-bbb4-452c-8700-94bbcfecb8ab"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/50123ca3-2001-4a89-8dec-a63bc2f78e98"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
@@ -3409,6 +3415,9 @@
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/88f4cff7-9710-4ace-a6dc-ce88ebe85e75"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/a8e3e3db-1972-4d69-a144-174e2c179e8c"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/b5df3089-a17c-4772-85b4-938fe7a953e0"
@@ -3435,6 +3444,9 @@
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/f2117218-bb44-4176-84c6-e26969a05165"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/f87805d2-0602-4d1b-82c7-c2bdc9593466"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/fc50dde7-3980-4635-b50b-febb1b23c507"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
@@ -3450,32 +3462,44 @@
     (path "/99a27256-a88a-4355-b453-612ad2615aaf"
       (reference "C2") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
     )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/70dad194-db2e-4fa0-9b72-4ce7bf56eed2"
+      (reference "CBT_3v3") (unit 1) (value "C") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
+    )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/632b5dcb-4f1a-407f-ab20-a3596d4909cf"
+      (reference "CBT_5v0") (unit 1) (value "C") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
+    )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/698e9179-5729-436a-8662-0be4e7046557"
-      (reference "C_Buck3v3") (unit 1) (value "1u") (footprint "")
+      (reference "C_Buck3v3") (unit 1) (value "1u") (footprint "Capacitor_SMD:CP_Elec_6.3x5.8")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/ced895ba-683a-4fb4-89da-e4e40bd1f3c4"
-      (reference "C_Buck5v0") (unit 1) (value "1u") (footprint "")
+      (reference "C_Buck5v0") (unit 1) (value "1u") (footprint "Capacitor_SMD:CP_Elec_6.3x5.8")
     )
     (path "/1347a48f-a9f7-470c-893f-af03f52f8d81"
       (reference "C_Bypass1") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/f5f32228-79b3-4d14-9225-e0514d655a1f"
-      (reference "C_CT_PWM_3v3") (unit 1) (value "1n") (footprint "")
+      (reference "C_CT_PWM_3v3") (unit 1) (value "1n") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/400c71b2-2716-4e11-8025-d978c4d314d5"
-      (reference "C_CT_PWM_5v0") (unit 1) (value "1n") (footprint "")
+      (reference "C_CT_PWM_5v0") (unit 1) (value "1n") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/3ec24b24-b370-4689-a7c1-0bb92acb17a0"
-      (reference "C_DTCS_3v3") (unit 1) (value "1u") (footprint "")
+      (reference "C_DTCS_3v3") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/20fbddb6-2b09-4a2b-8879-a6e59b7ace7d"
-      (reference "C_DTCS_5v0") (unit 1) (value "1u") (footprint "")
+      (reference "C_DTCS_5v0") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/ed837a9a-d813-4c14-8779-1ab988171caa"
-      (reference "C_rec") (unit 1) (value "100u") (footprint "")
+      (reference "C_rec") (unit 1) (value "100u") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
     )
     (path "/47f1e5ed-3a1b-4dbd-971b-d6b2b4751745"
       (reference "Conn_Prog1") (unit 1) (value "Conn_01x06_Male") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical")
+    )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/0ff79290-03fe-4d4e-a5d1-b8e56685f29a"
+      (reference "DBT_3v3") (unit 1) (value "D") (footprint "Diode_THT:D_DO-201AD_P15.24mm_Horizontal")
+    )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/8c28f8b3-5213-4524-83bc-15bd9396a6d4"
+      (reference "DBT_5v0") (unit 1) (value "D") (footprint "Diode_THT:D_DO-201AD_P15.24mm_Horizontal")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/8b9e263d-12ad-4354-953e-637de48b162e"
       (reference "D_Buck3v3") (unit 1) (value "1N5822") (footprint "Diode_THT:D_DO-201AD_P15.24mm_Horizontal")
@@ -3494,6 +3518,12 @@
     )
     (path "/54bb022c-4f06-483c-8e47-3bfbe88d31c6"
       (reference "Display_1") (unit 1) (value "Conn_01x14_Female") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x14_P2.54mm_Vertical")
+    )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/b90a3e08-ae17-4f47-ab85-dedde5892763"
+      (reference "Driver_3v3") (unit 1) (value "LM5104M") (footprint "LM5104M:SOIC127P599X175-8N")
+    )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/f898d227-497f-4fe3-9dc2-a267dabfeee8"
+      (reference "Driver_5v0") (unit 1) (value "LM5104M") (footprint "LM5104M:SOIC127P599X175-8N")
     )
     (path "/05f67689-b87d-4a73-ba19-8cfc59729f07"
       (reference "ESP_Prog_Enable1") (unit 1) (value "SW_DIP_x02") (footprint "Button_Switch_SMD:SW_SPST_CK_RS282G05A3")
@@ -3561,41 +3591,47 @@
     (path "/ee202a96-96ee-464e-a148-4b76788af37e"
       (reference "R5") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/b9ceaaa8-0ea4-4fa5-a62b-61f5ab5d7dc6"
+      (reference "RT_3v3") (unit 1) (value "R") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+    )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/833e125d-5eca-450a-9da9-7c93bf68abca"
+      (reference "RT_5v0") (unit 1) (value "R") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+    )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/cbf6f8f3-99a8-4a45-938b-65c6cb1f04c7"
-      (reference "R_DTCS_3v3") (unit 1) (value "680") (footprint "")
+      (reference "R_DTCS_3v3") (unit 1) (value "680") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/cd1e9a85-2727-42c5-954a-a445c7a62290"
-      (reference "R_DTCS_5v0") (unit 1) (value "680") (footprint "")
+      (reference "R_DTCS_5v0") (unit 1) (value "680") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/8fb19e1c-62a0-4855-8fed-c5ca70f61dd9"
-      (reference "R_DTC_3v3") (unit 1) (value "1k") (footprint "")
+      (reference "R_DTC_3v3") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/afbb1458-e9b3-4dd5-aa17-83b4ffc91f8d"
-      (reference "R_DTC_5v0") (unit 1) (value "1k") (footprint "")
+      (reference "R_DTC_5v0") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/f2a4a947-97a4-4666-a3ba-a228266f23c9"
-      (reference "R_RT_PWM_3v3") (unit 1) (value "6.8k") (footprint "")
+      (reference "R_RT_PWM_3v3") (unit 1) (value "6.8k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/d2882a62-ad90-474f-9576-95f05b59e5d7"
-      (reference "R_RT_PWM_5v0") (unit 1) (value "6.8k") (footprint "")
+      (reference "R_RT_PWM_5v0") (unit 1) (value "6.8k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/6ee20d1c-a46d-41e5-9769-e0e93e111749"
       (reference "R_prog1") (unit 1) (value "47") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/453fbb47-8f6e-4620-aa1b-00d9aeeefedc"
-      (reference "Rdiv1_3v3") (unit 1) (value "100k") (footprint "")
+      (reference "Rdiv1_3v3") (unit 1) (value "100k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/fb7bb9e5-77c0-40cb-a453-5cc5de91cbce"
-      (reference "Rdiv2_3v3") (unit 1) (value "51k") (footprint "")
+      (reference "Rdiv2_3v3") (unit 1) (value "51k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/7a371838-7673-4e2a-955b-9b6e37993916"
       (reference "U1") (unit 1) (value "ESP32-WROOM-32") (footprint "RF_Module:ESP32-WROOM-32")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/d901d30c-ba2a-4547-be89-6f6c79550f46"
-      (reference "U_PWM_3v3") (unit 1) (value "TL494CDR") (footprint "SOIC127P600X175-16N")
+      (reference "U_PWM_3v3") (unit 1) (value "TL494CDR") (footprint "TL494CDR_PWM:SOIC127P600X175-16N")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/efd1bb3d-18cd-4054-942e-f7c2ce1ede26"
-      (reference "U_PWM_5v0") (unit 1) (value "TL494CDR") (footprint "SOIC127P600X175-16N")
+      (reference "U_PWM_5v0") (unit 1) (value "TL494CDR") (footprint "TL494CDR_PWM:SOIC127P600X175-16N")
     )
   )
 )
