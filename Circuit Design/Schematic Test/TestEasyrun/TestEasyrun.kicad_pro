@@ -418,6 +418,14 @@
     [
       "ce33739c-5d28-4c4f-8ccf-84b467a2a283",
       "PowerModule"
+    ],
+    [
+      "07478b9d-a11f-4af8-aaf6-52968cd7dd25",
+      "PWM_Generator_5v0"
+    ],
+    [
+      "9bce1351-630b-4fdc-893b-fabe3cbde6e4",
+      "PWM_Generator_3v3"
     ]
   ],
   "text_variables": {}
