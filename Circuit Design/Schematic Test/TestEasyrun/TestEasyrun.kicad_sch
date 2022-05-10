@@ -3562,19 +3562,19 @@
       (reference "LED_prog1") (unit 1) (value "LED") (footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/4b91721f-5093-4d48-9d21-c9c391b2f621"
-      (reference "L_Buck3v3") (unit 1) (value "20u") (footprint "")
+      (reference "L_Buck3v3") (unit 1) (value "20u") (footprint "Inductor_THT:L_Toroid_Vertical_L25.4mm_W14.7mm_P12.20mm_Vishay_TJ5_BigPads")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/db5ffd5e-5890-4196-aac6-e11b280b47bd"
-      (reference "L_Buck5v0") (unit 1) (value "20u") (footprint "")
+      (reference "L_Buck5v0") (unit 1) (value "20u") (footprint "Inductor_THT:L_Toroid_Vertical_L25.4mm_W14.7mm_P12.20mm_Vishay_TJ5_BigPads")
     )
     (path "/711d27c5-efee-45ca-9b31-41d211608a1f"
       (reference "Pull_Down_Miso_Res1") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/e54dff27-a95a-4dce-b1b7-f3870d143a7b"
-      (reference "Q_3v3") (unit 1) (value "Q_NMOS_DGS") (footprint "")
+      (reference "Q_3v3") (unit 1) (value "Q_IRFZ44N") (footprint "Package_TO_SOT_THT:TO-220-3_Vertical")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/08c23668-2bee-4e3a-b6b4-f095786cf542"
-      (reference "Q_5v0") (unit 1) (value "Q_NMOS_DGS") (footprint "")
+      (reference "Q_5v0") (unit 1) (value "Q_IRFZ44N") (footprint "Package_TO_SOT_THT:TO-220-3_Vertical")
     )
     (path "/3a3c2d06-2914-4049-8266-3e33b3477ac7"
       (reference "R1") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
