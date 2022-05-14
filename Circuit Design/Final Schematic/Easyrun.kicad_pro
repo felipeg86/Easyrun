@@ -420,6 +420,10 @@
       "PowerModule"
     ],
     [
+      "47c3fd19-e8b0-4d87-ba69-8ede1ca5c801",
+      "Buck5v0"
+    ],
+    [
       "5ded5e05-91c3-4914-acd8-46f44022acc0",
       "Battery Charge"
     ],
@@ -438,6 +442,10 @@
     [
       "a142aa42-fa2e-49f8-91f9-6ab5f50a969e",
       "Actuators"
+    ],
+    [
+      "a95a8dfc-9f79-410d-a225-f43375e2a94b",
+      "Boost_batt"
     ]
   ],
   "text_variables": {}

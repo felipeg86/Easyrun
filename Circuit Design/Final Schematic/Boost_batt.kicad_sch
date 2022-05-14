@@ -1,0 +1,19 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid 75730b02-e088-4b5e-81b4-de92a825ff16)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (hierarchical_label "V_bat" (shape input) (at 46.355 78.74 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 1658eb14-a0a3-491e-b1b0-6bcdad0c4339)
+  )
+  (hierarchical_label "5v0" (shape output) (at 233.045 78.105 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid bfa75575-f685-4987-b2f7-7627aee676fb)
+  )
+)
