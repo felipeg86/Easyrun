@@ -583,7 +583,7 @@
     (uuid 886b8dac-956e-40b7-a7af-119c13d45782)
     (property "Reference" "SWRec" (id 0) (at 116.205 57.15 0))
     (property "Value" "SW_DIP_x01" (id 1) (at 116.205 59.69 0))
-    (property "Footprint" "" (id 2) (at 116.205 65.405 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" (id 2) (at 116.205 65.405 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 116.205 65.405 0)

@@ -2997,7 +2997,7 @@
       (reference "R_prog") (unit 1) (value "47") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/886b8dac-956e-40b7-a7af-119c13d45782"
-      (reference "SWRec") (unit 1) (value "SW_DIP_x01") (footprint "")
+      (reference "SWRec") (unit 1) (value "SW_DIP_x01") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left")
     )
     (path "/7a371838-7673-4e2a-955b-9b6e37993916"
       (reference "U1") (unit 1) (value "ESP32-WROOM-32") (footprint "RF_Module:ESP32-WROOM-32")
