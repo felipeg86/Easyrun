@@ -828,6 +828,7 @@
     )
   )
 
+
   (junction (at 150.495 93.98) (diameter 0) (color 0 0 0 0)
     (uuid 00cf5cd6-6352-4ecd-9e35-417d88e8c660)
   )
@@ -2986,7 +2987,7 @@
       (reference "LProg1") (unit 1) (value "LED") (footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/a95a8dfc-9f79-410d-a225-f43375e2a94b/86b9cc14-42fc-4a6c-8687-3339e1994761"
-      (reference "Lb1") (unit 1) (value "L") (footprint "Inductor_THT:L_Toroid_Vertical_L25.4mm_W14.7mm_P12.20mm_Vishay_TJ5_BigPads")
+      (reference "Lb1") (unit 1) (value "100u") (footprint "Inductor_THT:L_Toroid_Vertical_L25.4mm_W14.7mm_P12.20mm_Vishay_TJ5_BigPads")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/bbcfa0db-e124-4183-aa08-2767d29621b2"
       (reference "Lrec1") (unit 1) (value "440m") (footprint "Inductor_THT:L_Toroid_Vertical_L25.4mm_W14.7mm_P12.20mm_Vishay_TJ5_BigPads")
