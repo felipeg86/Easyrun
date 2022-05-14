@@ -2804,10 +2804,10 @@
     (path "/a3883662-2d57-4471-9f3d-7b28e4d02ced/edca2338-bb9e-4ddb-83b5-70fb952eb8e5"
       (reference "#PWR?") (unit 1) (value "+3.3V") (footprint "")
     )
-    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5adccc16-4c06-49da-909a-8a4d1a5b2995/ee83d32a-d48c-4e35-b9b0-e4586d15270b"
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/47c3fd19-e8b0-4d87-ba69-8ede1ca5c801/ee83d32a-d48c-4e35-b9b0-e4586d15270b"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
-    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/47c3fd19-e8b0-4d87-ba69-8ede1ca5c801/ee83d32a-d48c-4e35-b9b0-e4586d15270b"
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5adccc16-4c06-49da-909a-8a4d1a5b2995/ee83d32a-d48c-4e35-b9b0-e4586d15270b"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5adccc16-4c06-49da-909a-8a4d1a5b2995/f4ec2b6b-9999-40d0-80c6-454c2c11e70e"
@@ -2982,16 +2982,13 @@
       (reference "RMISO") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/64f629c7-cdd7-4ad8-bf5c-c40dbcf2e735"
-      (reference "R_GREEN") (unit 1) (value "1k") (footprint "")
+      (reference "R_GREEN") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/1b4964d3-02d9-499c-9270-967305e8da20"
-      (reference "R_Prog") (unit 1) (value "1k") (footprint "")
+      (reference "R_Prog") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/4118bc15-9eac-43e3-95c9-f76dd496989b"
-      (reference "R_RED") (unit 1) (value "1k") (footprint "")
-    )
-    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/4e724cb5-83b7-401e-9ed4-6697e668a5df"
-      (reference "R_Vcc") (unit 1) (value "0.4") (footprint "")
+      (reference "R_RED") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/6ee20d1c-a46d-41e5-9769-e0e93e111749"
       (reference "R_prog") (unit 1) (value "47") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
