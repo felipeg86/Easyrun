@@ -768,7 +768,7 @@
     (uuid eb3bf10c-415f-4231-8fef-acb0a60d93a5)
     (property "Reference" "D3" (id 0) (at 203.835 112.395 0))
     (property "Value" "1N5822" (id 1) (at 204.47 114.935 0))
-    (property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" (id 2) (at 203.835 113.03 0)
+    (property "Footprint" "Diode_THT:D_DO-201AE_P5.08mm_Vertical_AnodeUp" (id 2) (at 203.835 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.vishay.com/docs/88526/1n5820.pdf" (id 3) (at 203.835 117.475 0)

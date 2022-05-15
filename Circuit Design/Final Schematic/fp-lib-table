@@ -1,7 +1,4 @@
 (fp_lib_table
-  (lib (name "LM5104M")(type "KiCad")(uri "${KIPRJMOD}/Libraries/LM5104M")(options "")(descr ""))
-  (lib (name "TL494CDR_PWM")(type "KiCad")(uri "${KIPRJMOD}/Libraries/TL494CDR_PWM")(options "")(descr ""))
-  (lib (name "IR2110_Driver")(type "KiCad")(uri "${KIPRJMOD}/Libraries/IR2110_Driver")(options "")(descr ""))
   (lib (name "62409-1_Connector_Faston")(type "KiCad")(uri "${KIPRJMOD}/Libraries/62409-1_Connector_Faston")(options "")(descr ""))
   (lib (name "TP4056_Bcharge")(type "KiCad")(uri "${KIPRJMOD}/Libraries/TP4056_Bcharge")(options "")(descr ""))
 )

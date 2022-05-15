@@ -828,7 +828,6 @@
     )
   )
 
-
   (junction (at 150.495 93.98) (diameter 0) (color 0 0 0 0)
     (uuid 00cf5cd6-6352-4ecd-9e35-417d88e8c660)
   )
@@ -2740,9 +2739,6 @@
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/248036d8-3854-4916-b17c-506fb589c4bc"
       (reference "#PWR0131") (unit 1) (value "GND") (footprint "")
     )
-    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/2cd2635e-07ed-4431-956f-9037a3be26e0"
-      (reference "#PWR0132") (unit 1) (value "GND") (footprint "")
-    )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/ba4495f4-a3c7-46f6-83cd-c94d1edd8185"
       (reference "#PWR0133") (unit 1) (value "GND") (footprint "")
     )
@@ -2842,9 +2838,6 @@
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/c297cc2f-bdf9-4ac6-8db1-5f054cb407ae"
       (reference "BT1") (unit 1) (value "Battery_Cell") (footprint "Battery:BatteryHolder_MPD_BH-18650-PC2")
     )
-    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/5df81839-8dfc-4cfc-972d-58289c7f8980"
-      (reference "BT2") (unit 1) (value "Battery_Cell") (footprint "Battery:BatteryHolder_MPD_BH-18650-PC2")
-    )
     (path "/4cbbe3f1-88b5-4cc6-82cb-6fb8d843e93e"
       (reference "C1") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
     )
@@ -2900,7 +2893,7 @@
       (reference "D2") (unit 1) (value "1N5822") (footprint "Diode_THT:D_DO-201AD_P15.24mm_Horizontal")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/eb3bf10c-415f-4231-8fef-acb0a60d93a5"
-      (reference "D3") (unit 1) (value "1N5822") (footprint "Diode_THT:D_DO-201AD_P15.24mm_Horizontal")
+      (reference "D3") (unit 1) (value "1N5822") (footprint "Diode_THT:D_DO-201AE_P5.08mm_Vertical_AnodeUp")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/72439c1f-bc73-458c-9ac0-42c96ebc04b0"
       (reference "D4") (unit 1) (value "1N5822") (footprint "Diode_THT:D_DO-201AD_P15.24mm_Horizontal")

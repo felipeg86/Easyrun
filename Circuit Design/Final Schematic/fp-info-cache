@@ -1,302 +1,757 @@
-70609658324990
-Battery
-BatteryHolder_Bulgin_BX0036_1xC
-Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
-Bulgin BX0036
+178369233449112
+Diode_THT
+D_5KPW_P7.62mm_Vertical_AnodeUp
+Diode, 5KPW series, Axial, Vertical, pin pitch=7.62mm, , length*diameter=9*8mm^2, , http://www.diodes.com/_files/packages/8686949.gif
+Diode 5KPW series Axial Vertical pin pitch 7.62mm  length 9mm diameter 8mm
 0
 2
 2
-Battery
-BatteryHolder_ComfortableElectronic_CH273-2450_1x2450
-Comfortable Electronic CR2450 battery holder, http://www.comf.com.tw/ProductDetail.asp?no=148
-Comfortable Electronic CR2450
+Diode_THT
+D_5KPW_P7.62mm_Vertical_KathodeUp
+Diode, 5KPW series, Axial, Vertical, pin pitch=7.62mm, , length*diameter=9*8mm^2, , http://www.diodes.com/_files/packages/8686949.gif
+Diode 5KPW series Axial Vertical pin pitch 7.62mm  length 9mm diameter 8mm
 0
 2
 2
-Battery
-BatteryHolder_Eagle_12BH611-GR
-https://eu.mouser.com/datasheet/2/209/EPD-200766-1274481.pdf
-9V Battery Holder
+Diode_THT
+D_5KPW_P12.70mm_Horizontal
+Diode, 5KPW series, Axial, Horizontal, pin pitch=12.7mm, , length*diameter=9*8mm^2, , http://www.diodes.com/_files/packages/8686949.gif
+Diode 5KPW series Axial Horizontal pin pitch 12.7mm  length 9mm diameter 8mm
 0
 2
 2
-Battery
-BatteryHolder_Keystone_103_1x20mm
-http://www.keyelco.com/product-pdf.cfm?p=719
-Keystone type 103 battery holder
+Diode_THT
+D_5KP_P7.62mm_Vertical_AnodeUp
+Diode, 5KP series, Axial, Vertical, pin pitch=7.62mm, , length*diameter=7.62*9.53mm^2, , http://www.diodes.com/_files/packages/8686949.gif
+Diode 5KP series Axial Vertical pin pitch 7.62mm  length 7.62mm diameter 9.53mm
 0
 2
 2
-Battery
-BatteryHolder_Keystone_104_1x23mm
-http://www.keyelco.com/product-pdf.cfm?p=744
-Keystone type 104 battery holder
+Diode_THT
+D_5KP_P7.62mm_Vertical_KathodeUp
+Diode, 5KP series, Axial, Vertical, pin pitch=7.62mm, , length*diameter=7.62*9.53mm^2, , http://www.diodes.com/_files/packages/8686949.gif
+Diode 5KP series Axial Vertical pin pitch 7.62mm  length 7.62mm diameter 9.53mm
 0
 2
 2
-Battery
-BatteryHolder_Keystone_105_1x2430
-http://www.keyelco.com/product-pdf.cfm?p=745
-Keystone type 105 battery holder
+Diode_THT
+D_5KP_P10.16mm_Horizontal
+Diode, 5KP series, Axial, Horizontal, pin pitch=10.16mm, , length*diameter=7.62*9.53mm^2, , http://www.diodes.com/_files/packages/8686949.gif
+Diode 5KP series Axial Horizontal pin pitch 10.16mm  length 7.62mm diameter 9.53mm
 0
 2
 2
-Battery
-BatteryHolder_Keystone_106_1x20mm
-http://www.keyelco.com/product-pdf.cfm?p=720
-Keystone type 106 battery holder
+Diode_THT
+D_5KP_P12.70mm_Horizontal
+Diode, 5KP series, Axial, Horizontal, pin pitch=12.7mm, , length*diameter=7.62*9.53mm^2, , http://www.diodes.com/_files/packages/8686949.gif
+Diode 5KP series Axial Horizontal pin pitch 12.7mm  length 7.62mm diameter 9.53mm
 0
 2
 2
-Battery
-BatteryHolder_Keystone_107_1x23mm
-http://www.keyelco.com/product-pdf.cfm?p=746
-Keystone type 107 battery holder
+Diode_THT
+D_5W_P5.08mm_Vertical_AnodeUp
+Diode, 5W series, Axial, Vertical, pin pitch=5.08mm, , length*diameter=8.9*3.7mm^2, , http://www.diodes.com/_files/packages/8686949.gif
+Diode 5W series Axial Vertical pin pitch 5.08mm  length 8.9mm diameter 3.7mm
 0
 2
 2
-Battery
-BatteryHolder_Keystone_500
-Keystone #500, CR1220 battery holder, http://www.keyelco.com/product-pdf.cfm?p=710
-CR1220 battery holder
+Diode_THT
+D_5W_P5.08mm_Vertical_KathodeUp
+Diode, 5W series, Axial, Vertical, pin pitch=5.08mm, , length*diameter=8.9*3.7mm^2, , http://www.diodes.com/_files/packages/8686949.gif
+Diode 5W series Axial Vertical pin pitch 5.08mm  length 8.9mm diameter 3.7mm
 0
 2
 2
-Battery
-BatteryHolder_Keystone_1042_1x18650
-Battery holder for 18650 cylindrical cells http://www.keyelco.com/product.cfm/product_id/918
-18650 Keystone 1042 Li-ion
+Diode_THT
+D_5W_P10.16mm_Horizontal
+Diode, 5W series, Axial, Horizontal, pin pitch=10.16mm, , length*diameter=8.9*3.7mm^2, , http://www.diodes.com/_files/packages/8686949.gif
+Diode 5W series Axial Horizontal pin pitch 10.16mm  length 8.9mm diameter 3.7mm
 0
 2
 2
-Battery
-BatteryHolder_Keystone_1058_1x2032
-http://www.keyelco.com/product-pdf.cfm?p=14028
-Keystone type 1058 coin cell retainer
+Diode_THT
+D_5W_P12.70mm_Horizontal
+Diode, 5W series, Axial, Horizontal, pin pitch=12.7mm, , length*diameter=8.9*3.7mm^2, , http://www.diodes.com/_files/packages/8686949.gif
+Diode 5W series Axial Horizontal pin pitch 12.7mm  length 8.9mm diameter 3.7mm
 0
 2
 2
-Battery
-BatteryHolder_Keystone_1060_1x2032
-http://www.keyelco.com/product-pdf.cfm?p=726
-CR2032 BR2032 BatteryHolder Battery
+Diode_THT
+D_A-405_P2.54mm_Vertical_AnodeUp
+Diode, A-405 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=5.2*2.7mm^2, , http://www.diodes.com/_files/packages/A-405.pdf
+Diode A-405 series Axial Vertical pin pitch 2.54mm  length 5.2mm diameter 2.7mm
 0
 2
 2
-Battery
-BatteryHolder_Keystone_2460_1xAA
-https://www.keyelco.com/product-pdf.cfm?p=1025
-AA battery cell holder
+Diode_THT
+D_A-405_P2.54mm_Vertical_KathodeUp
+Diode, A-405 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=5.2*2.7mm^2, , http://www.diodes.com/_files/packages/A-405.pdf
+Diode A-405 series Axial Vertical pin pitch 2.54mm  length 5.2mm diameter 2.7mm
 0
 2
 2
-Battery
-BatteryHolder_Keystone_2462_2xAA
-2xAA cell battery holder, Keystone P/N 2462, https://www.keyelco.com/product-pdf.cfm?p=1027
-AA battery cell holder
+Diode_THT
+D_A-405_P5.08mm_Vertical_AnodeUp
+Diode, A-405 series, Axial, Vertical, pin pitch=5.08mm, , length*diameter=5.2*2.7mm^2, , http://www.diodes.com/_files/packages/A-405.pdf
+Diode A-405 series Axial Vertical pin pitch 5.08mm  length 5.2mm diameter 2.7mm
 0
 2
 2
-Battery
-BatteryHolder_Keystone_2466_1xAAA
-1xAAA Battery Holder, Keystone, Plastic Case, http://www.keyelco.com/product-pdf.cfm?p=1031
-AAA battery holder Keystone
+Diode_THT
+D_A-405_P5.08mm_Vertical_KathodeUp
+Diode, A-405 series, Axial, Vertical, pin pitch=5.08mm, , length*diameter=5.2*2.7mm^2, , http://www.diodes.com/_files/packages/A-405.pdf
+Diode A-405 series Axial Vertical pin pitch 5.08mm  length 5.2mm diameter 2.7mm
 0
 2
 2
-Battery
-BatteryHolder_Keystone_2468_2xAAA
-2xAAA cell battery holder, Keystone P/N 2468, http://www.keyelco.com/product-pdf.cfm?p=1033
-AAA battery cell holder
+Diode_THT
+D_A-405_P7.62mm_Horizontal
+Diode, A-405 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=5.2*2.7mm^2, , http://www.diodes.com/_files/packages/A-405.pdf
+Diode A-405 series Axial Horizontal pin pitch 7.62mm  length 5.2mm diameter 2.7mm
 0
 2
 2
-Battery
-BatteryHolder_Keystone_2479_3xAAA
-Keystone Battery Holder, 2479, Battery Type 3xAAA (Script generated with StandardBox.py) (Keystone Battery Holder, 2479, Battery Type 3xAAA)
-Keystone Battery Holder 2479 Battery Type 3xAAA
+Diode_THT
+D_A-405_P10.16mm_Horizontal
+Diode, A-405 series, Axial, Horizontal, pin pitch=10.16mm, , length*diameter=5.2*2.7mm^2, , http://www.diodes.com/_files/packages/A-405.pdf
+Diode A-405 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm
 0
 2
 2
-Battery
-BatteryHolder_Keystone_2993
-http://www.keyelco.com/product-pdf.cfm?p=776
-Keystone type 2993 negative battery contact
-0
-1
-1
-Battery
-BatteryHolder_Keystone_2998_1x6.8mm
-www.keyelco.com/product-pdf.cfm?p=763
-Keystone type 2998 battery holder
-0
-3
-2
-Battery
-BatteryHolder_Keystone_3000_1x12mm
-http://www.keyelco.com/product-pdf.cfm?p=777
-Keystone type 3000 coin cell retainer
-0
-3
-2
-Battery
-BatteryHolder_Keystone_3001_1x12mm
-http://www.keyelco.com/product-pdf.cfm?p=778
-Keystone type 3001 coin cell retainer
-0
-3
-2
-Battery
-BatteryHolder_Keystone_3002_1x2032
-https://www.tme.eu/it/Document/a823211ec201a9e209042d155fe22d2b/KEYS2996.pdf
-BR2016 CR2016 DL2016 BR2020 CL2020 BR2025 CR2025 DL2025 DR2032 CR2032 DL2032
-0
-3
-2
-Battery
-BatteryHolder_Keystone_3008_1x2450
-http://www.keyelco.com/product-pdf.cfm?p=786
-Keystone type 3008 coin cell retainer
-0
-3
-2
-Battery
-BatteryHolder_Keystone_3009_1x2450
-http://www.keyelco.com/product-pdf.cfm?p=787
-Keystone type 3009 coin cell retainer
-0
-3
-2
-Battery
-BatteryHolder_Keystone_3034_1x20mm
-Keystone 3034 SMD battery holder for 2020, 2025 and 2032 coincell batteries. http://www.keyelco.com/product-pdf.cfm?p=798
-Keystone type 3034 coin cell retainer
-0
-3
-2
-Battery
-BatteryHolder_LINX_BAT-HLD-012-SMT
-SMT battery holder for CR1216/1220/1225, https://linxtechnologies.com/wp/wp-content/uploads/bat-hld-012-smt.pdf
-battery holder coin cell cr1216 cr1220 cr1225
-0
-3
-2
-Battery
-BatteryHolder_MPD_BA9VPC_1xPP3
-1xPP3 (9V) battery holder, Memory Protection Devices P/N BA9VPC, http://www.memoryprotectiondevices.com/datasheets/BA9VPC-datasheet.pdf
-PP3 Battery Holder BA9VPC 9V
+Diode_THT
+D_A-405_P12.70mm_Horizontal
+Diode, A-405 series, Axial, Horizontal, pin pitch=12.7mm, , length*diameter=5.2*2.7mm^2, , http://www.diodes.com/_files/packages/A-405.pdf
+Diode A-405 series Axial Horizontal pin pitch 12.7mm  length 5.2mm diameter 2.7mm
 0
 2
 2
-Battery
-BatteryHolder_MPD_BC2AAPC_2xAA
-2xAA cell battery holder, Memory Protection Devices P/N BC2AAPC, http://www.memoryprotectiondevices.com/datasheets/BC2AAPC-datasheet.pdf
-AA battery cell holder
+Diode_THT
+D_DO-15_P2.54mm_Vertical_AnodeUp
+Diode, DO-15 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=7.6*3.6mm^2, , http://www.diodes.com/_files/packages/DO-15.pdf
+Diode DO-15 series Axial Vertical pin pitch 2.54mm  length 7.6mm diameter 3.6mm
 0
 2
 2
-Battery
-BatteryHolder_MPD_BC12AAPC_2xAA
-2xAA cell battery holder, Memory Protection Devices P/N BC12AAPC, http://www.memoryprotectiondevices.com/datasheets/BC12AAPC-datasheet.pdf
-AA battery cell holder
+Diode_THT
+D_DO-15_P2.54mm_Vertical_KathodeUp
+Diode, DO-15 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=7.6*3.6mm^2, , http://www.diodes.com/_files/packages/DO-15.pdf
+Diode DO-15 series Axial Vertical pin pitch 2.54mm  length 7.6mm diameter 3.6mm
 0
 2
 2
-Battery
-BatteryHolder_MPD_BC2003_1x2032
-http://www.memoryprotectiondevices.com/datasheets/BC-2003-datasheet.pdf
-BC2003 CR2032 2032 Battery Holder
-0
-3
-2
-Battery
-BatteryHolder_MPD_BH-18650-PC2
-18650 Battery Holder (http://www.memoryprotectiondevices.com/datasheets/BK-18650-PC2-datasheet.pdf)
-18650 Battery Holder
+Diode_THT
+D_DO-15_P3.81mm_Vertical_AnodeUp
+Diode, DO-15 series, Axial, Vertical, pin pitch=3.81mm, , length*diameter=7.6*3.6mm^2, , http://www.diodes.com/_files/packages/DO-15.pdf
+Diode DO-15 series Axial Vertical pin pitch 3.81mm  length 7.6mm diameter 3.6mm
 0
 2
 2
-Battery
-BatteryHolder_Seiko_MS621F
-Seiko MS621F, https://www.sii.co.jp/en/me/files/2014/02/file_EXTENDED_PRDCT_SPEC_75_FILE_11.jpg
-Seiko MS621F
+Diode_THT
+D_DO-15_P3.81mm_Vertical_KathodeUp
+Diode, DO-15 series, Axial, Vertical, pin pitch=3.81mm, , length*diameter=7.6*3.6mm^2, , http://www.diodes.com/_files/packages/DO-15.pdf
+Diode DO-15 series Axial Vertical pin pitch 3.81mm  length 7.6mm diameter 3.6mm
 0
 2
 2
-Battery
-BatteryHolder_TruPower_BH-331P_3xAA
-Keystone Battery Holder BH-331P Battery Type 3xAA (Script generated with StandardBox.py) (Keystone Battery Holder BH-331P Battery Type 3xAA)
-Battery Holder BH-331P Battery Type 3xAA
+Diode_THT
+D_DO-15_P5.08mm_Vertical_AnodeUp
+Diode, DO-15 series, Axial, Vertical, pin pitch=5.08mm, , length*diameter=7.6*3.6mm^2, , http://www.diodes.com/_files/packages/DO-15.pdf
+Diode DO-15 series Axial Vertical pin pitch 5.08mm  length 7.6mm diameter 3.6mm
 0
 2
 2
-Battery
-Battery_CR1225
-CR1225 battery
-battery CR1225 coin cell
-0
-0
-0
-Battery
-Battery_Panasonic_CR1025-VSK_Vertical_CircularHoles
-Panasonic CR-1025/VSK battery
-battery CR-1025 coin cell vertical
+Diode_THT
+D_DO-15_P5.08mm_Vertical_KathodeUp
+Diode, DO-15 series, Axial, Vertical, pin pitch=5.08mm, , length*diameter=7.6*3.6mm^2, , http://www.diodes.com/_files/packages/DO-15.pdf
+Diode DO-15 series Axial Vertical pin pitch 5.08mm  length 7.6mm diameter 3.6mm
 0
 2
 2
-Battery
-Battery_Panasonic_CR1220-VCN_Vertical_CircularHoles
-Panasonic CR-1220/VCN battery, https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000D140.PDF
-battery CR-1220 coin cell vertical
+Diode_THT
+D_DO-15_P10.16mm_Horizontal
+Diode, DO-15 series, Axial, Horizontal, pin pitch=10.16mm, , length*diameter=7.6*3.6mm^2, , http://www.diodes.com/_files/packages/DO-15.pdf
+Diode DO-15 series Axial Horizontal pin pitch 10.16mm  length 7.6mm diameter 3.6mm
 0
 2
 2
-Battery
-Battery_Panasonic_CR1632-V1AN_Vertical_CircularHoles
-Panasonic CR-1632-V1AN battery, https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000D464.PDF
-battery CR-1632 coin cell vertical
+Diode_THT
+D_DO-15_P12.70mm_Horizontal
+Diode, DO-15 series, Axial, Horizontal, pin pitch=12.7mm, , length*diameter=7.6*3.6mm^2, , http://www.diodes.com/_files/packages/DO-15.pdf
+Diode DO-15 series Axial Horizontal pin pitch 12.7mm  length 7.6mm diameter 3.6mm
 0
 2
 2
-Battery
-Battery_Panasonic_CR2025-V1AK_Vertical_CircularHoles
-Panasonic CR-2025/V1AK battery,
-battery CR-2025 coin cell vertical
+Diode_THT
+D_DO-15_P15.24mm_Horizontal
+Diode, DO-15 series, Axial, Horizontal, pin pitch=15.24mm, , length*diameter=7.6*3.6mm^2, , http://www.diodes.com/_files/packages/DO-15.pdf
+Diode DO-15 series Axial Horizontal pin pitch 15.24mm  length 7.6mm diameter 3.6mm
 0
 2
 2
-Battery
-Battery_Panasonic_CR2032-VS1N_Vertical_CircularHoles
-Panasonic CR-2032/VS1N battery, https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000D348.PDF
-battery CR-2032 coin cell vertical
+Diode_THT
+D_DO-27_P5.08mm_Vertical_AnodeUp
+Diode, DO-27 series, Axial, Vertical, pin pitch=5.08mm, , length*diameter=9.52*5.33mm^2, , http://www.slottechforum.com/slotinfo/Techstuff/CD2%20Diodes%20and%20Transistors/Cases/Diode%20DO-27.jpg
+Diode DO-27 series Axial Vertical pin pitch 5.08mm  length 9.52mm diameter 5.33mm
 0
 2
 2
-Battery
-Battery_Panasonic_CR2354-VCN_Vertical_CircularHoles
-Panasonic CR-2354/VCN battery, https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000D486.PDF
-battery CR-2354/VCN coin cell vertical
+Diode_THT
+D_DO-27_P5.08mm_Vertical_KathodeUp
+Diode, DO-27 series, Axial, Vertical, pin pitch=5.08mm, , length*diameter=9.52*5.33mm^2, , http://www.slottechforum.com/slotinfo/Techstuff/CD2%20Diodes%20and%20Transistors/Cases/Diode%20DO-27.jpg
+Diode DO-27 series Axial Vertical pin pitch 5.08mm  length 9.52mm diameter 5.33mm
 0
 2
 2
-Battery
-Battery_Panasonic_CR2450-VAN_Vertical_CircularHoles
-Panasonic CR-2450/VAN battery, https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000D492.PDF
-battery CR-2450 coin cell
+Diode_THT
+D_DO-27_P12.70mm_Horizontal
+Diode, DO-27 series, Axial, Horizontal, pin pitch=12.7mm, , length*diameter=9.52*5.33mm^2, , http://www.slottechforum.com/slotinfo/Techstuff/CD2%20Diodes%20and%20Transistors/Cases/Diode%20DO-27.jpg
+Diode DO-27 series Axial Horizontal pin pitch 12.7mm  length 9.52mm diameter 5.33mm
 0
 2
 2
-Battery
-Battery_Panasonic_CR2477-VCN_Vertical_CircularHoles
-Panasonic CR-2477/VCN battery, https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000D502.PDF
-battery CR-2477 coin cell vertical
+Diode_THT
+D_DO-27_P15.24mm_Horizontal
+Diode, DO-27 series, Axial, Horizontal, pin pitch=15.24mm, , length*diameter=9.52*5.33mm^2, , http://www.slottechforum.com/slotinfo/Techstuff/CD2%20Diodes%20and%20Transistors/Cases/Diode%20DO-27.jpg
+Diode DO-27 series Axial Horizontal pin pitch 15.24mm  length 9.52mm diameter 5.33mm
 0
 2
 2
-Battery
-Battery_Panasonic_CR3032-VCN_Vertical_CircularHoles
-Panasonic CR-3032/VCN battery, https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000D508.PDF
-battery CR-3032 coin cell vertical
+Diode_THT
+D_DO-34_SOD68_P2.54mm_Vertical_AnodeUp
+Diode, DO-34_SOD68 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=3.04*1.6mm^2, , https://www.nxp.com/docs/en/data-sheet/KTY83_SER.pdf
+Diode DO-34_SOD68 series Axial Vertical pin pitch 2.54mm  length 3.04mm diameter 1.6mm
 0
 2
 2
+Diode_THT
+D_DO-34_SOD68_P2.54mm_Vertical_KathodeUp
+Diode, DO-34_SOD68 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=3.04*1.6mm^2, , https://www.nxp.com/docs/en/data-sheet/KTY83_SER.pdf
+Diode DO-34_SOD68 series Axial Vertical pin pitch 2.54mm  length 3.04mm diameter 1.6mm
+0
+2
+2
+Diode_THT
+D_DO-34_SOD68_P5.08mm_Vertical_AnodeUp
+Diode, DO-34_SOD68 series, Axial, Vertical, pin pitch=5.08mm, , length*diameter=3.04*1.6mm^2, , https://www.nxp.com/docs/en/data-sheet/KTY83_SER.pdf
+Diode DO-34_SOD68 series Axial Vertical pin pitch 5.08mm  length 3.04mm diameter 1.6mm
+0
+2
+2
+Diode_THT
+D_DO-34_SOD68_P5.08mm_Vertical_KathodeUp
+Diode, DO-34_SOD68 series, Axial, Vertical, pin pitch=5.08mm, , length*diameter=3.04*1.6mm^2, , https://www.nxp.com/docs/en/data-sheet/KTY83_SER.pdf
+Diode DO-34_SOD68 series Axial Vertical pin pitch 5.08mm  length 3.04mm diameter 1.6mm
+0
+2
+2
+Diode_THT
+D_DO-34_SOD68_P7.62mm_Horizontal
+Diode, DO-34_SOD68 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=3.04*1.6mm^2, , https://www.nxp.com/docs/en/data-sheet/KTY83_SER.pdf
+Diode DO-34_SOD68 series Axial Horizontal pin pitch 7.62mm  length 3.04mm diameter 1.6mm
+0
+2
+2
+Diode_THT
+D_DO-34_SOD68_P10.16mm_Horizontal
+Diode, DO-34_SOD68 series, Axial, Horizontal, pin pitch=10.16mm, , length*diameter=3.04*1.6mm^2, , https://www.nxp.com/docs/en/data-sheet/KTY83_SER.pdf
+Diode DO-34_SOD68 series Axial Horizontal pin pitch 10.16mm  length 3.04mm diameter 1.6mm
+0
+2
+2
+Diode_THT
+D_DO-34_SOD68_P12.70mm_Horizontal
+Diode, DO-34_SOD68 series, Axial, Horizontal, pin pitch=12.7mm, , length*diameter=3.04*1.6mm^2, , https://www.nxp.com/docs/en/data-sheet/KTY83_SER.pdf
+Diode DO-34_SOD68 series Axial Horizontal pin pitch 12.7mm  length 3.04mm diameter 1.6mm
+0
+2
+2
+Diode_THT
+D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp
+Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf
+Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm
+0
+2
+2
+Diode_THT
+D_DO-35_SOD27_P2.54mm_Vertical_KathodeUp
+Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf
+Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm
+0
+2
+2
+Diode_THT
+D_DO-35_SOD27_P3.81mm_Vertical_AnodeUp
+Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=3.81mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf
+Diode DO-35_SOD27 series Axial Vertical pin pitch 3.81mm  length 4mm diameter 2mm
+0
+2
+2
+Diode_THT
+D_DO-35_SOD27_P3.81mm_Vertical_KathodeUp
+Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=3.81mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf
+Diode DO-35_SOD27 series Axial Vertical pin pitch 3.81mm  length 4mm diameter 2mm
+0
+2
+2
+Diode_THT
+D_DO-35_SOD27_P5.08mm_Vertical_AnodeUp
+Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=5.08mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf
+Diode DO-35_SOD27 series Axial Vertical pin pitch 5.08mm  length 4mm diameter 2mm
+0
+2
+2
+Diode_THT
+D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp
+Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=5.08mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf
+Diode DO-35_SOD27 series Axial Vertical pin pitch 5.08mm  length 4mm diameter 2mm
+0
+2
+2
+Diode_THT
+D_DO-35_SOD27_P7.62mm_Horizontal
+Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf
+Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm
+0
+2
+2
+Diode_THT
+D_DO-35_SOD27_P10.16mm_Horizontal
+Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=10.16mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf
+Diode DO-35_SOD27 series Axial Horizontal pin pitch 10.16mm  length 4mm diameter 2mm
+0
+2
+2
+Diode_THT
+D_DO-35_SOD27_P12.70mm_Horizontal
+Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=12.7mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf
+Diode DO-35_SOD27 series Axial Horizontal pin pitch 12.7mm  length 4mm diameter 2mm
+0
+2
+2
+Diode_THT
+D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp
+Diode, DO-41_SOD81 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=5.2*2.7mm^2, , http://www.diodes.com/_files/packages/DO-41%20(Plastic).pdf
+Diode DO-41_SOD81 series Axial Vertical pin pitch 2.54mm  length 5.2mm diameter 2.7mm
+0
+2
+2
+Diode_THT
+D_DO-41_SOD81_P2.54mm_Vertical_KathodeUp
+Diode, DO-41_SOD81 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=5.2*2.7mm^2, , http://www.diodes.com/_files/packages/DO-41%20(Plastic).pdf
+Diode DO-41_SOD81 series Axial Vertical pin pitch 2.54mm  length 5.2mm diameter 2.7mm
+0
+2
+2
+Diode_THT
+D_DO-41_SOD81_P3.81mm_Vertical_AnodeUp
+Diode, DO-41_SOD81 series, Axial, Vertical, pin pitch=3.81mm, , length*diameter=5.2*2.7mm^2, , https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf
+Diode DO-41_SOD81 series Axial Vertical pin pitch 3.81mm  length 5.2mm diameter 2.7mm
+0
+2
+2
+Diode_THT
+D_DO-41_SOD81_P3.81mm_Vertical_KathodeUp
+Diode, DO-41_SOD81 series, Axial, Vertical, pin pitch=3.81mm, , length*diameter=5.2*2.7mm^2, , https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf
+Diode DO-41_SOD81 series Axial Vertical pin pitch 3.81mm  length 5.2mm diameter 2.7mm
+0
+2
+2
+Diode_THT
+D_DO-41_SOD81_P5.08mm_Vertical_AnodeUp
+Diode, DO-41_SOD81 series, Axial, Vertical, pin pitch=5.08mm, , length*diameter=5.2*2.7mm^2, , http://www.diodes.com/_files/packages/DO-41%20(Plastic).pdf
+Diode DO-41_SOD81 series Axial Vertical pin pitch 5.08mm  length 5.2mm diameter 2.7mm
+0
+2
+2
+Diode_THT
+D_DO-41_SOD81_P5.08mm_Vertical_KathodeUp
+Diode, DO-41_SOD81 series, Axial, Vertical, pin pitch=5.08mm, , length*diameter=5.2*2.7mm^2, , http://www.diodes.com/_files/packages/DO-41%20(Plastic).pdf
+Diode DO-41_SOD81 series Axial Vertical pin pitch 5.08mm  length 5.2mm diameter 2.7mm
+0
+2
+2
+Diode_THT
+D_DO-41_SOD81_P7.62mm_Horizontal
+Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=5.2*2.7mm^2, , http://www.diodes.com/_files/packages/DO-41%20(Plastic).pdf
+Diode DO-41_SOD81 series Axial Horizontal pin pitch 7.62mm  length 5.2mm diameter 2.7mm
+0
+2
+2
+Diode_THT
+D_DO-41_SOD81_P10.16mm_Horizontal
+Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, , length*diameter=5.2*2.7mm^2, , http://www.diodes.com/_files/packages/DO-41%20(Plastic).pdf
+Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm
+0
+2
+2
+Diode_THT
+D_DO-41_SOD81_P12.70mm_Horizontal
+Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=12.7mm, , length*diameter=5.2*2.7mm^2, , http://www.diodes.com/_files/packages/DO-41%20(Plastic).pdf
+Diode DO-41_SOD81 series Axial Horizontal pin pitch 12.7mm  length 5.2mm diameter 2.7mm
+0
+2
+2
+Diode_THT
+D_DO-201AD_P3.81mm_Vertical_AnodeUp
+Diode, DO-201AD series, Axial, Vertical, pin pitch=3.81mm, , length*diameter=9.5*5.2mm^2, , http://www.diodes.com/_files/packages/DO-201AD.pdf
+Diode DO-201AD series Axial Vertical pin pitch 3.81mm  length 9.5mm diameter 5.2mm
+0
+2
+2
+Diode_THT
+D_DO-201AD_P3.81mm_Vertical_KathodeUp
+Diode, DO-201AD series, Axial, Vertical, pin pitch=3.81mm, , length*diameter=9.5*5.2mm^2, , http://www.diodes.com/_files/packages/DO-201AD.pdf
+Diode DO-201AD series Axial Vertical pin pitch 3.81mm  length 9.5mm diameter 5.2mm
+0
+2
+2
+Diode_THT
+D_DO-201AD_P5.08mm_Vertical_AnodeUp
+Diode, DO-201AD series, Axial, Vertical, pin pitch=5.08mm, , length*diameter=9.5*5.2mm^2, , http://www.diodes.com/_files/packages/DO-201AD.pdf
+Diode DO-201AD series Axial Vertical pin pitch 5.08mm  length 9.5mm diameter 5.2mm
+0
+2
+2
+Diode_THT
+D_DO-201AD_P5.08mm_Vertical_KathodeUp
+Diode, DO-201AD series, Axial, Vertical, pin pitch=5.08mm, , length*diameter=9.5*5.2mm^2, , http://www.diodes.com/_files/packages/DO-201AD.pdf
+Diode DO-201AD series Axial Vertical pin pitch 5.08mm  length 9.5mm diameter 5.2mm
+0
+2
+2
+Diode_THT
+D_DO-201AD_P12.70mm_Horizontal
+Diode, DO-201AD series, Axial, Horizontal, pin pitch=12.7mm, , length*diameter=9.5*5.2mm^2, , http://www.diodes.com/_files/packages/DO-201AD.pdf
+Diode DO-201AD series Axial Horizontal pin pitch 12.7mm  length 9.5mm diameter 5.2mm
+0
+2
+2
+Diode_THT
+D_DO-201AD_P15.24mm_Horizontal
+Diode, DO-201AD series, Axial, Horizontal, pin pitch=15.24mm, , length*diameter=9.5*5.2mm^2, , http://www.diodes.com/_files/packages/DO-201AD.pdf
+Diode DO-201AD series Axial Horizontal pin pitch 15.24mm  length 9.5mm diameter 5.2mm
+0
+2
+2
+Diode_THT
+D_DO-201AE_P3.81mm_Vertical_AnodeUp
+Diode, DO-201AE series, Axial, Vertical, pin pitch=3.81mm, , length*diameter=9*5.3mm^2, , http://www.farnell.com/datasheets/529758.pdf
+Diode DO-201AE series Axial Vertical pin pitch 3.81mm  length 9mm diameter 5.3mm
+0
+2
+2
+Diode_THT
+D_DO-201AE_P3.81mm_Vertical_KathodeUp
+Diode, DO-201AE series, Axial, Vertical, pin pitch=3.81mm, , length*diameter=9*5.3mm^2, , http://www.farnell.com/datasheets/529758.pdf
+Diode DO-201AE series Axial Vertical pin pitch 3.81mm  length 9mm diameter 5.3mm
+0
+2
+2
+Diode_THT
+D_DO-201AE_P5.08mm_Vertical_AnodeUp
+Diode, DO-201AE series, Axial, Vertical, pin pitch=5.08mm, , length*diameter=9*5.3mm^2, , http://www.farnell.com/datasheets/529758.pdf
+Diode DO-201AE series Axial Vertical pin pitch 5.08mm  length 9mm diameter 5.3mm
+0
+2
+2
+Diode_THT
+D_DO-201AE_P5.08mm_Vertical_KathodeUp
+Diode, DO-201AE series, Axial, Vertical, pin pitch=5.08mm, , length*diameter=9*5.3mm^2, , http://www.farnell.com/datasheets/529758.pdf
+Diode DO-201AE series Axial Vertical pin pitch 5.08mm  length 9mm diameter 5.3mm
+0
+2
+2
+Diode_THT
+D_DO-201AE_P12.70mm_Horizontal
+Diode, DO-201AE series, Axial, Horizontal, pin pitch=12.7mm, , length*diameter=9*5.3mm^2, , http://www.farnell.com/datasheets/529758.pdf
+Diode DO-201AE series Axial Horizontal pin pitch 12.7mm  length 9mm diameter 5.3mm
+0
+2
+2
+Diode_THT
+D_DO-201AE_P15.24mm_Horizontal
+Diode, DO-201AE series, Axial, Horizontal, pin pitch=15.24mm, , length*diameter=9*5.3mm^2, , http://www.farnell.com/datasheets/529758.pdf
+Diode DO-201AE series Axial Horizontal pin pitch 15.24mm  length 9mm diameter 5.3mm
+0
+2
+2
+Diode_THT
+D_DO-201_P3.81mm_Vertical_AnodeUp
+Diode, DO-201 series, Axial, Vertical, pin pitch=3.81mm, , length*diameter=9.53*5.21mm^2, , http://www.diodes.com/_files/packages/DO-201.pdf
+Diode DO-201 series Axial Vertical pin pitch 3.81mm  length 9.53mm diameter 5.21mm
+0
+2
+2
+Diode_THT
+D_DO-201_P3.81mm_Vertical_KathodeUp
+Diode, DO-201 series, Axial, Vertical, pin pitch=3.81mm, , length*diameter=9.53*5.21mm^2, , http://www.diodes.com/_files/packages/DO-201.pdf
+Diode DO-201 series Axial Vertical pin pitch 3.81mm  length 9.53mm diameter 5.21mm
+0
+2
+2
+Diode_THT
+D_DO-201_P5.08mm_Vertical_AnodeUp
+Diode, DO-201 series, Axial, Vertical, pin pitch=5.08mm, , length*diameter=9.53*5.21mm^2, , http://www.diodes.com/_files/packages/DO-201.pdf
+Diode DO-201 series Axial Vertical pin pitch 5.08mm  length 9.53mm diameter 5.21mm
+0
+2
+2
+Diode_THT
+D_DO-201_P5.08mm_Vertical_KathodeUp
+Diode, DO-201 series, Axial, Vertical, pin pitch=5.08mm, , length*diameter=9.53*5.21mm^2, , http://www.diodes.com/_files/packages/DO-201.pdf
+Diode DO-201 series Axial Vertical pin pitch 5.08mm  length 9.53mm diameter 5.21mm
+0
+2
+2
+Diode_THT
+D_DO-201_P12.70mm_Horizontal
+Diode, DO-201 series, Axial, Horizontal, pin pitch=12.7mm, , length*diameter=9.53*5.21mm^2, , http://www.diodes.com/_files/packages/DO-201.pdf
+Diode DO-201 series Axial Horizontal pin pitch 12.7mm  length 9.53mm diameter 5.21mm
+0
+2
+2
+Diode_THT
+D_DO-201_P15.24mm_Horizontal
+Diode, DO-201 series, Axial, Horizontal, pin pitch=15.24mm, , length*diameter=9.53*5.21mm^2, , http://www.diodes.com/_files/packages/DO-201.pdf
+Diode DO-201 series Axial Horizontal pin pitch 15.24mm  length 9.53mm diameter 5.21mm
+0
+2
+2
+Diode_THT
+D_DO-247_Horizontal_TabDown
+Diode, DO-247 series, Horizontal, TabDown, P 10.9mm
+diode rectifier
+0
+2
+2
+Diode_THT
+D_DO-247_Horizontal_TabUp
+Diode, DO-247 series, Horizontal, TabUp, P 10.9mm
+diode rectifier
+0
+2
+2
+Diode_THT
+D_DO-247_Vertical
+Diode, DO-247 series, Vertical, P 10.9mm
+diode rectifier
+0
+2
+2
+Diode_THT
+D_P600_R-6_P7.62mm_Vertical_AnodeUp
+Diode, P600_R-6 series, Axial, Vertical, pin pitch=7.62mm, , length*diameter=9.1*9.1mm^2, , http://www.vishay.com/docs/88692/p600a.pdf, http://www.diodes.com/_files/packages/R-6.pdf
+Diode P600_R-6 series Axial Vertical pin pitch 7.62mm  length 9.1mm diameter 9.1mm
+0
+2
+2
+Diode_THT
+D_P600_R-6_P7.62mm_Vertical_KathodeUp
+Diode, P600_R-6 series, Axial, Vertical, pin pitch=7.62mm, , length*diameter=9.1*9.1mm^2, , http://www.vishay.com/docs/88692/p600a.pdf, http://www.diodes.com/_files/packages/R-6.pdf
+Diode P600_R-6 series Axial Vertical pin pitch 7.62mm  length 9.1mm diameter 9.1mm
+0
+2
+2
+Diode_THT
+D_P600_R-6_P12.70mm_Horizontal
+Diode, P600_R-6 series, Axial, Horizontal, pin pitch=12.7mm, , length*diameter=9.1*9.1mm^2, , http://www.vishay.com/docs/88692/p600a.pdf, http://www.diodes.com/_files/packages/R-6.pdf
+Diode P600_R-6 series Axial Horizontal pin pitch 12.7mm  length 9.1mm diameter 9.1mm
+0
+2
+2
+Diode_THT
+D_P600_R-6_P20.00mm_Horizontal
+Diode, P600_R-6 series, Axial, Horizontal, pin pitch=20mm, , length*diameter=9.1*9.1mm^2, , http://www.vishay.com/docs/88692/p600a.pdf, http://www.diodes.com/_files/packages/R-6.pdf
+Diode P600_R-6 series Axial Horizontal pin pitch 20mm  length 9.1mm diameter 9.1mm
+0
+2
+2
+Diode_THT
+D_T-1_P2.54mm_Vertical_AnodeUp
+Diode, T-1 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=3.2*2.6mm^2, , http://www.diodes.com/_files/packages/T-1.pdf
+Diode T-1 series Axial Vertical pin pitch 2.54mm  length 3.2mm diameter 2.6mm
+0
+2
+2
+Diode_THT
+D_T-1_P2.54mm_Vertical_KathodeUp
+Diode, T-1 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=3.2*2.6mm^2, , http://www.diodes.com/_files/packages/T-1.pdf
+Diode T-1 series Axial Vertical pin pitch 2.54mm  length 3.2mm diameter 2.6mm
+0
+2
+2
+Diode_THT
+D_T-1_P5.08mm_Horizontal
+Diode, T-1 series, Axial, Horizontal, pin pitch=5.08mm, , length*diameter=3.2*2.6mm^2, , http://www.diodes.com/_files/packages/T-1.pdf
+Diode T-1 series Axial Horizontal pin pitch 5.08mm  length 3.2mm diameter 2.6mm
+0
+2
+2
+Diode_THT
+D_T-1_P10.16mm_Horizontal
+Diode, T-1 series, Axial, Horizontal, pin pitch=10.16mm, , length*diameter=3.2*2.6mm^2, , http://www.diodes.com/_files/packages/T-1.pdf
+Diode T-1 series Axial Horizontal pin pitch 10.16mm  length 3.2mm diameter 2.6mm
+0
+2
+2
+Diode_THT
+D_T-1_P12.70mm_Horizontal
+Diode, T-1 series, Axial, Horizontal, pin pitch=12.7mm, , length*diameter=3.2*2.6mm^2, , http://www.diodes.com/_files/packages/T-1.pdf
+Diode T-1 series Axial Horizontal pin pitch 12.7mm  length 3.2mm diameter 2.6mm
+0
+2
+2
+Diode_THT
+Diode_Bridge_15.1x15.1x6.3mm_P10.9mm
+Single phase bridge rectifier case 15.1x15.1mm, pitch 10.9mm, see https://diotec.com/tl_files/diotec/files/pdf/datasheets/pb1000.pdf
+Diode Bridge PB10xxS
+0
+4
+4
+Diode_THT
+Diode_Bridge_15.2x15.2x6.3mm_P10.9mm
+Single phase bridge rectifier case 15.2x15.2mm, pitch 10.9mm, see https://diotec.com/tl_files/diotec/files/pdf/datasheets/kbpc600.pdf
+Diode Bridge KBPC6xx
+0
+4
+4
+Diode_THT
+Diode_Bridge_15.7x15.7x6.3mm_P10.8mm
+Single phase bridge rectifier case 15.7x15.7
+Diode Bridge
+0
+4
+4
+Diode_THT
+Diode_Bridge_16.7x16.7x6.3mm_P10.8mm
+Single phase bridge rectifier case 16.7x16.7
+Diode Bridge
+0
+4
+4
+Diode_THT
+Diode_Bridge_19.0x3.5x10.0mm_P5.0mm
+Vishay GBU rectifier package, 5.08mm pitch, see http://www.vishay.com/docs/88606/g3sba20.pdf
+Vishay GBU rectifier diode bridge
+0
+4
+4
+Diode_THT
+Diode_Bridge_19.0x19.0x6.8mm_P12.7mm
+Single phase bridge rectifier case 19x19mm, pitch 12.7mm, see https://diotec.com/tl_files/diotec/files/pdf/datasheets/pb1000.pdf
+Diode Bridge PB10xx
+0
+4
+4
+Diode_THT
+Diode_Bridge_28.6x28.6x7.3mm_P18.0mm_P11.6mm
+Single phase bridge rectifier case 28.6x28.6mm, pitch 18.0mm & 11.6mm, see https://diotec.com/tl_files/diotec/files/pdf/datasheets/kbpc1500fw.pdf
+Diode Bridge KBPCxxxxWP
+0
+4
+4
+Diode_THT
+Diode_Bridge_32.0x5.6x17.0mm_P10.0mm_P7.5mm
+Diotec 32x5.6x17mm rectifier package, 7.5mm/10mm pitch, see https://diotec.com/tl_files/diotec/files/pdf/datasheets/b40c3700.pdf
+Diotec rectifier diode bridge
+0
+4
+4
+Diode_THT
+Diode_Bridge_Comchip_SCVB-L
+Three phase, Bridge, Rectifier, https://www.comchiptech.com/admin/files/product/SC35VB80S-G%20Thru506369.%20SC35VB160S-G%20RevB.pdf
+diode module
+0
+5
+5
+Diode_THT
+Diode_Bridge_DIP-4_W5.08mm_P2.54mm
+4-lead dip package for diode bridges, row spacing 5.08mm, pin-spacing 2.54mm, see http://www.vishay.com/docs/88898/b2m.pdf
+DIL DIP PDIP 5.08mm 2.54
+0
+4
+4
+Diode_THT
+Diode_Bridge_DIP-4_W7.62mm_P5.08mm
+4-lead dip package for diode bridges, row spacing 7.62 mm (300 mils), see http://cdn-reichelt.de/documents/datenblatt/A400/HDBL101G_20SERIES-TSC.pdf
+DIL DIP PDIP 5.08mm 7.62mm 300mil
+0
+4
+4
+Diode_THT
+Diode_Bridge_IXYS_GUFP
+Three phase, Bridge, Rectifier
+diode module
+0
+5
+5
+Diode_THT
+Diode_Bridge_Round_D8.9mm
+4-lead round diode bridge package, diameter 8.9mm, pin pitch 5.08mm, see http://cdn-reichelt.de/documents/datenblatt/A400/W005M-W10M_SEP.PDF
+diode bridge 8.9mm 8.85mm WOB pitch 5.08mm
+0
+4
+4
+Diode_THT
+Diode_Bridge_Round_D9.0mm
+4-lead round diode bridge package, diameter 9.0mm, pin pitch 5.0mm, see https://diotec.com/tl_files/diotec/files/pdf/datasheets/b40r.pdf
+diode bridge 9.0mm 8.85mm WOB pitch 5.0mm
+0
+4
+4
+Diode_THT
+Diode_Bridge_Round_D9.8mm
+4-lead round diode bridge package, diameter 9.8mm, pin pitch 5.08mm, see http://www.vishay.com/docs/88769/woo5g.pdf
+diode bridge 9.8mm WOG pitch 5.08mm
+0
+4
+4
+Diode_THT
+Diode_Bridge_Vishay_GBL
+Vishay GBL rectifier package, 5.08mm pitch, see http://www.vishay.com/docs/88609/gbl005.pdf
+Vishay GBL rectifier diode bridge
+0
+4
+4
+Diode_THT
+Diode_Bridge_Vishay_GBU
+Vishay GBU rectifier package, 5.08mm pitch, see http://www.vishay.com/docs/88606/g3sba20.pdf
+Vishay GBU rectifier diode bridge
+0
+4
+4
+Diode_THT
+Diode_Bridge_Vishay_KBL
+Vishay KBL rectifier package, 5.08mm pitch, see http://www.vishay.com/docs/88655/kbl005.pdf
+Vishay KBL rectifier diode bridge
+0
+4
+4
+Diode_THT
+Diode_Bridge_Vishay_KBPC1
+Single phase bridge rectifier case KBPC1, see http://www.vishay.com/docs/93585/vs-kbpc1series.pdf
+Diode Bridge
+0
+4
+4
+Diode_THT
+Diode_Bridge_Vishay_KBPC6
+Single phase bridge rectifier case KBPC6, see http://www.vishay.com/docs/93585/vs-kbpc1series.pdf
+Diode Bridge
+0
+4
+4
+Diode_THT
+Diode_Bridge_Vishay_KBPM
+Vishay KBM rectifier package, 3.95mm pitch (http://www.farnell.com/datasheets/2238158.pdf, http://www.cdil.com/s/kbp2005_.pdf)
+Vishay KBM rectifier diode bridge
+0
+4
+4
+Diode_THT
+Diode_Bridge_Vishay_KBU
+Vishay KBU rectifier package, 5.08mm pitch, see http://www.vishay.com/docs/88656/kbu4.pdf
+Vishay KBU rectifier diode bridge
+0
+4
+4
