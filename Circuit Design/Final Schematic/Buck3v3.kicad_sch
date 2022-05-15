@@ -465,7 +465,7 @@
     (property "Value" "1N5822" (id 1) (at 165.1 97.79 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" (id 2) (at 163.83 101.6 0)
+    (property "Footprint" "Diode_THT:D_DO-201AE_P5.08mm_Vertical_AnodeUp" (id 2) (at 163.83 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.vishay.com/docs/88526/1n5820.pdf" (id 3) (at 168.275 101.6 0)

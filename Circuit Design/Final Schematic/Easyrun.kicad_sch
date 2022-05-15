@@ -1961,7 +1961,7 @@
   (symbol (lib_id "Device:LED") (at 92.71 88.9 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 250658cf-3442-4875-98b9-880ff77de779)
-    (property "Reference" "LProg1" (id 0) (at 90.17 92.71 0))
+    (property "Reference" "L_p1" (id 0) (at 90.17 92.71 0))
     (property "Value" "LED" (id 1) (at 93.98 98.425 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2110,7 +2110,7 @@
   (symbol (lib_id "Device:R") (at 92.71 81.28 180) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 6ee20d1c-a46d-41e5-9769-e0e93e111749)
-    (property "Reference" "R_prog1" (id 0) (at 90.17 83.82 90))
+    (property "Reference" "R_p1" (id 0) (at 90.17 83.82 90))
     (property "Value" "47" (id 1) (at 95.6564 81.28 90))
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (id 2) (at 94.488 81.28 90)
       (effects (font (size 1.27 1.27)) hide)
@@ -2871,11 +2871,11 @@
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/95d20b22-15a2-4d6e-ad13-d156dc884049"
       (reference "CByBa1") (unit 1) (value "10u") (footprint "Capacitor_SMD:CP_Elec_6.3x5.8")
     )
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/a95a8dfc-9f79-410d-a225-f43375e2a94b/9c674106-6c66-4027-bc63-5e55a554fc6b"
+      (reference "C_b1") (unit 1) (value "C_Polarized") (footprint "Capacitor_SMD:CP_Elec_6.3x5.8")
+    )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/a95a8dfc-9f79-410d-a225-f43375e2a94b/9000c85f-cb97-497a-b20c-46cf02358932"
       (reference "C_by1") (unit 1) (value "10n") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
-    )
-    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/a95a8dfc-9f79-410d-a225-f43375e2a94b/9c674106-6c66-4027-bc63-5e55a554fc6b"
-      (reference "C_by_2") (unit 1) (value "C_Polarized") (footprint "Capacitor_SMD:CP_Elec_6.3x5.8")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/a95a8dfc-9f79-410d-a225-f43375e2a94b/9f43f97d-5da0-4635-9c3c-4c4ecc5e776b"
       (reference "C_cv1") (unit 1) (value "10n") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
@@ -2887,28 +2887,28 @@
       (reference "Crec1") (unit 1) (value "100u") (footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/2742c4ea-a381-46e6-9108-7abf967d887e"
-      (reference "D1") (unit 1) (value "1N5822") (footprint "Diode_THT:D_DO-201AD_P15.24mm_Horizontal")
+      (reference "D1") (unit 1) (value "1N5822") (footprint "Diode_THT:D_DO-201AE_P5.08mm_Vertical_AnodeUp")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/f0e54572-ce21-4288-9f09-e30e644463d7"
-      (reference "D2") (unit 1) (value "1N5822") (footprint "Diode_THT:D_DO-201AD_P15.24mm_Horizontal")
+      (reference "D2") (unit 1) (value "1N5822") (footprint "Diode_THT:D_DO-201AE_P5.08mm_Vertical_AnodeUp")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/eb3bf10c-415f-4231-8fef-acb0a60d93a5"
       (reference "D3") (unit 1) (value "1N5822") (footprint "Diode_THT:D_DO-201AE_P5.08mm_Vertical_AnodeUp")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/72439c1f-bc73-458c-9ac0-42c96ebc04b0"
-      (reference "D4") (unit 1) (value "1N5822") (footprint "Diode_THT:D_DO-201AD_P15.24mm_Horizontal")
+      (reference "D4") (unit 1) (value "1N5822") (footprint "Diode_THT:D_DO-201AE_P5.08mm_Vertical_AnodeUp")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5adccc16-4c06-49da-909a-8a4d1a5b2995/d9751148-af1e-418c-88ff-4f06a0a21baf"
-      (reference "DB3") (unit 1) (value "1N5822") (footprint "Diode_THT:D_DO-201AD_P15.24mm_Horizontal")
+      (reference "DB3") (unit 1) (value "1N5822") (footprint "Diode_THT:D_DO-201AE_P5.08mm_Vertical_AnodeUp")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/47c3fd19-e8b0-4d87-ba69-8ede1ca5c801/d9751148-af1e-418c-88ff-4f06a0a21baf"
-      (reference "DB5") (unit 1) (value "1N5822") (footprint "Diode_THT:D_DO-201AD_P15.24mm_Horizontal")
+      (reference "DB5") (unit 1) (value "1N5822") (footprint "Diode_THT:D_DO-201AE_P5.08mm_Vertical_AnodeUp")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/a95a8dfc-9f79-410d-a225-f43375e2a94b/30079145-2e0e-4c22-8e7c-788ec61e4444"
-      (reference "DBoo1") (unit 1) (value "1N5819") (footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal")
+      (reference "DBoo1") (unit 1) (value "1N5819") (footprint "Diode_THT:D_DO-201AE_P5.08mm_Vertical_AnodeUp")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/118d15e0-06a7-423f-a72c-0cc161894136"
-      (reference "DFly1") (unit 1) (value "1N5822") (footprint "Diode_THT:D_DO-201AD_P15.24mm_Horizontal")
+      (reference "DFly1") (unit 1) (value "1N5822") (footprint "Diode_THT:D_DO-201AE_P5.08mm_Vertical_AnodeUp")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/5ded5e05-91c3-4914-acd8-46f44022acc0/b4b31f94-7238-4ebb-8945-f8429e813474"
       (reference "D_GREEN1") (unit 1) (value "LED") (footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
@@ -2917,10 +2917,10 @@
       (reference "D_RED1") (unit 1) (value "LED") (footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/ba09b7a2-59f0-45b6-95a4-046331578e0c"
-      (reference "D_S1") (unit 1) (value "1N5822") (footprint "Diode_THT:D_DO-201AD_P15.24mm_Horizontal")
+      (reference "D_S1") (unit 1) (value "1N5822") (footprint "Diode_THT:D_DO-201AE_P5.08mm_Vertical_AnodeUp")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/105c7258-4162-4b7a-b521-952f194bc83b"
-      (reference "D_S2") (unit 1) (value "1N5822") (footprint "Diode_THT:D_DO-201AD_P15.24mm_Horizontal")
+      (reference "D_S2") (unit 1) (value "1N5822") (footprint "Diode_THT:D_DO-201AE_P5.08mm_Vertical_AnodeUp")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/944023bb-0136-4552-b0c7-ccea65a609e4"
       (reference "FB1") (unit 1) (value "FerriteBead") (footprint "Resistor_SMD:R_1812_4532Metric_Pad1.30x3.40mm_HandSolder")
@@ -2977,7 +2977,7 @@
       (reference "LB5") (unit 1) (value "100u") (footprint "Inductor_THT:L_Toroid_Vertical_L25.4mm_W14.7mm_P12.20mm_Vishay_TJ5_BigPads")
     )
     (path "/250658cf-3442-4875-98b9-880ff77de779"
-      (reference "LProg1") (unit 1) (value "LED") (footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
+      (reference "L_p1") (unit 1) (value "LED") (footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/a95a8dfc-9f79-410d-a225-f43375e2a94b/86b9cc14-42fc-4a6c-8687-3339e1994761"
       (reference "Lb1") (unit 1) (value "100u") (footprint "Inductor_THT:L_Toroid_Vertical_L25.4mm_W14.7mm_P12.20mm_Vishay_TJ5_BigPads")
@@ -3025,7 +3025,7 @@
       (reference "R_RED1") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/6ee20d1c-a46d-41e5-9769-e0e93e111749"
-      (reference "R_prog1") (unit 1) (value "47") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+      (reference "R_p1") (unit 1) (value "47") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/a95a8dfc-9f79-410d-a225-f43375e2a94b/ce62b4fd-c72d-403d-abc0-345bbc10d0b3"
       (reference "Ra1") (unit 1) (value "47") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
