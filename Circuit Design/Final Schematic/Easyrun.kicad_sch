@@ -2829,6 +2829,18 @@
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/a95a8dfc-9f79-410d-a225-f43375e2a94b/e797e86e-e962-4e3e-b809-7cc5032d99d1"
       (reference "#PWR0162") (unit 1) (value "GND") (footprint "")
     )
+    (path "/c13a6616-c17d-4cf2-b3e4-e5020afffd17/6d2e074d-20e0-46dd-b220-5c8b6fd8bada"
+      (reference "B1") (unit 1) (value "62409-1") (footprint "TE_62409-1")
+    )
+    (path "/c13a6616-c17d-4cf2-b3e4-e5020afffd17/bc74914d-dc54-4151-9968-081989a9e109"
+      (reference "B1_1") (unit 1) (value "62409-1") (footprint "TE_62409-1")
+    )
+    (path "/c13a6616-c17d-4cf2-b3e4-e5020afffd17/5e532b39-497e-46e0-875b-2e4c029a8dea"
+      (reference "B2") (unit 1) (value "62409-1") (footprint "TE_62409-1")
+    )
+    (path "/c13a6616-c17d-4cf2-b3e4-e5020afffd17/9200027c-6dd1-4a6f-923c-59d9e5bf30d3"
+      (reference "B2_1") (unit 1) (value "62409-1") (footprint "TE_62409-1")
+    )
     (path "/05f67689-b87d-4a73-ba19-8cfc59729f07"
       (reference "BProg1") (unit 1) (value "SW_DIP_x02") (footprint "Button_Switch_SMD:SW_SPST_CK_RS282G05A3")
     )
@@ -2952,18 +2964,6 @@
     (path "/55207256-b7c0-4b97-abd0-a90deac736ad"
       (reference "J_Tap_2") (unit 1) (value "62409-1") (footprint "TE_62409-1")
     )
-    (path "/c13a6616-c17d-4cf2-b3e4-e5020afffd17/6d2e074d-20e0-46dd-b220-5c8b6fd8bada"
-      (reference "J_Tap_B1") (unit 1) (value "62409-1") (footprint "TE_62409-1")
-    )
-    (path "/c13a6616-c17d-4cf2-b3e4-e5020afffd17/5e532b39-497e-46e0-875b-2e4c029a8dea"
-      (reference "J_Tap_B2") (unit 1) (value "62409-1") (footprint "TE_62409-1")
-    )
-    (path "/c13a6616-c17d-4cf2-b3e4-e5020afffd17/9200027c-6dd1-4a6f-923c-59d9e5bf30d3"
-      (reference "J_Tap_B3") (unit 1) (value "62409-1") (footprint "TE_62409-1")
-    )
-    (path "/c13a6616-c17d-4cf2-b3e4-e5020afffd17/bc74914d-dc54-4151-9968-081989a9e109"
-      (reference "J_Tap_B4") (unit 1) (value "62409-1") (footprint "TE_62409-1")
-    )
     (path "/bc6c999a-26ec-46d2-8cde-101b9a4f87cd"
       (reference "J_gnd1") (unit 1) (value "62409-1") (footprint "TE_62409-1")
     )
@@ -2985,8 +2985,8 @@
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/bbcfa0db-e124-4183-aa08-2767d29621b2"
       (reference "Lrec1") (unit 1) (value "440m") (footprint "Inductor_THT:L_Toroid_Vertical_L25.4mm_W14.7mm_P12.20mm_Vishay_TJ5_BigPads")
     )
-    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/a95a8dfc-9f79-410d-a225-f43375e2a94b/e7777fa1-a8ea-4961-a459-a0bdcd009129"
-      (reference "Qb1") (unit 1) (value "IRF740") (footprint "Package_TO_SOT_THT:TO-220-3_Vertical")
+    (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/a95a8dfc-9f79-410d-a225-f43375e2a94b/42790c40-c6c9-4e65-821f-7eaeea8a48f1"
+      (reference "QBoo1") (unit 1) (value "SI2302") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/3a3c2d06-2914-4049-8266-3e33b3477ac7"
       (reference "R1") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
@@ -3001,10 +3001,10 @@
       (reference "R6") (unit 1) (value "220") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/c13a6616-c17d-4cf2-b3e4-e5020afffd17/56e5d3cc-5a06-4e79-863d-5a093386b270"
-      (reference "RB1") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+      (reference "RBtn1") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/c13a6616-c17d-4cf2-b3e4-e5020afffd17/b7e803f1-b6f6-4470-8528-7fac70da12e6"
-      (reference "RB2") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+      (reference "RBtn2") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/e919b687-2b98-4a07-8199-1881bd8858b0"
       (reference "RI2C1") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
