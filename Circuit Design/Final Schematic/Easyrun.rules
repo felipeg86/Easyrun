@@ -1,0 +1,84 @@
+
+(rules PCB Easyrun
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 3886)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    GND "Net-(BProg1-Pad1)" "Net-(BRst1-Pad2)" "unconnected-(U1-Pad4)" "unconnected-(U1-Pad5)" "/PowerModule/Battery Charge/Vo_bat" /En /IO0
+    +3V3 "/Butt_No_D" "/Butt_D" "unconnected-(U1-Pad14)" /PowerModule/Buck5v0 "unconnected-(U1-Pad17)" "unconnected-(U1-Pad18)" "unconnected-(U1-Pad19)"
+    "unconnected-(U1-Pad20)" "unconnected-(U1-Pad21)" "unconnected-(U1-Pad22)" "unconnected-(U1-Pad24)" "/PowerModule/Boost_batt/TT" "/PowerModule/Buck3v3/v_in" "/PowerModule/Vo_rec" "Net-(C_by1-Pad2)"
+    /PowerModule/Boost5v0 "unconnected-(U1-Pad32)" "Net-(C_cv1-Pad1)" +5V "Net-(DB3-Pad1)" "Net-(DB5-Pad1)" "Net-(DFly1-Pad1)" "Net-(D_GREEN1-Pad1)"
+    "Net-(D_RED1-Pad1)" "Net-(D_RED1-Pad2)" "/PowerModule/Tap_1" "/PowerModule/Tab_2" "/PowerModule/R_Gnd" /MISO /SCK /MOSI
+    /D{slash}C "/Rst_D" "/CS_Display" /I2C2 /I2C1 "/CS_Lector1" "unconnected-(J_Lector_1-Pad5)" "/Rst_1"
+    "/CS_Lector2" "unconnected-(J_Lector_2-Pad5)" "/Rst_2" "/CS_Lector3" "unconnected-(J_Lector_3-Pad5)" "/Rst_3" "/PWM_M1" "/PWM_M2"
+    "unconnected-(J_prog1-Pad1)" "unconnected-(J_prog1-Pad2)" "/Prog_Rx" "/Prog_Tx" "unconnected-(J_prog1-Pad6)" "Net-(L_p1-Pad2)" "/PowerModule/Boost_batt/PWM" "Net-(Ra1-Pad2)"
+    STDBY /IO13 "Net-(R_Prog1-Pad1)" CHRG "/CS_Lector_1" "unconnected-(U_ChargeControler1-Pad9)" "Net-(DBoo1-Pad2)"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
