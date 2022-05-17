@@ -828,7 +828,6 @@
     )
   )
 
-
   (junction (at 150.495 93.98) (diameter 0) (color 0 0 0 0)
     (uuid 00cf5cd6-6352-4ecd-9e35-417d88e8c660)
   )
@@ -1675,7 +1674,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 5a76cf33-4ebd-4d1f-a6b5-cdd5a61ed5b0)
   )
-  (label "CS_Lector_1" (at 184.15 63.5 0)
+  (label "CS_Lector1" (at 184.15 63.5 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 5ca6f444-baa6-442e-a55c-e8853aa5b5b7)
   )
