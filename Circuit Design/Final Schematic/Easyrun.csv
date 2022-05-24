@@ -1,127 +1,59 @@
-"Source:","D:\Mis documentos\Documentos\GitHub\Easyrun\Circuit Design\Final Schematic\Easyrun.kicad_sch"
-"Date:","14/05/2022 3:37:33 p. m."
-"Tool:","Eeschema (6.0.1)"
-"Generator:","C:\Program Files\KiCad\6.0\bin\scripting\plugins/bom_csv_grouped_by_value.py"
-"Component Count:","76"
-
-"Individual Components:"
-
-"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","Comment","MANUFACTURER","MAXIMUM_PACKAGE_HEIGHT","STANDARD"
-"","","BProg1","SW_DIP_x02","Switch:SW_DIP_x01","Button_Switch_SMD:SW_SPST_CK_RS282G05A3","~","","","",""
-"","","BRst1","SW_DIP_x01","Switch:SW_DIP_x01","Button_Switch_SMD:SW_SPST_CK_RS282G05A3","~","","","",""
-"","","BT1","Battery_Cell","Device:Battery_Cell","Battery:BatteryHolder_MPD_BH-18650-PC2","~","","","",""
-"","","BT2","Battery_Cell","Device:Battery_Cell","Battery:BatteryHolder_MPD_BH-18650-PC2","~","","","",""
-"","","C1","100nF","Device:C","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","~","","","",""
-"","","C3","100nF","Device:C","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","~","","","",""
-"","","C_by1","10n","Device:C","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","~","","","",""
-"","","C_by_2","C_Polarized","Device:C_Polarized","Capacitor_SMD:CP_Elec_6.3x5.8","~","","","",""
-"","","C_cv1","10n","Device:C","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","~","","","",""
-"","","CB1","100nF","Device:C","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","~","","","",""
-"","","CB2","100nF","Device:C","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","~","","","",""
-"","","CB3","22u","Device:C_Polarized","Capacitor_SMD:CP_Elec_6.3x5.8","~","","","",""
-"","","CB4","100nF","Device:C","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","~","","","",""
-"","","CB5","22u","Device:C_Polarized","Capacitor_SMD:CP_Elec_6.3x5.8","~","","","",""
-"","","CBat1","10u","Device:C_Polarized","Capacitor_SMD:CP_Elec_6.3x5.8","~","","","",""
-"","","Cby2","0.1u","Device:C","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","~","","","",""
-"","","CBy3","47u","Device:C_Polarized","Capacitor_Tantalum_SMD:CP_EIA-7343-43_Kemet-X_Pad2.25x2.55mm_HandSolder","~","","","",""
-"","","CBy5","47u","Device:C_Polarized","Capacitor_Tantalum_SMD:CP_EIA-7343-43_Kemet-X_Pad2.25x2.55mm_HandSolder","~","","","",""
-"","","CByBa1","10u","Device:C_Polarized","Capacitor_SMD:CP_Elec_6.3x5.8","~","","","",""
-"","","Crec1","100u","Device:C_Polarized","Capacitor_THT:CP_Radial_D6.3mm_P2.50mm","~","","","",""
-"","","D1","1N5822","Diode:1N5822","Diode_THT:D_DO-201AD_P15.24mm_Horizontal","http://www.vishay.com/docs/88526/1n5820.pdf","","","",""
-"","","D2","1N5822","Diode:1N5822","Diode_THT:D_DO-201AD_P15.24mm_Horizontal","http://www.vishay.com/docs/88526/1n5820.pdf","","","",""
-"","","D3","1N5822","Diode:1N5822","Diode_THT:D_DO-201AD_P15.24mm_Horizontal","http://www.vishay.com/docs/88526/1n5820.pdf","","","",""
-"","","D4","1N5822","Diode:1N5822","Diode_THT:D_DO-201AD_P15.24mm_Horizontal","http://www.vishay.com/docs/88526/1n5820.pdf","","","",""
-"","","D_GREEN1","LED","Device:LED","LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~","","","",""
-"","","D_RED1","LED","Device:LED","LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~","","","",""
-"","","D_S1","1N5822","Diode:1N5822","Diode_THT:D_DO-201AD_P15.24mm_Horizontal","http://www.vishay.com/docs/88526/1n5820.pdf","","","",""
-"","","D_S2","1N5822","Diode:1N5822","Diode_THT:D_DO-201AD_P15.24mm_Horizontal","http://www.vishay.com/docs/88526/1n5820.pdf","","","",""
-"","","DB3","1N5822","Diode:1N5822","Diode_THT:D_DO-201AD_P15.24mm_Horizontal","http://www.vishay.com/docs/88526/1n5820.pdf","","","",""
-"","","DB5","1N5822","Diode:1N5822","Diode_THT:D_DO-201AD_P15.24mm_Horizontal","http://www.vishay.com/docs/88526/1n5820.pdf","","","",""
-"","","DBoo1","1N5819","Diode:1N5819","Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal","http://www.vishay.com/docs/88525/1n5817.pdf","","","",""
-"","","DFly1","1N5822","Diode:1N5822","Diode_THT:D_DO-201AD_P15.24mm_Horizontal","http://www.vishay.com/docs/88526/1n5820.pdf","","","",""
-"","","FB1","FerriteBead","Device:FerriteBead","Resistor_SMD:R_1812_4532Metric_Pad1.30x3.40mm_HandSolder","~","","","",""
-"","","J_Display1","Conn_01x09","Connector_Generic:Conn_01x09","Connector_JST:JST_EH_S9B-EH_1x09_P2.50mm_Horizontal","~","","","",""
-"","","J_gnd1","62409-1","Connector_Faston:62409-1","TE_62409-1","","62409-1","","",""
-"","","J_I2C1","Conn_01x05_Male","Connector:Conn_01x05_Male","Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Horizontal","~","","","",""
-"","","J_Lector_1","Conn_01x08","Connector_Generic:Conn_01x08","Connector_JST:JST_EH_S8B-EH_1x08_P2.50mm_Horizontal","~","","","",""
-"","","J_Lector_2","Conn_01x08","Connector_Generic:Conn_01x08","Connector_JST:JST_EH_S8B-EH_1x08_P2.50mm_Horizontal","~","","","",""
-"","","J_Lector_3","Conn_01x08","Connector_Generic:Conn_01x08","Connector_JST:JST_EH_S8B-EH_1x08_P2.50mm_Horizontal","~","","","",""
-"","","J_M1","Conn_01x03","Connector_Generic:Conn_01x03","Connector_JST:JST_EH_S3B-EH_1x03_P2.50mm_Horizontal","~","","","",""
-"","","J_M2","Conn_01x03","Connector_Generic:Conn_01x03","Connector_JST:JST_EH_S3B-EH_1x03_P2.50mm_Horizontal","~","","","",""
-"","","J_prog1","Conn_01x06_Male","Connector:Conn_01x06_Male","Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal","~","","","",""
-"","","J_Tap_1","62409-1","Connector_Faston:62409-1","TE_62409-1","","62409-1","","",""
-"","","J_Tap_2","62409-1","Connector_Faston:62409-1","TE_62409-1","","62409-1","","",""
-"","","J_Tap_B1","62409-1","Connector_Faston:62409-1","TE_62409-1","","62409-1","","",""
-"","","J_Tap_B2","62409-1","Connector_Faston:62409-1","TE_62409-1","","62409-1","","",""
-"","","J_Tap_B3","62409-1","Connector_Faston:62409-1","TE_62409-1","","62409-1","","",""
-"","","J_Tap_B4","62409-1","Connector_Faston:62409-1","TE_62409-1","","62409-1","","",""
-"","","Lb1","L","Device:L","Inductor_THT:L_Toroid_Vertical_L25.4mm_W14.7mm_P12.20mm_Vishay_TJ5_BigPads","~","","","",""
-"","","LB3","100u","Device:L","Inductor_THT:L_Toroid_Vertical_L25.4mm_W14.7mm_P12.20mm_Vishay_TJ5_BigPads","~","","","",""
-"","","LB5","100u","Device:L","Inductor_THT:L_Toroid_Vertical_L25.4mm_W14.7mm_P12.20mm_Vishay_TJ5_BigPads","~","","","",""
-"","","LProg1","LED","Device:LED","LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~","","","",""
-"","","Lrec1","440m","Device:L","Inductor_THT:L_Toroid_Vertical_L25.4mm_W14.7mm_P12.20mm_Vishay_TJ5_BigPads","~","","","",""
-"","","Qb1","IRF740","Transistor_FET:IRF740","Package_TO_SOT_THT:TO-220-3_Vertical","http://www.vishay.com/docs/91054/91054.pdf","","","",""
-"","","R1","10K","Device:R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","","","",""
-"","","R4","10K","Device:R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","","","",""
-"","","R5","220","Device:R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","","","",""
-"","","R6","220","Device:R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","","","",""
-"","","R_GREEN1","1k","Device:R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","","","",""
-"","","R_prog1","47","Device:R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","","","",""
-"","","R_Prog1","10k","Device:R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","","","",""
-"","","R_RED1","1k","Device:R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","","","",""
-"","","Ra1","47","Device:R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","","","",""
-"","","RB1","10K","Device:R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","","","",""
-"","","Rb1","100","Device:R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","","","",""
-"","","RB2","10K","Device:R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","","","",""
-"","","RI2C1","10k","Device:R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","","","",""
-"","","RI2C2","10k","Device:R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","","","",""
-"","","RMISO1","10k","Device:R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","","","",""
-"","","Ro1","1k","Device:R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","","","",""
-"","","SWRec1","SW_DIP_x01","Switch:SW_DIP_x01","Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left","~","","","",""
-"","","U1","ESP32-WROOM-32","RF_Module:ESP32-WROOM-32","RF_Module:ESP32-WROOM-32","https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf","","","",""
-"","","U_555","LM555xM","Timer:LM555xM","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm","http://www.ti.com/lit/ds/symlink/lm555.pdf","","","",""
-"","","U_ChargeControler1","TP4056","TP4056:TP4056","TP4056_Bcharge:SOP127P600X175-9N","https://www.sigmaelectronica.net/wp-content/uploads/2018/01/TP4056-lipo-charger.pdf","","NanJing Top Power ASIC Corp.","1.75mm","IPC 7351B"
-"","","UB3v3","LM2576S-5","Regulator_Switching:LM2576S-5","Package_TO_SOT_SMD:TO-263-5_TabPin3","http://www.ti.com/lit/ds/symlink/lm2576.pdf","","","",""
-"","","UB5v0","LM2576S-5","Regulator_Switching:LM2576S-5","Package_TO_SOT_SMD:TO-263-5_TabPin3","http://www.ti.com/lit/ds/symlink/lm2576.pdf","","","",""
-
-
-
-"Collated Components:"
-
-"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","Comment","MANUFACTURER","MAXIMUM_PACKAGE_HEIGHT","STANDARD"
-"1","1","BProg1","SW_DIP_x02","Switch:SW_DIP_x01","Button_Switch_SMD:SW_SPST_CK_RS282G05A3","~","","","",""
-"2","1","BRst1","SW_DIP_x01","Switch:SW_DIP_x01","Button_Switch_SMD:SW_SPST_CK_RS282G05A3","~","","","",""
-"3","2","BT1, BT2","Battery_Cell","Device:Battery_Cell","Battery:BatteryHolder_MPD_BH-18650-PC2","~","","","",""
-"4","5","C1, C3, CB1, CB2, CB4","100nF","Device:C","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","~","","","",""
-"5","2","C_by1, C_cv1","10n","Device:C","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","~","","","",""
-"6","1","C_by_2","C_Polarized","Device:C_Polarized","Capacitor_SMD:CP_Elec_6.3x5.8","~","","","",""
-"7","2","CB3, CB5","22u","Device:C_Polarized","Capacitor_SMD:CP_Elec_6.3x5.8","~","","","",""
-"8","2","CBat1, CByBa1","10u","Device:C_Polarized","Capacitor_SMD:CP_Elec_6.3x5.8","~","","","",""
-"9","1","Cby2","0.1u","Device:C","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","~","","","",""
-"10","2","CBy3, CBy5","47u","Device:C_Polarized","Capacitor_Tantalum_SMD:CP_EIA-7343-43_Kemet-X_Pad2.25x2.55mm_HandSolder","~","","","",""
-"11","1","Crec1","100u","Device:C_Polarized","Capacitor_THT:CP_Radial_D6.3mm_P2.50mm","~","","","",""
-"12","9","D1, D2, D3, D4, D_S1, D_S2, DB3, DB5, DFly1","1N5822","Diode:1N5822","Diode_THT:D_DO-201AD_P15.24mm_Horizontal","http://www.vishay.com/docs/88526/1n5820.pdf","","","",""
-"13","3","D_GREEN1, D_RED1, LProg1","LED","Device:LED","LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~","","","",""
-"14","1","DBoo1","1N5819","Diode:1N5819","Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal","http://www.vishay.com/docs/88525/1n5817.pdf","","","",""
-"15","1","FB1","FerriteBead","Device:FerriteBead","Resistor_SMD:R_1812_4532Metric_Pad1.30x3.40mm_HandSolder","~","","","",""
-"16","1","J_Display1","Conn_01x09","Connector_Generic:Conn_01x09","Connector_JST:JST_EH_S9B-EH_1x09_P2.50mm_Horizontal","~","","","",""
-"17","7","J_gnd1, J_Tap_1, J_Tap_2, J_Tap_B1, J_Tap_B2, J_Tap_B3, J_Tap_B4","62409-1","Connector_Faston:62409-1","TE_62409-1","","62409-1","","",""
-"18","1","J_I2C1","Conn_01x05_Male","Connector:Conn_01x05_Male","Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Horizontal","~","","","",""
-"19","3","J_Lector_1, J_Lector_2, J_Lector_3","Conn_01x08","Connector_Generic:Conn_01x08","Connector_JST:JST_EH_S8B-EH_1x08_P2.50mm_Horizontal","~","","","",""
-"20","2","J_M1, J_M2","Conn_01x03","Connector_Generic:Conn_01x03","Connector_JST:JST_EH_S3B-EH_1x03_P2.50mm_Horizontal","~","","","",""
-"21","1","J_prog1","Conn_01x06_Male","Connector:Conn_01x06_Male","Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal","~","","","",""
-"22","1","Lb1","L","Device:L","Inductor_THT:L_Toroid_Vertical_L25.4mm_W14.7mm_P12.20mm_Vishay_TJ5_BigPads","~","","","",""
-"23","2","LB3, LB5","100u","Device:L","Inductor_THT:L_Toroid_Vertical_L25.4mm_W14.7mm_P12.20mm_Vishay_TJ5_BigPads","~","","","",""
-"24","1","Lrec1","440m","Device:L","Inductor_THT:L_Toroid_Vertical_L25.4mm_W14.7mm_P12.20mm_Vishay_TJ5_BigPads","~","","","",""
-"25","1","Qb1","IRF740","Transistor_FET:IRF740","Package_TO_SOT_THT:TO-220-3_Vertical","http://www.vishay.com/docs/91054/91054.pdf","","","",""
-"26","4","R1, R4, RB1, RB2","10K","Device:R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","","","",""
-"27","2","R5, R6","220","Device:R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","","","",""
-"28","3","R_GREEN1, R_RED1, Ro1","1k","Device:R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","","","",""
-"29","2","R_prog1, Ra1","47","Device:R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","","","",""
-"30","4","R_Prog1, RI2C1, RI2C2, RMISO1","10k","Device:R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","","","",""
-"31","1","Rb1","100","Device:R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","","","",""
-"32","1","SWRec1","SW_DIP_x01","Switch:SW_DIP_x01","Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left","~","","","",""
-"33","1","U1","ESP32-WROOM-32","RF_Module:ESP32-WROOM-32","RF_Module:ESP32-WROOM-32","https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf","","","",""
-"34","1","U_555","LM555xM","Timer:LM555xM","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm","http://www.ti.com/lit/ds/symlink/lm555.pdf","","","",""
-"35","1","U_ChargeControler1","TP4056","TP4056:TP4056","TP4056_Bcharge:SOP127P600X175-9N","https://www.sigmaelectronica.net/wp-content/uploads/2018/01/TP4056-lipo-charger.pdf","","NanJing Top Power ASIC Corp.","1.75mm","IPC 7351B"
-"36","2","UB3v3, UB5v0","LM2576S-5","Regulator_Switching:LM2576S-5","Package_TO_SOT_SMD:TO-263-5_TabPin3","http://www.ti.com/lit/ds/symlink/lm2576.pdf","","","",""
+Source:,Easyrun.kicad_sch,,,,,
+Date:,mar 24 may 2022 09:25:52,,,,,
+Component Count:,75,,,,,
+Ref,Qnty,Value,Cmp name,Footprint,Description,Vendor
+"B1, B2, ",2,62409-1,62409-1,TE_62409-1,,
+"B1_1, ",1,62409-1,62409-1,TE_62409-1,,
+"B2_1, ",1,62409-1,62409-1,TE_62409-1,,
+"BProg1, ",1,SW_DIP_x02,SW_DIP_x01,Button_Switch_SMD:SW_SPST_CK_RS282G05A3,"1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol",
+"BRst1, ",1,SW_DIP_x01,SW_DIP_x01,Button_Switch_SMD:SW_SPST_CK_RS282G05A3,"1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol",
+"BT1, ",1,Battery_Cell,Battery_Cell,Battery:BatteryHolder_MPD_BH-18650-PC2,Single-cell battery,
+"C1, C3, ",2,100nF,C,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,Unpolarized capacitor,
+"C_b1, ",1,C_Polarized,C_Polarized,Capacitor_SMD:CP_Elec_6.3x5.8,Polarized capacitor,
+"C_by1, ",1,10n,C,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,Unpolarized capacitor,
+"C_cv1, ",1,10n,C,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,Unpolarized capacitor,
+"CB1, CB2, CB4, ",3,100nF,C,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,Unpolarized capacitor,
+"CB3, CB5, ",2,22u,C_Polarized,Capacitor_SMD:CP_Elec_6.3x5.8,Polarized capacitor,
+"CBat1, ",1,10u,C_Polarized,Capacitor_SMD:CP_Elec_6.3x5.8,Polarized capacitor,
+"Cby2, ",1,0.1u,C,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,Unpolarized capacitor,
+"CBy3, CBy5, ",2,47u,C_Polarized,Capacitor_Tantalum_SMD:CP_EIA-7343-43_Kemet-X_Pad2.25x2.55mm_HandSolder,Polarized capacitor,
+"CByBa1, ",1,10u,C_Polarized,Capacitor_SMD:CP_Elec_6.3x5.8,Polarized capacitor,
+"Crec1, ",1,100u,C_Polarized,Capacitor_THT:CP_Radial_D6.3mm_P2.50mm,Polarized capacitor,
+"D1, D2, D3, D4, ",4,1N5822,1N5822,Diode_THT:D_DO-201AE_P5.08mm_Vertical_AnodeUp,"40V 3A Schottky Barrier Rectifier Diode, DO-201AD",
+"D_GREEN1, ",1,LED,LED,LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,Light emitting diode,
+"D_RED1, ",1,LED,LED,LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,Light emitting diode,
+"D_S1, D_S2, ",2,1N5822,1N5822,Diode_THT:D_DO-201AE_P5.08mm_Vertical_AnodeUp,"40V 3A Schottky Barrier Rectifier Diode, DO-201AD",
+"DB3, DB5, ",2,1N5822,1N5822,Diode_THT:D_DO-201AE_P5.08mm_Vertical_AnodeUp,"40V 3A Schottky Barrier Rectifier Diode, DO-201AD",
+"DBoo1, ",1,1N5819,1N5819,Diode_THT:D_DO-201AE_P5.08mm_Vertical_AnodeUp,"40V 1A Schottky Barrier Rectifier Diode, DO-41",
+"DFly1, ",1,1N5822,1N5822,Diode_THT:D_DO-201AE_P5.08mm_Vertical_AnodeUp,"40V 3A Schottky Barrier Rectifier Diode, DO-201AD",
+"FB1, ",1,FerriteBead,FerriteBead,Resistor_SMD:R_1812_4532Metric_Pad1.30x3.40mm_HandSolder,Ferrite bead,
+"J_Display1, ",1,Conn_01x09,Conn_01x09,Connector_JST:JST_EH_S9B-EH_1x09_P2.50mm_Horizontal,"Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)",
+"J_gnd1, ",1,62409-1,62409-1,TE_62409-1,,
+"J_I2C1, ",1,Conn_01x05_Male,Conn_01x05_Male,Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Horizontal,"Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)",
+"J_Lector_1, J_Lector_2, J_Lector_3, ",3,Conn_01x08,Conn_01x08,Connector_JST:JST_EH_S8B-EH_1x08_P2.50mm_Horizontal,"Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)",
+"J_M1, J_M2, ",2,Conn_01x03,Conn_01x03,Connector_JST:JST_EH_S3B-EH_1x03_P2.50mm_Horizontal,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",
+"J_prog1, ",1,Conn_01x06_Male,Conn_01x06_Male,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal,"Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)",
+"J_Tap_1, J_Tap_2, ",2,62409-1,62409-1,TE_62409-1,,
+"L_p1, ",1,LED,LED,LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,Light emitting diode,
+"Lb1, ",1,100u,L,Inductor_THT:L_Toroid_Vertical_L25.4mm_W14.7mm_P12.20mm_Vishay_TJ5_BigPads,Inductor,
+"LB3, LB5, ",2,100u,L,Inductor_THT:L_Toroid_Vertical_L25.4mm_W14.7mm_P12.20mm_Vishay_TJ5_BigPads,Inductor,
+"Lrec1, ",1,440m,L,Inductor_THT:L_Toroid_Vertical_L25.4mm_W14.7mm_P12.20mm_Vishay_TJ5_BigPads,Inductor,
+"QBoo1, ",1,SI2302,Q_NMOS_GSD,Package_TO_SOT_SMD:SOT-23,"N-MOSFET transistor, gate/source/drain",
+"R1, R4, ",2,10K,R,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,Resistor,
+"R5, R6, ",2,220,R,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,Resistor,
+"R_GREEN1, ",1,1k,R,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,Resistor,
+"R_p1, ",1,47,R,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,Resistor,
+"R_Prog10, ",1,10k,R,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,Resistor,
+"R_RED1, ",1,1k,R,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,Resistor,
+"Ra1, ",1,47,R,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,Resistor,
+"Rb1, ",1,100,R,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,Resistor,
+"RBtn1, RBtn2, ",2,10K,R,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,Resistor,
+"RI2C1, RI2C2, ",2,10k,R,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,Resistor,
+"RMISO1, ",1,10k,R,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,Resistor,
+"Ro1, ",1,1k,R,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,Resistor,
+"SWRec1, ",1,SW_DIP_x01,SW_DIP_x01,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left,"1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol",
+"U1, ",1,ESP32-WROOM-32,ESP32-WROOM-32,RF_Module:ESP32-WROOM-32,"RF Module, ESP32-D0WDQ6 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 2.7-3.6V, onboard antenna, SMD",
+"U_555, ",1,LM555xM,LM555xM,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,"Timer, 555 compatible, SOIC-8",
+"U_ChargeControler1, ",1,TP4056,TP4056,TP4056_Bcharge:SOP127P600X175-9N,,
+"UB3v3, ",1,LM2576S-5,LM2576S-5,Package_TO_SOT_SMD:TO-263-5_TabPin3,"5V, 3A SIMPLE SWITCHER® Step-Down Voltage Regulator, TO-263",
+"UB5v0, ",1,LM2576S-5,LM2576S-5,Package_TO_SOT_SMD:TO-263-5_TabPin3,"5V, 3A SIMPLE SWITCHER® Step-Down Voltage Regulator, TO-263",
