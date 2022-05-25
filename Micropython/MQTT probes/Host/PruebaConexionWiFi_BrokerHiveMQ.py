@@ -5,12 +5,14 @@ from paho import mqtt
 
 ID = ['CH10537T','Cjadgyieb','wdbhef']
 m = {
-    "1": "Hola",
-    "2": "Si",
-    "3": "Sonido"
+    "Nombre": "Juan Felipe",
+    "Permisos": "Si"
 }
+m1 = ['Juan','Si']
 m2_bytes = b'[\'Hola\',\'bien\']'
 m2 = m2_bytes.decode('utf8').replace("'", '"')
+a = 1
+
 
 # setting callbacks for different events to see if it works, print the message etc.
 def on_connect(client, userdata, flags, rc, properties=None):
@@ -26,19 +28,24 @@ def on_subscribe(client, userdata, mid, granted_qos, properties=None):
 
 # print message, useful for checking if it was successful
 def on_message(client, userdata, msg):
+    
     #print(msg.topic + " " + str(msg.qos) + " " + str(msg.payload))
+    #print(str(msg.payload.decode()))
     if msg.topic == 'SI/Validar':
-        if str(msg.payload.decode()) in ID:
+        if json.loads(msg.payload) in ID:
             print("Si está en la base de datos")
-            (rc, mid)= client.publish(msg.topic,json.dumps(m),qos = 1)
-        else: 
-            print("No está regitrado")
+            time.sleep(1)
+            (rc, mid)= client.publish(msg.topic,json.dumps(m),qos= 1)
+        
     elif msg.topic == 'SI/Easyrun/Prestar':
         a = 1
     elif msg.topic == 'SI/Easyrun/Devolver':
         a = 2
     elif msg.topic == 'SI/Easyrun/Distribuir':
         a = 3
+    else:
+        print("No se envió nada")
+        (rc, mid) = client.publish('SI/Validar',json.dumps("Hola"),qos = 1)
 
 
 
@@ -61,9 +68,9 @@ client.connect("broker.mqttdashboard.com", 1883)
 # setting callbacks, use separate functions like above for better visibility
 client.on_subscribe = on_subscribe
 client.on_message = on_message
-client.on_publish = on_publish
+#client.on_publish = on_publish
 
-# subscribe to all topics of encyclopedia by using the wildcard "#"
+# subscribe 
 client.subscribe("SI/Validar", qos=1)
 client.subscribe("SI/Esayrun/#", qos=1)
 
@@ -75,4 +82,3 @@ while True:
     #time.sleep(5)
     #(rc, mid) = client.publish("notification/holu", "100", qos = 1)
     client.on_message = on_message 
-    time.sleep(5)

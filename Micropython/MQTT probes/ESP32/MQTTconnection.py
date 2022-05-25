@@ -35,15 +35,17 @@ def conect_to(SSID, PASSWORD):
         restart_and_reconnect()
 
 def sub_cb(topic, msg):
-    msg_dec = msg.decode()
+    msg_dec =  json.loads(msg)
     if topic == b'SI/Validar':
         #print('El mensaje es del tema %s,  mensaje %s',topic,msg)
         print(msg_dec)
+        print(type(msg_dec))
     elif topic == b'notification/holu':
         #print('El mensaje es del tema %s,  mensaje %s',topic,msg)
         print(msg_dec)
     else:
         print('No llegó nada unu')
+
 
 def connect_and_subscribe():
     global client_id, mqtt_server

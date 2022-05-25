@@ -12,6 +12,7 @@ last_message = 0
 message_interval = 2
 received = True
 ID = b'CH10537T'
+ID = ID.decode('utf8').replace("'", '"')
 
 #conect_to("Juan F","qwertyuiop")
 conect_to("Carlos Mario Gonzalez","Carmar15")
@@ -26,10 +27,10 @@ while True:
     #client.check_msg()
     if (time.time() - last_message) > message_interval:
         if received:
-            client.publish(b'SI/Validar', ID,True,1)
+            client.publish(b'SI/Validar', json.dumps(ID),True,1)
             received = False
         else:
-            client.set_callback(sub_cb)
+            client.check_msg()
             received = True
         last_message = time.time()
         """client.publish(b'SI/Validar', ID)
