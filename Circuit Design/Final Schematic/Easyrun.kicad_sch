@@ -2930,7 +2930,7 @@
       (reference "Cby2") (unit 1) (value "0.1u") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/8de74ce5-2e0d-4e07-90a6-3644a7c32c76"
-      (reference "Crec1") (unit 1) (value "100u") (footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
+      (reference "Crec1") (unit 1) (value "470u") (footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/2742c4ea-a381-46e6-9108-7abf967d887e"
       (reference "D1") (unit 1) (value "1N5822") (footprint "Diode_THT:D_DO-201AE_P5.08mm_Vertical_AnodeUp")
@@ -3017,7 +3017,7 @@
       (reference "Lb1") (unit 1) (value "100u") (footprint "Inductor_THT:L_Toroid_Vertical_L25.4mm_W14.7mm_P12.20mm_Vishay_TJ5_BigPads")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/bbcfa0db-e124-4183-aa08-2767d29621b2"
-      (reference "Lrec1") (unit 1) (value "440m") (footprint "Inductor_THT:L_Toroid_Vertical_L25.4mm_W14.7mm_P12.20mm_Vishay_TJ5_BigPads")
+      (reference "Lrec1") (unit 1) (value "250m") (footprint "Inductor_THT:L_Toroid_Vertical_L25.4mm_W14.7mm_P12.20mm_Vishay_TJ5_BigPads")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/a95a8dfc-9f79-410d-a225-f43375e2a94b/42790c40-c6c9-4e65-821f-7eaeea8a48f1"
       (reference "QBoo1") (unit 1) (value "SI2302") (footprint "Package_TO_SOT_SMD:SOT-23")
