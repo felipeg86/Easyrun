@@ -5,7 +5,7 @@ from mfrc522 import MFRC522
 from machine import Pin
 from machine import SPI
 from machine import SoftSPI
-from _thread 
+
 
 sck1 = Pin(18, Pin.OUT)
 mosi1 = Pin(23, Pin.OUT)

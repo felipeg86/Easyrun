@@ -20,44 +20,38 @@ def lectura(numero_lector):
     #int lector_activado;
     #int numero_lector=2;
     card_id="0"
-    def switch_demo(numero_lector):
-        switcher = {
-                case 1: while (card_id != "0"):
-                            (stat, tag_type) = rdr1.request(rdr1.REQIDL)
-                            if stat == rdr1.OK:
-                                (stat, raw_uid) = rdr1.anticoll()
-                                if stat == rdr1.OK:
-                                    card_id = "uid: 0x%02x%02x%02x%02x" % (raw_uid[0], raw_uid[1], raw_uid[2], raw_uid[3])
-                                    print(card_id)
-                                    return card_id
-                        break;
-                case 2: for i in range(5):
-                            (stat, tag_type) = rdr2.request(rdr2.REQIDL)
-                            if stat == rdr2.OK:
-                                (stat, raw_uid) = rdr2.anticoll()
-                                if stat == rdr2.OK:
-                                    card_id = "uid: 0x%02x%02x%02x%02x" % (raw_uid[0], raw_uid[1], raw_uid[2], raw_uid[3])
-                                    print(card_id)
-                                    return card_id
-                                    if card_id != '0':
-                                        break
-                        break;
+    if(numero_lector==1):
+        while True:
+            (stat, tag_type) = rdr1.request(rdr1.REQIDL)
+            if stat == rdr1.OK:    
+                (stat, raw_uid) = rdr1.anticoll()
+                if stat == rdr1.OK:
+                    card_id = "uid: 0x%02x%02x%02x%02x" % (raw_uid[0], raw_uid[1], raw_uid[2], raw_uid[3])
+                    print(card_id)
+                    return card_id
+    elif(numero_lector==2):
+          while True:
+            (stat, tag_type) = rdr2.request(rdr2.REQIDL)
+            if stat == rdr2.OK:    
+                (stat, raw_uid) = rdr2.anticoll()
+                if stat == rdr2.OK:
+                    card_id = "uid: 0x%02x%02x%02x%02x" % (raw_uid[0], raw_uid[1], raw_uid[2], raw_uid[3])
+                    print(card_id)
+                    return card_id
 
-                case 3: for i in range(5):
-                            (stat, tag_type) = rdr3.request(rdr3.REQIDL)
-                            if stat == rdr3.OK:
-                                (stat, raw_uid) = rdr3.anticoll()
-                                if stat == rdr3.OK:
-                                    card_id = "uid: 0x%02x%02x%02x%02x" % (raw_uid[0], raw_uid[1], raw_uid[2], raw_uid[3])
-                                    print(card_id)
-                                    return card_id
-                                    if card_id != '0':
-                                        break
-                        break;
+    elif(numero_lector==3):
+          while True:
+            (stat, tag_type) = rdr3.request(rdr3.REQIDL)
+            if stat == rdr3.OK:    
+                (stat, raw_uid) = rdr3.anticoll()
+                if stat == rdr3.OK:
+                    card_id = "uid: 0x%02x%02x%02x%02x" % (raw_uid[0], raw_uid[1], raw_uid[2], raw_uid[3])
+                    print(card_id)
+                    return card_id
 
+    else:
+        card_id="0"
+        print("error")
+        return card_id
 
-                default: print ("caso invalido")
-                         return card_id = '0'
-
-                         break;
-        }
+        

@@ -1,6 +1,6 @@
 import Bicicleta
 
-class Candido:
+class Candado:
     estado = False
     ubicacion = 'Indefinido'
     n_candado = 0
