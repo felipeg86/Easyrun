@@ -3,25 +3,24 @@
 C's 1
 D's 3
 K's 3
-L's 5
+L's 4
 R's 1
 V's 1
-tot: 14
+tot: 13
 
 
     --- Expanded Netlist ---
 * C:\users\omar\My Documents\University\IX_Semester\Disenio\Easyrun\Circuit Design\LTspice Simulations\Rectifier.asc
-l1 0 n004 4.44444444444445 rser=1
+l1 0 n003 64 rser=1
 v_red n003 0 sine(0 155.6 60 0 0 90)
 d1 n001 n002 1n5819
-c1 vo_rect 0 0.000143393166256933 
-l2 0 n001 0.1 
-l3 n005 0 0.1 
-d2 n005 n002 1n5819
-r_min_16v vo_rect 0 27.748 
-l4 n002 vo_rect 0.441623136091391 
+c1 vo_rect 0 0.000265326409200567 
+l2 0 n001 1 
+l3 n004 0 1 
+d2 n004 n002 1n5819
+r_min_16v vo_rect 0 14.9961460274 
+l4 n002 vo_rect 0.23867107675886 rser=0.4
 d3 0 n002 1n5819
-l6 n003 n004 0.441623136091391 
 k_A0 l1 l2 1
 k_A1 l1 l3 1
 k_A2 l2 l3 1
@@ -31,20 +30,20 @@ k_A2 l2 l3 1
 
 Per .tran options, skipping operating point for transient analysis.
 
-Date: Sat May 14 09:17:26 2022
-Total elapsed time: 3.154 seconds.
+Date: Mon May 30 17:29:42 2022
+Total elapsed time: 0.124 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 1864182
-traniter = 1864182
-tranpoints = 671068
-accept = 433177
-rejected = 237891
-matrix size = 13
+totiter = 12598
+traniter = 12598
+tranpoints = 4378
+accept = 3243
+rejected = 1135
+matrix size = 12
 fillins = 8
 solver = Normal
-Matrix Compiler1: 1.01 KB object code size  0.2/0.1/[0.1]
-Matrix Compiler2: 1.08 KB object code size  0.1/0.2/[0.1]
+Matrix Compiler1: 980 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: 1.01 KB object code size  0.1/0.1/[0.1]
 

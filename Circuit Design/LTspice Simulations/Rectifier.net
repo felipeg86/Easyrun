@@ -1,0 +1,23 @@
+* C:\users\omar\My Documents\University\IX_Semester\Disenio\Easyrun\Circuit Design\LTspice Simulations\Rectifier.asc
+L1 0 N003 {L_prim} Rser=1
+V_red N003 0 SINE(0 155.6 60 0 0 90)
+D1 N001 N002 1N5819
+C1 Vo_rect 0 {C}
+L2 0 N001 {L_sec}
+L3 N004 0 {L_sec}
+D2 N004 N002 1N5819
+R_min_16V Vo_rect 0 {Req}
+L4 N002 Vo_rect {L} Rser=0.4
+D3 0 N002 1N5819
+.model D D
+.lib C:\users\omar\My Documents\LTspiceXVII\lib\cmp\standard.dio
+K L1 L2 L3 1
+.tran 0 400m 200m uic
+.param Req = 14.9961460274
+.param C = {1/(4*pi*fc*Req)}
+.param L = {4*Req*Req*C}
+.param fc = 20
+.param L_sec = 1
+.param L_prim = {L_sec*(120/15)*(120/15)}
+.backanno
+.end
