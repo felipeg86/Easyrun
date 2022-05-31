@@ -14,6 +14,8 @@ Integrantes:
 
 ## Organización del repositorio
 
-* En la carpeta "[Circuit Design](https://github.com/felipeg86/Easyrun/tree/main/Circuit%20Design)" se encuentran las simulaciones, diseños y esquemáticos llevados a cabo en el diseño del Hardware del sistema.
-* "[Micropython](https://github.com/felipeg86/Easyrun/tree/main/Micropython)" contiene los scripts utilizados para programar el microcontrolador de la solución.
-* En "[Case Design](https://github.com/felipeg86/Easyrun/tree/main/Case%20Design)" se encuentran los modelos 3D, planos y consideraciones físicas para la cubierta y componentes mecánicos. 
+### En la carpeta "[Circuit Design](https://github.com/felipeg86/Easyrun/tree/main/Circuit%20Design)" se encuentran las simulaciones, diseños y esquemáticos llevados a cabo en el diseño del Hardware del sistema.
+### "[Micropython](https://github.com/felipeg86/Easyrun/tree/main/Micropython)" contiene los scripts utilizados para programar el microcontrolador de la solución.
+### En "[Case Design](https://github.com/felipeg86/Easyrun/tree/main/Case%20Design)" se encuentran los modelos 3D, planos y consideraciones físicas para la cubierta y componentes mecánicos. 
+### "[Budget](https://github.com/felipeg86/Easyrun/tree/main/Budget)" contiene el presupuesto detallado para el desarrollo del prototipo. 
+### "[Imagenes](https://github.com/felipeg86/Easyrun/tree/main/Images)" almacena las imágenes utilizadas en la documentación y en los archivos readme de cada sección.
