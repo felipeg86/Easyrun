@@ -738,7 +738,7 @@
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid bbcfa0db-e124-4183-aa08-2767d29621b2)
     (property "Reference" "Lrec1" (id 0) (at 118.745 71.755 90))
-    (property "Value" "250m" (id 1) (at 118.745 74.295 90))
+    (property "Value" "150m" (id 1) (at 118.745 74.295 90))
     (property "Footprint" "Inductor_THT:L_Toroid_Vertical_L25.4mm_W14.7mm_P12.20mm_Vishay_TJ5_BigPads" (id 2) (at 118.745 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )

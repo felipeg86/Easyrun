@@ -11,15 +11,15 @@ tot: 13
 
     --- Expanded Netlist ---
 * C:\users\omar\My Documents\University\IX_Semester\Disenio\Easyrun\Circuit Design\LTspice Simulations\Rectifier.asc
-l1 0 n003 64 rser=1
+l1 0 n003 100 rser=1
 v_red n003 0 sine(0 155.6 60 0 0 90)
 d1 n001 n002 1n5819
-c1 vo_rect 0 0.000265326409200567 
+c1 vo_rect 0 0.000437798836778634 
 l2 0 n001 1 
 l3 n004 0 1 
 d2 n004 n002 1n5819
-r_min_11.6v vo_rect 0 14.9961460274 
-l4 n002 vo_rect 0.23867107675886 rser=0.4
+r_min_11.6v vo_rect 0 9.08836032223 
+l4 n002 vo_rect 0.144645746988316 rser=0.4
 d3 0 n002 1n5819
 k_A0 l1 l2 1
 k_A1 l1 l3 1
@@ -30,20 +30,20 @@ k_A2 l2 l3 1
 
 Per .tran options, skipping operating point for transient analysis.
 
-Date: Mon May 30 21:00:44 2022
-Total elapsed time: 0.098 seconds.
+Date: Mon May 30 21:36:04 2022
+Total elapsed time: 0.104 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 12598
-traniter = 12598
-tranpoints = 4378
-accept = 3243
-rejected = 1135
+totiter = 13458
+traniter = 13458
+tranpoints = 4707
+accept = 3455
+rejected = 1252
 matrix size = 12
 fillins = 8
 solver = Normal
-Matrix Compiler1: 980 bytes object code size  0.2/0.1/[0.1]
-Matrix Compiler2: 1.01 KB object code size  0.1/0.1/[0.1]
+Matrix Compiler1: 980 bytes object code size  0.2/0.2/[0.1]
+Matrix Compiler2: off  [0.1]/0.2/0.1
 

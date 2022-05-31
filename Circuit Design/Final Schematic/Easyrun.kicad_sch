@@ -3017,7 +3017,7 @@
       (reference "Lb1") (unit 1) (value "100u") (footprint "Inductor_THT:L_Toroid_Vertical_L25.4mm_W14.7mm_P12.20mm_Vishay_TJ5_BigPads")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/bbcfa0db-e124-4183-aa08-2767d29621b2"
-      (reference "Lrec1") (unit 1) (value "250m") (footprint "Inductor_THT:L_Toroid_Vertical_L25.4mm_W14.7mm_P12.20mm_Vishay_TJ5_BigPads")
+      (reference "Lrec1") (unit 1) (value "150m") (footprint "Inductor_THT:L_Toroid_Vertical_L25.4mm_W14.7mm_P12.20mm_Vishay_TJ5_BigPads")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/a95a8dfc-9f79-410d-a225-f43375e2a94b/42790c40-c6c9-4e65-821f-7eaeea8a48f1"
       (reference "QBoo1") (unit 1) (value "SI2302") (footprint "Package_TO_SOT_SMD:SOT-23")
