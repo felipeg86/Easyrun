@@ -2918,7 +2918,7 @@
       (reference "CByBa1") (unit 1) (value "10u") (footprint "Capacitor_SMD:CP_Elec_6.3x5.8")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/a95a8dfc-9f79-410d-a225-f43375e2a94b/9c674106-6c66-4027-bc63-5e55a554fc6b"
-      (reference "C_b1") (unit 1) (value "C_Polarized") (footprint "Capacitor_SMD:CP_Elec_6.3x5.8")
+      (reference "C_b1") (unit 1) (value "22u") (footprint "Capacitor_SMD:CP_Elec_6.3x5.8")
     )
     (path "/ce33739c-5d28-4c4f-8ccf-84b467a2a283/a95a8dfc-9f79-410d-a225-f43375e2a94b/9000c85f-cb97-497a-b20c-46cf02358932"
       (reference "C_by1") (unit 1) (value "10n") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")

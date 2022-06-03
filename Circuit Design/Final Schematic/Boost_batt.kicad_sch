@@ -924,7 +924,7 @@
     (property "Reference" "C_b1" (id 0) (at 172.212 68.9609 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "C_Polarized" (id 1) (at 172.212 71.5009 0)
+    (property "Value" "22u" (id 1) (at 172.212 71.5009 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.8" (id 2) (at 169.3672 74.93 0)
