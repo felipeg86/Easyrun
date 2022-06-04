@@ -1,0 +1,204 @@
+Questionable use of curly braces in "b§e_abmgate yint 0 v={if(v(a)>{{vthresh}}&v(b)>{{vthresh}},{{vss}},{{vdd}})}"
+    Error: undefined symbol in: "if([v](a)>((vthresh))&v(b)>((vthresh)),((vss)),((vdd)))"
+Questionable use of curly braces in "b§e_abmgate yint 0 v={if(v(a)>{{vthresh}}&v(b)>{{vthresh}},{{vdd}},{{vss}})}"
+    Error: undefined symbol in: "if([v](a)>((vthresh))&v(b)>((vthresh)),((vdd)),((vss)))"
+Questionable use of curly braces in "b§e_abmgate yint 0 v={if(v(a)>{{vthresh}}|v(b)>{{vthresh}}|v(c)>{{vthresh}},{{vss}},{{vdd}})}"
+    Error: undefined symbol in: "if([v](a)>((vthresh))|v(b)>((vthresh))|v(c)>((vthresh)),((vss)),((vdd)))"
+Questionable use of curly braces in "b§e_abmgate yint 0 v={if(v(a)>{{vthresh}}|v(b)>{{vthresh}},{{vdd}},{{vss}})}"
+    Error: undefined symbol in: "if([v](a)>((vthresh))|v(b)>((vthresh)),((vdd)),((vss)))"
+Questionable use of curly braces in "b§e_abmgate yint 0 v={if(v(a)>{{vthresh}},{{vdd}},{{vss}})}"
+    Error: undefined symbol in: "if([v](a)>((vthresh)),((vdd)),((vss)))"
+
+   --- Expanded Deck Component Count ---
+B's 25
+C's 21
+D's 7
+E's 4
+L's 1
+R's 30
+S's 2
+V's 11
+tot: 101
+
+
+    --- Expanded Netlist ---
+* C:\users\omar\My Documents\University\IX_Semester\Disenio\Easyrun\Circuit Design\LTspice Simulations\Buck5v.asc
+b:u1:§e_e4 u1:vin1 0 v=v(n001,0) 
+b:u1:_u1:§e_abm u1:_u1:yint 0 v=if(v(u1:n16785629)>v(u1:n16780455), 1 , 0)
+r:u1:_u1:1 u1:_u1:yint u1:n16783088 1
+c:u1:_u1:1 u1:n16783088 0 1n
+b:u1:_u21:§gq 0 u1:_u21:qint i=if(v(u1:n16780558)> 0.5 ,-5,if(v(u1:cl)> 0.5 ,5,0))
+c:u1:_u21:qint u1:_u21:qint 0 1n
+r:u1:_u21:qint u1:_u21:qint 0 1000000meg
+d:u1:_u21:_d10 u1:_u21:qint u1:_u21:my5 u1:_u21:d_d1 
+v:u1:_u21:1 u1:_u21:my5 0 1 
+d:u1:_u21:_d11 u1:_u21:myvss u1:_u21:qint u1:_u21:d_d1 
+v:u1:_u21:2 u1:_u21:myvss 0 0 
+e:u1:_u21:q u1:_u21:qqq 0 u1:_u21:qint 0 1
+b:u1:_u21:3:§e_abmgate u1:_u21:3:yint 0 v=(if(v(u1:_u21:qqq)> 0.5 , 1 , 0))
+r:u1:_u21:3:int u1:_u21:3:yint u1:_u21:qqqd1 1
+c:u1:_u21:3:int u1:_u21:qqqd1 0 1n
+r:u1:_u21:qq u1:_u21:qqqd1 u1:n16780769 1
+b:u1:_u21:§eqb u1:_u21:qbr 0 v=if(v(u1:n16780769)> 0.5 , 0 , 1)
+r:u1:_u21:qb u1:_u21:qbr u1:qb 1
+c:u1:_u21:dummy1 u1:n16780769 0 1n
+c:u1:_u21:dummy2 u1:qb 0 1n
+.ic v(u1:_u21:qint) 0 
+e:u1:_osc_u21:in u1:_osc_u21:inp1 u1:_osc_u21:inm1 u1:osc_ramp u1:osc_n16782728 1
+b:u1:_osc_u21:§ehys u1:_osc_u21:inp1 u1:_osc_u21:inp2 v=if(v(u1:_osc_u21:1)> 0.5 ,-v(u1:osc_n16784243),0)
+b:u1:_osc_u21:§eout u1:osc_n167827641 0 v=if(v(u1:_osc_u21:inp2)>v(u1:_osc_u21:inm1), 1 , 0)
+r:u1:_osc_u21:1 u1:osc_n167827641 u1:_osc_u21:1 1
+c:u1:_osc_u21:1 u1:_osc_u21:1 0 5n
+r:u1:_osc_u21:inp1 u1:_osc_u21:inp1 0 1k
+b:u1:_osc_u22:§e_abmgate u1:_osc_u22:yint 0 v=(if(v(u1:osc_n16784766)> 0.5 &v(u1:osc_n16784936)> 0.5 , 0 , 1))
+r:u1:_osc_u22:int u1:_osc_u22:yint u1:n16780558 1
+c:u1:_osc_u22:int u1:n16780558 0 1n
+v:u1:_osc_v7 u1:osc_n16788042 0 1.6832 
+s:u1:_osc_s1:_osc_s1 u1:osc_ramp 0 u1:osc_en_ll 0 u1:_osc_s1:_osc_s1 
+r:u1:_osc_s1:s_osc_s1 u1:osc_en_ll 0 1g
+v:u1:_osc_v6 u1:osc_n16787864 0 0.79 
+c:u1:_osc_c1 0 u1:osc_ramp 1u tc=0,0
+b:u1:_osc_u25:§e_abm u1:_osc_u25:yint 0 v=if(v(u1:n16780455)>v(u1:osc_n16788042), 1 , 0)
+r:u1:_osc_u25:1 u1:_osc_u25:yint u1:osc_dutyl 1
+c:u1:_osc_u25:1 u1:osc_dutyl 0 1n
+v:u1:_osc_v4 u1:osc_n16784243 0 0.8
+v:u1:_osc_v5 u1:osc_n16789270 0 1.3
+c:u1:_osc_c5 u1:osc_trf 0 10p tc=0,0
+b:u1:_osc_u24:§e_abm u1:_osc_u24:yint 0 v=if(v(u1:n16780455)>v(u1:osc_n16787864), 1 , 0)
+r:u1:_osc_u24:1 u1:_osc_u24:yint u1:osc_dutyh 1
+c:u1:_osc_u24:1 u1:osc_dutyh 0 1n
+b:u1:§e_osc_abm3 u1:osc_freq 0 v=if(v(u1:fb1)<0.58,17.602m,83.33m) 
+b:u1:§e_osc_abm2 u1:osc_n16784766 0 v=if(v(u1:n16780455)>0.755,1,0) 
+r:u1:_osc_r3 u1:osc_n16784766 u1:osc_n16784936 107k tc=0,0
+c:u1:_osc_c6 u1:osc_n16784936 0 10p tc=0,0
+b:u1:_osc_u23:§e_abm u1:_osc_u23:yint 0 v=if(v(u1:osc_n16789270)>v(u1:en1), 1 , 0)
+r:u1:_osc_u23:1 u1:_osc_u23:yint u1:osc_en_ll 1
+c:u1:_osc_u23:1 u1:osc_en_ll 0 1n
+v:u1:_osc_v3 u1:osc_n16782728 0 1.55
+b:u1:§g_osc_abmi2 0 u1:osc_ramp i=if(v(u1:osc_en_ll)>0.5,(if(v(u1:osc_trf)>0.5,-v(u1:osc_freq),v(u1:osc_freq))),0) 
+b:u1:§e_osc_abm1 u1:n16780455 0 v=if(v(u1:osc_ramp)>1.2,(2.2105465*v(u1:osc_ramp)*v(u1:osc_ramp)-4.5932886*v(u1:osc_ramp)+3.5287593),v(u1:osc_ramp)) 
+d:u1:_osc_u20:1 u1:osc_n16784936 u1:osc_n16784766 u1:_osc_u20:dd1 
+r:u1:_osc_r2 u1:osc_n167827641 u1:osc_trf 1k tc=0,0
+c:u1:_osc_c7 0 u1:osc_n16790080 1n tc=0,0
+d:u1:_osc_u26:1 u1:osc_n16790080 u1:osc_dutyl u1:_osc_u26:dd1 
+r:u1:_osc_r4 u1:osc_dutyl u1:osc_n16790080 591.63 tc=0,0
+b:u1:_osc_u27:§e_abmgate u1:_osc_u27:yint 0 v=(if(v(u1:osc_dutyl)> 0.5 &v(u1:osc_n16790122)> 0.5 , 1 , 0))
+r:u1:_osc_u27:int u1:_osc_u27:yint u1:dutyl 1
+c:u1:_osc_u27:int u1:dutyl 0 1n
+b:u1:§e_osc_abm4 u1:osc_n16790122 0 v=if(v(u1:osc_n16790080)<0.5,1,0) 
+b:u1:§e_e5 u1:fb1 0 v=v(n002,0) 
+d:u1:_u24:1 n003 u1:vin1_cl u1:_u24:dd1 
+v:u1:_v2 u1:n16782719 n003 0.735
+r:u1:_r4 n001 0 1e9 tc=0,0
+e:u1:_ea_e2 u1:ea_n00312 0 u1:ea_n00344 0 1
+r:u1:_ea_r1 u1:ref u1:ea_n00234 600 tc=0,0
+r:u1:_ea_r2 u1:ea_n00234 u1:ea_n00312 30k tc=0,0
+e:u1:_ea_e1 u1:ea_n01722 0 u1:fb1 u1:ea_n00234 10k
+r:u1:_ea_r3 u1:ea_n01722 u1:ea_n00344 2.229k tc=0,0
+c:u1:_ea_c1 0 u1:ea_n00344 1u tc=0,0
+b:u1:§e_ea_abm1 u1:n16785629 0 v=limit(v(u1:ea_n00312),2.4,0.1) 
+b:u1:§e_e6 u1:en1 0 v=v(0,0) 
+s:u1:_s1:_s1 u1:vin1_cl u1:n16782719 u1:n16784673 0 u1:_s1:_s1 
+r:u1:_s1:s_s1 u1:n16784673 0 1g
+r:u1:_r5 0 0 1e6 tc=0,0
+b:u1:_u2:§e_abmgate u1:_u2:yint 0 v=(if(v(u1:n16783088)> 0.5 |v(u1:n16780558)> 0.5 |v(u1:n16780769)> 0.5 , 0 , 1))
+r:u1:_u2:int u1:_u2:yint u1:n16780780 1
+c:u1:_u2:int u1:n16780780 0 1n
+b:u1:_u25:§e_abmgate u1:_u25:yint 0 v=(if(v(u1:n16780780)> 0.5 |v(u1:dutyl)> 0.5 , 1 , 0))
+r:u1:_u25:int u1:_u25:yint u1:n16784673 1
+c:u1:_u25:int u1:n16784673 0 1n
+b:u1:§e_u_e6 u1:u_n16793791 0 v=v(u1:vin1_cl,0) 
+b:u1:§e_u_abm5 u1:cl 0 v=if(v(u1:u_n16793728)>0.5,1,0) 
+b:u1:_u_u23:§e_abm u1:_u_u23:yint 0 v=if(v(u1:u_n16793849)>v(u1:u_n16793791), 1 , 0)
+r:u1:_u_u23:1 u1:_u_u23:yint u1:u_n16793730 1
+c:u1:_u_u23:1 u1:u_n16793730 0 1n
+c:u1:_u_c2 u1:u_n16793728 0 10p tc=0,0
+r:u1:_u_r3 n001 u1:vin1_cl 0.01 tc=0,0
+v:u1:_u_v2 u1:vin1 u1:u_n16793849 0.058
+r:u1:_u_r4 u1:u_n16793730 u1:u_n16793728 100k tc=0,0
+d:u1:_u_u22:1 u1:u_n16793730 u1:u_n16793728 u1:_u_u22:dd1 
+v:u1:_v1 u1:ref 0 1.23
+.ic v(u1:osc_ramp)=0
+v1 n001 0 sine(9.0624 0.185 120)
+l1 n003 n004 100µ
+c1 n004 0 47µ
+r1 n004 0 3.57
+d1 0 n003 1n5819
+r2 n004 n002 6130.08130081301 
+r3 n002 0 2k
+.model 1n5819 d(is=31.7u rs=.051 n=1.373 cjo=110p m=.35 eg=.69 xti=2 iave=1 vpk=40 mfg=onsemi type=schottky)
+.model u1:_u_u22:dd1 d is=1e-015 tt=1e-011 rs=0.05 n=0.1
+.model u1:_s1:_s1 vswitch roff=1e6 ron=0.2155 voff=0.2 von=0.8
+.model u1:_u24:dd1 d is=1e-015 tt=1e-011 rs=0.05 n=0.1
+.model u1:_osc_u26:dd1 d is=1e-015 tt=1e-011 rs=0.05 n=0.1
+.model u1:_osc_u20:dd1 d is=1e-015 tt=1e-011 rs=0.05 n=0.1
+.model u1:_osc_s1:_osc_s1 vswitch roff=1e9 ron=1.0m voff=0.8 von=0.2
+.model u1:_u21:d_d1 d is=1e-015 tt=1e-011 rs=0.05 n=0.1
+.tran 20m uic
+.end
+
+Per .tran options, skipping operating point for transient analysis.
+Ignoring empty pin current: Ix(u1:fb)
+Heightened Def Con from 0.0109114 to 0.0109114
+Heightened Def Con from 0.0111442 to 0.0111442
+Heightened Def Con from 0.0113276 to 0.0113276
+Heightened Def Con from 0.0119012 to 0.0119012
+Heightened Def Con from 0.0120397 to 0.0120397
+Heightened Def Con from 0.0122146 to 0.0122146
+Heightened Def Con from 0.0122435 to 0.0122435
+Heightened Def Con from 0.012602 to 0.012602
+Heightened Def Con from 0.01328 to 0.01328
+Heightened Def Con from 0.0136726 to 0.0136726
+Heightened Def Con from 0.0139703 to 0.0139703
+Heightened Def Con from 0.014195 to 0.014195
+Heightened Def Con from 0.0143195 to 0.0143195
+Heightened Def Con from 0.0143862 to 0.0143862
+Heightened Def Con from 0.0145304 to 0.0145304
+Heightened Def Con from 0.0145495 to 0.0145495
+Heightened Def Con from 0.0146804 to 0.0146804
+Heightened Def Con from 0.0149544 to 0.0149544
+Heightened Def Con from 0.0151935 to 0.0151935
+Heightened Def Con from 0.0153293 to 0.0153293
+Heightened Def Con from 0.0153676 to 0.0153676
+Heightened Def Con from 0.0158246 to 0.0158246
+Heightened Def Con from 0.0159072 to 0.0159072
+Heightened Def Con from 0.0161479 to 0.0161479
+Heightened Def Con from 0.0162141 to 0.0162141
+Heightened Def Con from 0.0162998 to 0.0162998
+Heightened Def Con from 0.0163713 to 0.0163713
+Heightened Def Con from 0.0165349 to 0.0165349
+Heightened Def Con from 0.0170916 to 0.0170916
+Heightened Def Con from 0.0172488 to 0.0172488
+Heightened Def Con from 0.0172679 to 0.0172679
+Heightened Def Con from 0.0174169 to 0.0174169
+Heightened Def Con from 0.0176039 to 0.0176039
+Heightened Def Con from 0.0178748 to 0.0178748
+Heightened Def Con from 0.0179323 to 0.0179323
+Heightened Def Con from 0.0179707 to 0.0179707
+Heightened Def Con from 0.018009 to 0.018009
+Heightened Def Con from 0.0181957 to 0.0181957
+Heightened Def Con from 0.0186861 to 0.0186861
+Heightened Def Con from 0.0187818 to 0.0187818
+Heightened Def Con from 0.0188298 to 0.0188298
+Heightened Def Con from 0.0189725 to 0.0189725
+Heightened Def Con from 0.0196574 to 0.0196574
+Heightened Def Con from 0.0198399 to 0.0198399
+
+Date: Fri Jun 03 22:05:10 2022
+Total elapsed time: 22.702 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 1900131
+traniter = 1900131
+tranpoints = 645055
+accept = 502664
+rejected = 142435
+matrix size = 109
+fillins = 52
+solver = Normal
+Thread vector: 5.7/4.1[2] 1.2/1.5[1] 2.3/1.7[2] 0.3/1.2[1]  2592/500
+Matrix Compiler1: 5.05 KB object code size  1.0/0.7/[0.3]
+Matrix Compiler2: 7.44 KB object code size  0.5/0.9/[0.3]
+

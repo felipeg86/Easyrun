@@ -394,7 +394,7 @@
     (property "Reference" "CB5" (id 0) (at 193.04 99.4409 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "22u" (id 1) (at 193.04 101.9809 0)
+    (property "Value" "47u" (id 1) (at 193.04 101.9809 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.8" (id 2) (at 190.8302 105.41 0)
