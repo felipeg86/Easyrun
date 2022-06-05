@@ -2,6 +2,10 @@
 #import Persona
 #import Bicicleta
 import Perifericos
+import json
+import Bicicleta
+import Candado
+import Persona
 
 #candaco_1 = Candado()
 #candaco_2 = Candado()
@@ -14,10 +18,64 @@ lector_1 = 1
 lector_2 = 2
 lector_3 = 3
 
-card_id = '0'
-
-card_id = Perifericos.lectura(lector_1)
 
 
+card_id_L_1 = "0"
+card_id_L_3 = "0"
+card_id_L_2 = "0"
 
 
+Persona_1 = Persona
+Persona_2 = Persona
+
+Bicicleta_1 = Bicicleta
+Bicicleta_2 = Bicicleta
+
+Candado_1 = Candado
+Candado_2 = Candado
+
+Persona_1.bicicleta_asignada = Bicicleta_1
+Persona_2.bicicleta_asignada = Bicicleta_2
+
+Bicicleta_1.candado = Candado_1
+Bicicleta_2.candado = Candado_2
+Bicicleta_1.persona = Persona_1
+Bicicleta_2.persona = Persona_2
+
+Candado_1.bicicleta = Bicicleta_1
+Candado_2.bicicleta = Bicicleta_2
+
+Bike_avail=[Bicicleta_1, Bicicleta_2]
+
+print(Persona_1.nombre)
+Persona_1.nombre="Ana"
+print(Persona_1.nombre)
+
+
+##Abran el Jhonny
+while True:
+    #Poner RST
+    card_id_L_1 = Perifericos.lectura(lector_1)
+    if(card_id_L_1!=None):
+        with open('IDcarnet.json') as IDcarnet:  
+            data = json.load(IDcarnet)
+            data['id'] = card_id_L_1 ###################### DATO PARA MANDAR POR WIFI EN SI1
+            #### Enviar dato de carnet al SI, hacer un while para esperar la recepcion del dato y
+            #### cuando este llegue seguir con el codigo
+            
+        with open('Prueba_persona.json') as Prueba_persona:
+            data_prueba_persona = json.load(Prueba_persona)
+        
+        if(data_prueba_persona['cedula'] != 0): 
+            if(data_prueba_persona['restricciones'] != 0):
+                for i in range(1,len(Bike_avail)):
+                    if ((Bike_avail[i].estado!=0)):
+                      a=0                
+            else:
+                ####PONER LLAMADO DE FUNCION DISPLAY
+                a=1
+        else:
+            ####PONER LLAMADO DE FUNCION DISPLAY    
+            a=2
+            
+Bike_avail=[Bicicleta_1, Bicicleta_2]
