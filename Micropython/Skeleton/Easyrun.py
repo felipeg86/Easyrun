@@ -3,9 +3,9 @@
 #import Bicicleta
 import Perifericos
 import json
-import Bicicleta
-import Candado
-import Persona
+from Bicicleta import Bicicleta
+from Candado import Candado
+from Persona import Persona
 
 #candaco_1 = Candado()
 #candaco_2 = Candado()
@@ -47,9 +47,9 @@ Candado_2.bicicleta = Bicicleta_2
 
 Bike_avail=[Bicicleta_1, Bicicleta_2]
 
-print(Persona_1.nombre)
-Persona_1.nombre="Ana"
-print(Persona_1.nombre)
+print(Bike_avail[1].persona.nombre)
+Bicicleta_1.persona.nombre="Ana"
+print(Bike_avail[1].persona.nombre)
 
 
 ##Abran el Jhonny
@@ -78,4 +78,3 @@ while True:
             ####PONER LLAMADO DE FUNCION DISPLAY    
             a=2
             
-Bike_avail=[Bicicleta_1, Bicicleta_2]
