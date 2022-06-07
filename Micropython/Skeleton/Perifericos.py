@@ -51,4 +51,30 @@ def lectura(numero_lector):
         print("error")
         return card_id
 
-        
+ def servo_open(num_servo):
+    if num_servo == 1:
+        servo = PWM(Pin(27))
+        servo.freq(50)  #Hz
+        servo.duty(25)
+        time.sleep_ms(400)
+        servo.duty(0)
+    elif num_servo == 2:
+        servo = PWM(Pin(28))  #configurar pin 21 para trabajar con PWM
+        servo.freq(50)  #Hz
+        servo.duty(25)
+        time.sleep_ms(400)
+        servo.duty(0)
+
+def servo_close(num_servo):
+    if num_servo == 1:
+        servo = PWM(Pin(27))  #configurar pin 21 para trabajar con PWM
+        servo.freq(50)  #Hz
+        servo.duty(135)
+        time.sleep_ms(400)
+        servo.duty(0)
+    elif num_servo == 2:
+        servo = PWM(Pin(28))  #configurar pin 21 para trabajar con PWM
+        servo.freq(50)  #Hz
+        servo.duty(135)
+        time.sleep_ms(400)
+        servo.duty(0)       

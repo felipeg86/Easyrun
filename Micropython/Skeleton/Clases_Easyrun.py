@@ -1,6 +1,7 @@
 class Bicicleta:
     iD = 0
     estado = False
+    daños = False
     ubicacion = "Indefinido"
     candado = 'Indefinido'
     persona = 'Indefinido'
@@ -18,15 +19,13 @@ class Candado:
     estado = 'indefinido'
     ubicacion = 'Indefinido'
     n_candado = 0
-    bicicleta = 'Indefinido'
+    bicicleta = 'Indefinido' #quitar?
 
     def reset(self):
         self.estado = False
         self.ubicacion = 'Indefinido'
         self.n_candado = 0
         self.bicicleta = 'Indefinido'
-
-
 
 
 class Persona:
