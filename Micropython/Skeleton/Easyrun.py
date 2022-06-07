@@ -77,9 +77,6 @@ while True:
                         Bike_avail[i].persona.iDcarnet = data_prueba_persona['iDcarnet']
                         Bike_avail[i].persona.restricciones = data_prueba_persona['restricciones']
                         #mostrar en pantalla el numero de la bicicleta escogido
-                        card_id_L_Bike = None
-                        while (card_id_L_Bike == None) #Se asegura leer la identificación de la bicicleta a prestar
-                            card_id_L_Bike = Perifericos.lectura(i+1)
 
                         Perifericos.servo_open(i)
                         Bike_avail[i].candado.estado = 'en_espera'
@@ -87,7 +84,7 @@ while True:
                         Bike_avail[i].daños = False
                         with open('Prestamo.json') as Prestamo:
                             data_send_prestamo = json.load(Prestamo)
-                            data_send_prestamo['id_bike'] = card_id_L_Bike
+                            data_send_prestamo['id_bike'] = Bike_avail[i].iD
                             data_send_prestamo['bike_state'] = ~Bike_avail[i].estado
                             data_send_prestamo['puesto_prestamo'] = Bike_avail[1].candado.ubicacion
                             data_send_prestamo['daños'] = Bike_avail[i].daños
