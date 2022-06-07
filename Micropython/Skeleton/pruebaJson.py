@@ -7,8 +7,8 @@ with open('prueba2.json') as prueba:
    print((data['identification']))
    if(data['status'] ==False):
        print("una cariloca, yo me transformo")
-       
+
 data['name']="Ana Milena"
 print(str(data['name']))
 
-       
+

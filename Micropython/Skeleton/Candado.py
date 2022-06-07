@@ -1,5 +1,3 @@
-import Bicicleta
-
 class Candado:
     estado = False
     ubicacion = 'Indefinido'
