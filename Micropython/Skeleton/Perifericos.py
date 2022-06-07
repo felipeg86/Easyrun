@@ -1,9 +1,7 @@
 from mfrc522 import MFRC522
 from machine import Pin
 from machine import SPI
-from machine import PWM
 from machine import SoftSPI
-import time
 
 def lectura(numero_lector):
 
@@ -23,32 +21,29 @@ def lectura(numero_lector):
     #int numero_lector=2;
     card_id="0"
     if(numero_lector==1):
-        while True:
+        for i in range(1,10):
             (stat, tag_type) = rdr1.request(rdr1.REQIDL)
-            if stat == rdr1.OK:
+            if stat == rdr1.OK:    
                 (stat, raw_uid) = rdr1.anticoll()
                 if stat == rdr1.OK:
-                    card_id = "uid: 0x%02x%02x%02x%02x" % (raw_uid[0], raw_uid[1], raw_uid[2], raw_uid[3])
-                    print(card_id)
+                    card_id = "0x%02x%02x%02x%02x" % (raw_uid[0], raw_uid[1], raw_uid[2], raw_uid[3])
                     return card_id
     elif(numero_lector==2):
-          while True:
+        for i in range(1,10):
             (stat, tag_type) = rdr2.request(rdr2.REQIDL)
-            if stat == rdr2.OK:
+            if stat == rdr2.OK:    
                 (stat, raw_uid) = rdr2.anticoll()
                 if stat == rdr2.OK:
-                    card_id = "uid: 0x%02x%02x%02x%02x" % (raw_uid[0], raw_uid[1], raw_uid[2], raw_uid[3])
-                    print(card_id)
+                    card_id = "0x%02x%02x%02x%02x" % (raw_uid[0], raw_uid[1], raw_uid[2], raw_uid[3])
                     return card_id
 
     elif(numero_lector==3):
-          while True:
+        for i in range(1,10):
             (stat, tag_type) = rdr3.request(rdr3.REQIDL)
-            if stat == rdr3.OK:
+            if stat == rdr3.OK:    
                 (stat, raw_uid) = rdr3.anticoll()
                 if stat == rdr3.OK:
-                    card_id = "uid: 0x%02x%02x%02x%02x" % (raw_uid[0], raw_uid[1], raw_uid[2], raw_uid[3])
-                    print(card_id)
+                    card_id = "0x%02x%02x%02x%02x" % (raw_uid[0], raw_uid[1], raw_uid[2], raw_uid[3])
                     return card_id
 
     else:
@@ -56,32 +51,4 @@ def lectura(numero_lector):
         print("error")
         return card_id
 
-
-
-def servo_open(num_servo):
-    if num_servo == 1:
-        servo = PWM(Pin(27))
-        servo.freq(50)  #Hz
-        servo.duty(25)
-        time.sleep_ms(400)
-        servo.duty(0)
-    elif num_servo == 2:
-        servo = PWM(Pin(28))  #configurar pin 21 para trabajar con PWM
-        servo.freq(50)  #Hz
-        servo.duty(25)
-        time.sleep_ms(400)
-        servo.duty(0)
-
-def servo_close(num_servo):
-    if num_servo == 1:
-        servo = PWM(Pin(27))  #configurar pin 21 para trabajar con PWM
-        servo.freq(50)  #Hz
-        servo.duty(135)
-        time.sleep_ms(400)
-        servo.duty(0)
-    elif num_servo == 2:
-        servo = PWM(Pin(28))  #configurar pin 21 para trabajar con PWM
-        servo.freq(50)  #Hz
-        servo.duty(135)
-        time.sleep_ms(400)
-        servo.duty(0)
+        

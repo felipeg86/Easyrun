@@ -40,6 +40,8 @@ Candado_2.bicicleta = Bicicleta_2
 
 Bike_avail = [Bicicleta_1, Bicicleta_2]
 
+
+
 #print(Bike_avail[1].persona.nombre)
 #Bicicleta_1.persona.nombre = "Ana"
 #print(Bike_avail[1].persona.nombre)
