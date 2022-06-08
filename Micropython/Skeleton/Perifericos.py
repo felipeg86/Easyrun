@@ -51,7 +51,7 @@ def lectura(numero_lector):
         print("error")
         return card_id
 
- def servo_open(num_servo):
+def servo_open(num_servo):
     if num_servo == 1:
         servo = PWM(Pin(27))
         servo.freq(50)  #Hz

@@ -2,6 +2,7 @@
 import Perifericos
 import json
 from Clases_Easyrun import Bicicleta, Candado, Persona
+import time
 
 #candaco_1 = Candado()
 #candaco_2 = Candado()
@@ -52,13 +53,12 @@ for i in range(1, len(Bike_avail)):
 #print(Bike_avail[1].persona.nombre)
 #Bicicleta_1.persona.nombre = "Ana"
 #print(Bike_avail[1].persona.nombre)
-
-
 #Abran el Jhonny
 while True:
     #Poner RST
     card_id_L_1 = Perifericos.lectura(lector_1)
     if(card_id_L_1 != None):
+        print (card_id_L_1)
         with open('IDcarnet.json') as IDcarnet:
             data = json.load(IDcarnet)
             data['id'] = card_id_L_1  ###################### DATO PARA MANDAR POR WIFI EN SI1
@@ -77,22 +77,21 @@ while True:
                         Bike_avail[i].persona.iDcarnet = data_prueba_persona['iDcarnet']
                         Bike_avail[i].persona.restricciones = data_prueba_persona['restricciones']
                         #mostrar en pantalla el numero de la bicicleta escogido
-
+                        
                         Perifericos.servo_open(i)
                         Bike_avail[i].candado.estado = 'en_espera'
-                        Bike_avail[i].estado = False
-                        Bike_avail[i].daños = False
+                        Bike_avail[i].estado = True
                         with open('Prestamo.json') as Prestamo:
                             data_send_prestamo = json.load(Prestamo)
                             data_send_prestamo['id_bike'] = Bike_avail[i].iD
-                            data_send_prestamo['bike_state'] = ~Bike_avail[i].estado
+                            data_send_prestamo['bike_state'] = Bike_avail[i].estado
                             data_send_prestamo['puesto_prestamo'] = Bike_avail[1].candado.ubicacion
                             data_send_prestamo['daños'] = Bike_avail[i].daños
                             data_send_prestamo['nombre'] = Bike_avail[i].persona.nombre
                             data_send_prestamo['cedula'] = Bike_avail[i].persona.cedula
                             data_send_prestamo['iDcarnet'] = Bike_avail[i].persona.iDcarnet
-                        #### Enviar dato de carnet al SI, hacer un while para esperar confirmacion de receprcion
-
+                        #### Enviar data_send_prestamo de carnet al SI, hacer un while para esperar confirmacion de receprcion
+                            time_p = time.time()
                         break
             else:
                 ####PONER LLAMADO DE FUNCION DISPLAY
@@ -100,4 +99,41 @@ while True:
         else:
             ####PONER LLAMADO DE FUNCION DISPLAY
             a = 2
-
+    else:
+        #imprimir "acerque su carnet de nuevo"
+        card_id_L_2 = Perifericos.lectura(lector_2)
+        if(card_id_L_2 != None):
+            print("seg",card_id_L_2)
+            if(Bike_avail[1].candado.estado == 'vacio'):
+                Perifericos.servo_close(1)
+                Bike_avail[1].candado.estado = 'ocupado'
+                
+                Bike_avail[1].iD = card_id_L_2
+                Bike_avail[1].estado = False # No disponible(Prestada) = True/  Disponible(No prestada)= False
+                Bike_avail[1].daños = False # No dañada = False/ Dañada = True
+    
+                with open('Prestamo.json') as EntregaB1:
+                    data_send_entregaB1 = json.load(EntregaB1)
+                    data_send_entregaB1['id_bike'] = Bike_avail[1].iD
+                    data_send_entregaB1['bike_state'] = Bike_avail[1].estado
+                    data_send_entregaB1['daños'] = Bike_avail[1].daños
+                    #### Enviar data_send_entregaB1 de carnet al SI, hacer un while para esperar confirmacion de receprcion
+             
+        card_id_L_3 = Perifericos.lectura(lector_3)  
+        if(card_id_L_3 != None):
+            print("ter",card_id_L_3)
+            if(Bike_avail[2].candado.estado == 'vacio'):
+                Perifericos.servo_close(2)
+                Bike_avail[2].candado.estado = 'ocupado'
+                
+                Bike_avail[2].iD = card_id_L_3
+                Bike_avail[2].estado = False # No disponible(Prestada) = True/  Disponible(No prestada)= False
+                Bike_avail[2].daños = False # No dañada = False/ Dañada = True
+    
+                with open('Prestamo.json') as EntregaB2:
+                    data_send_entregaB2 = json.load(EntregaB2)
+                    data_send_entregaB2['id_bike'] = Bike_avail[2].iD
+                    data_send_entregaB2['bike_state'] = Bike_avail[2].estado
+                    data_send_entregaB2['daños'] = Bike_avail[2].daños
+                    #### Enviar data_send_entregaB1 de carnet al SI, hacer un while para esperar confirmacion de receprcion
+                     

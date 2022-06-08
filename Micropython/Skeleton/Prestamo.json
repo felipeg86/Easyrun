@@ -1,9 +1,9 @@
 {
 "id_bike":"0x00000000",
-"bike_state":"Prestamo",
+"bike_state":"Io_no_se",
 "puesto_prestamo":"CyT",
-"daños": "False",
+"daños": "Tampoco_se",
 "nombre": "Ana",
-"cedula": "123456789",
-"iDcarnet": "0x99dc293c"
+"cedula": "00000000",
+"iDcarnet": "0x00000000"
 }
