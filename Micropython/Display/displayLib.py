@@ -2,6 +2,7 @@ from ili9341 import Display, color565
 from machine import Pin, SPI
 from xglcd_font import XglcdFont
 from machine import SoftSPI
+import math
 import time
 
 
@@ -32,10 +33,39 @@ class MyDisplay:
         self.spi = SoftSPI(baudrate=baudrate, polarity=0, phase=0, sck=Pin(sck, Pin.OUT), mosi=Pin(mosi, Pin.OUT), miso=Pin(miso, Pin.OUT))
         self.display = Display(spi, dc=Pin(dc), cs=Pin(cs), rst=Pin(rst))
         self.font = XglcdFont('fonts/Broadway17x15.c', 17, 15)
-    def printText(self):
+    def printShortText(self, text):
+        self.display.draw_text(0, 0, text, self.font, color565(255, 255, 255), color565(204, 53, 94))# x, y, texto, fuente, color de letra, color de fondo de letra
+    def printText(self, text):
         print('Debe imprimir texto')
         self.display.clear(color565(204, 53, 94)) # color de fondo en RGB de 24 bits
-        self.display.draw_text(55, 90, 'Hola', self.font, color565(255, 255, 255), color565(204, 53, 94))# x, y, texto, fuente, color de letra, color de fondo de letra
-        time.sleep(20)
+        self.display.draw_text(0, 0, '5', self.font, color565(255, 255, 255), color565(204, 53, 94))# x, y, texto, fuente, color de letra, color de fondo de letra
+        self.display.draw_text(10, 0, '2', self.font, color565(255, 255, 255), color565(204, 53, 94))# x, y, texto, fuente, color de letra, color de fondo de letra
+        ceiling=math.ceil(len(text)/23)
+        counter=1
+        if ceiling>1:
+            aux_matrix=' '
+            while len(text)>23:
+                aux_matrix=[aux_matrix,
+                            text[1:23]]
+                text=text[24:len(text)]
+                counter+=1
+            if len(text)>0:
+                aux_matrix=[aux_matrix,
+                            text[1:len(text)]]
+                counter+=1
+        else:
+            aux_matrix=text
+            
+        for x in range(counter):
+            print(aux_matrix[counter])
+        time.sleep(15)
         self.display.cleanup()
         self.display.reset_mpy()
+        
+"""
+About printing text:
+* 14 is recommended as difference between two lines 'y' coordinates for broadway font.
+* 10 is recommended as difference between two characters 'x' coordinates for broadway font.
+* A maximum of 23 characters (letters and numbers) can be printed per line
+* 10*23=230 spaces in one line
+"""
