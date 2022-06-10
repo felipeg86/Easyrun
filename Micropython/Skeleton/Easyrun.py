@@ -2,6 +2,14 @@
 import Perifericos
 import json
 from Clases_Easyrun import Bicicleta, Candado, Persona
+
+from displayLib import MyDisplay
+from ili9341 import Display, color565
+from machine import Pin, SPI
+from xglcd_font import XglcdFont
+from machine import SoftSPI
+
+import math
 import time
 
 #candaco_1 = Candado()
@@ -22,25 +30,25 @@ card_id_L_2 = "0"
 Puesto_de_prestamo = 'CyT' 
 #Puesto_de_prestamo = '30' 
 
-Persona_1 = Persona
-Persona_2 = Persona
+disp=MyDisplay()
 
-Bicicleta_1 = Bicicleta
-Bicicleta_2 = Bicicleta
+Persona_1 = Persona()
+Persona_2 = Persona()
 
-Candado_1 = Candado
-Candado_2 = Candado
+Bicicleta_1 = Bicicleta()
+Bicicleta_2 = Bicicleta()
 
-Persona_1.bicicleta_asignada = Bicicleta_1
-Persona_2.bicicleta_asignada = Bicicleta_2
+Candado_1 = Candado()
+Candado_2 = Candado()
+
+#Persona_1.bicicleta_asignada = Bicicleta_1
+#Persona_2.bicicleta_asignada = Bicicleta_2
 
 Bicicleta_1.candado = Candado_1
 Bicicleta_2.candado = Candado_2
 Bicicleta_1.persona = Persona_1
 Bicicleta_2.persona = Persona_2
 
-Candado_1.bicicleta = Bicicleta_1
-Candado_2.bicicleta = Bicicleta_2
 
 Bike_avail = [Bicicleta_1, Bicicleta_2]
 
@@ -49,7 +57,7 @@ Bike_avail[1].candado.ubicacion = 'CyT'
 for i in range(1, len(Bike_avail)):
     Bike_avail[1].candado.n_candado = i
 
-
+Bike_avail[0].estado=True
 #print(Bike_avail[1].persona.nombre)
 #Bicicleta_1.persona.nombre = "Ana"
 #print(Bike_avail[1].persona.nombre)
@@ -58,7 +66,7 @@ while True:
     #Poner RST
     card_id_L_1 = Perifericos.lectura(lector_1)
     if(card_id_L_1 != None):
-        #print (card_id_L_1)
+        print (card_id_L_1)
         with open('IDcarnet.json') as IDcarnet:
             data = json.load(IDcarnet)
             data['id'] = card_id_L_1  ###################### DATO PARA MANDAR POR WIFI EN SI1
@@ -68,14 +76,15 @@ while True:
         with open('Prueba_persona.json') as Prueba_persona:
             data_prueba_persona = json.load(Prueba_persona)
 
-        if(data_prueba_persona['cedula'] != 0):
-            if(data_prueba_persona['restricciones'] != 0):
+        if(data_prueba_persona['cedula'] != "0"): ##NO OLVIDAR: COMPARACIONES CON JSON SE HACEN EN STRING
+            if(data_prueba_persona['restricciones'] != "True"):
                 for i in range(0, len(Bike_avail)):
-                    if ((Bike_avail[i].estado != 0)):
+                    if ((Bike_avail[i].estado != False)):
                         Bike_avail[i].persona.nombre = data_prueba_persona['nombre']
                         Bike_avail[i].persona.cedula = data_prueba_persona['cedula']
                         Bike_avail[i].persona.iDcarnet = data_prueba_persona['iDcarnet']
                         Bike_avail[i].persona.restricciones = data_prueba_persona['restricciones']
+                        disp.printShortText('Buenas') #Fino
                         #mostrar en pantalla el numero de la bicicleta escogido
                         
                         Perifericos.servo_open(i+1)
@@ -94,20 +103,25 @@ while True:
                             time_p = time.time()
                         break
             else:
-                ####PONER LLAMADO DE FUNCION DISPLAY
-                a = 1
+                disp.printShortText('Danas todo respetame') #Fino
+
         else:
-            ####PONER LLAMADO DE FUNCION DISPLAY
-            a = 2
+            disp.printShortText('Resgistrate wuon') #Fino
     else:
+        disp.printShortText('Aja y que') #Fino
         #imprimir "acerque su carnet de nuevo"
         for k in range(0, len(Bike_avail)):
             card_id_Bike = Perifericos.lectura(k+2)
+            #print ("El ", k+2, "      ",card_id_Bike)
             if(card_id_Bike != None):
-                #print(k+2, "Lector    ", card_id_Bike)
+                print(k+2, "Lector    ", card_id_Bike)
+                #print(Candado_1.estado)
+                #print(Candado_2.estado)
                 if(Bike_avail[k].candado.estado == 'vacio'):
                     Perifericos.servo_close(k+1)
-                    Bike_avail[k].candado.estado = 'ocupado'  
+                    Bike_avail[k].candado.estado = 'ocupado'
+                    #print(Candado_1.estado)
+                    #print(Candado_2.estado)
                     Bike_avail[k].iD = card_id_Bike
                     Bike_avail[k].estado = False # No disponible(Prestada) = True/  Disponible(No prestada)= False
                     Bike_avail[k].daños = False # No dañada = False/ Dañada = True

@@ -7,4 +7,4 @@ import math
 import time
 
 disp=MyDisplay()
-disp.printShortText('Funciona :v')
+disp.printShortText('Por que eres tan crack?')
