@@ -58,11 +58,19 @@ for i in range(1, len(Bike_avail)):
     Bike_avail[1].candado.n_candado = i
 
 Bike_avail[0].estado=True
+
+Bike_avail[0].candado.estado = 'vacio'
+Bike_avail[1].candado.estado = 'vacio'
+
+
+
 #print(Bike_avail[1].persona.nombre)
 #Bicicleta_1.persona.nombre = "Ana"
 #print(Bike_avail[1].persona.nombre)
 #Abran el Jhonny
 while True:
+    
+    ##Aqui va la revision de las interrupciones por hardware
     #Poner RST
     card_id_L_1 = Perifericos.lectura(lector_1)
     if(card_id_L_1 != None):
@@ -75,8 +83,8 @@ while True:
 
         with open('Prueba_persona.json') as Prueba_persona:
             data_prueba_persona = json.load(Prueba_persona)
-
         if(data_prueba_persona['cedula'] != "0"): ##NO OLVIDAR: COMPARACIONES CON JSON SE HACEN EN STRING
+            #print(data_prueba_persona['restricciones'] != "True")
             if(data_prueba_persona['restricciones'] != "True"):
                 for i in range(0, len(Bike_avail)):
                     if ((Bike_avail[i].estado != False)):
@@ -84,6 +92,7 @@ while True:
                         Bike_avail[i].persona.cedula = data_prueba_persona['cedula']
                         Bike_avail[i].persona.iDcarnet = data_prueba_persona['iDcarnet']
                         Bike_avail[i].persona.restricciones = data_prueba_persona['restricciones']
+                        print(Bike_avail[i].estado != False)
                         disp.printShortText('Buenas') #Fino
                         #mostrar en pantalla el numero de la bicicleta escogido
                         
@@ -100,15 +109,17 @@ while True:
                             data_send_prestamo['cedula'] = Bike_avail[i].persona.cedula
                             data_send_prestamo['iDcarnet'] = Bike_avail[i].persona.iDcarnet
                         #### Enviar data_send_prestamo de carnet al SI, hacer un while para esperar confirmacion de receprcion
-                            time_p = time.time()
+                        
+                        ##Aqui va la activacion para la interrupcion por software del prestamo
+                            
+                        
                         break
             else:
-                disp.printShortText('Danas todo respetame') #Fino
-
+                disp.printShortText('Manitas creativas') #Fino
         else:
             disp.printShortText('Resgistrate wuon') #Fino
     else:
-        disp.printShortText('Aja y que') #Fino
+        disp.printShortText('Porque eres tan linda') #Fino
         #imprimir "acerque su carnet de nuevo"
         for k in range(0, len(Bike_avail)):
             card_id_Bike = Perifericos.lectura(k+2)
@@ -118,8 +129,10 @@ while True:
                 #print(Candado_1.estado)
                 #print(Candado_2.estado)
                 if(Bike_avail[k].candado.estado == 'vacio'):
+                    
                     Perifericos.servo_close(k+1)
                     Bike_avail[k].candado.estado = 'ocupado'
+                    print(Bike_avail[k].candado.estado)
                     #print(Candado_1.estado)
                     #print(Candado_2.estado)
                     Bike_avail[k].iD = card_id_Bike
