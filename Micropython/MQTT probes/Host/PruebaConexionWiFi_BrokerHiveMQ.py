@@ -3,8 +3,10 @@ import json
 import paho.mqtt.client as paho
 from paho import mqtt
 
+client_id = "SI"
 ID = ['CH10537T','Cjadgyieb','wdbhef']
 m = {
+    "Source": client_id,
     "Nombre": "Juan Felipe",
     "Permisos": "Si"
 }
@@ -29,14 +31,15 @@ def on_subscribe(client, userdata, mid, granted_qos, properties=None):
 # print message, useful for checking if it was successful
 def on_message(client, userdata, msg):
     
-    #print(msg.topic + " " + str(msg.qos) + " " + str(msg.payload))
-    #print(str(msg.payload.decode()))
+    msg_dec = json.loads(msg.payload)
+    
     if msg.topic == 'SI/Validar':
-        if json.loads(msg.payload) in ID:
+        if msg_dec["Source"] == "ESP32":
             print("Si está en la base de datos")
+            print(msg_dec)
+            print(type(msg_dec))
             time.sleep(1)
             (rc, mid)= client.publish(msg.topic,json.dumps(m),qos= 1)
-        
     elif msg.topic == 'SI/Easyrun/Prestar':
         a = 1
     elif msg.topic == 'SI/Easyrun/Devolver':
@@ -48,21 +51,8 @@ def on_message(client, userdata, msg):
         (rc, mid) = client.publish('SI/Validar',json.dumps("Hola"),qos = 1)
 
 
-
-
-# using MQTT version 5 here, for 3.1.1: MQTTv311, 3.1: MQTTv31
-# userdata is user defined data of any type, updated by user_data_set()
-# client_id is the given name of the client
-# client = paho.Client(client_id="Paco", userdata=None, protocol=paho.MQTTv5)
-client = paho.Client("Paco")
+client = paho.Client(client_id)
 client.on_connect = on_connect
-
-# enable TLS for secure connection
-# client.tls_set(tls_version=mqtt.client.ssl.PROTOCOL_TLS)
-# set username and password
-# client.username_pw_set("JuanFelipe", "xr8_G!pQiw2R6fC")
-# connect to HiveMQ Cloud on port 8883 (default for MQTT)
-
 client.connect("broker.mqttdashboard.com", 1883)
 
 # setting callbacks, use separate functions like above for better visibility

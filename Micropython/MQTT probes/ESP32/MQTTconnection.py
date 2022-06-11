@@ -6,12 +6,9 @@ import json
 
 
 client_id = "ESP32"
-#mqtt_server = "778209500d2e429395808690733dbd2a.s1.eu.hivemq.cloud"
 mqtt_server = "broker.mqttdashboard.com"
 user_mqtt = "JuanFelipe"
 password_mqtt = "xr8_G!pQiw2R6fC"
-
-#topic_sub = b'notification'
 
 def restart_and_reconnect():
     print('Failed to connect. Reconnecting...')
@@ -27,7 +24,7 @@ def conect_to(SSID, PASSWORD):
             sta_if.active(True)
             sta_if.connect(SSID,PASSWORD)
             print("Trying to connect to the network: ",SSID)
-            while nt.isconnected() == False:
+            while not sta_if.isconnected():
                 pass
         print("Connected")
         led.value(1)
@@ -35,16 +32,26 @@ def conect_to(SSID, PASSWORD):
         restart_and_reconnect()
 
 def sub_cb(topic, msg):
-    msg_dec =  json.loads(msg)
-    if topic == b'SI/Validar':
-        #print('El mensaje es del tema %s,  mensaje %s',topic,msg)
-        print(msg_dec)
-        print(type(msg_dec))
-    elif topic == b'notification/holu':
-        #print('El mensaje es del tema %s,  mensaje %s',topic,msg)
-        print(msg_dec)
+    msg_dec = json.loads(msg)
+    if msg_dec["Source"] == client_id:
+        if topic == b'SI/Validar':
+            msg_dec = msg_dec["ID"]
+        elif topic == b'SI/Easyrun/Prestar':
+            msg_dec = msg_dec["ID"]
+        elif topic == b'SI/Easyrun/Devolver':
+            msg_dec = msg_dec["ID"]
+        else:
+            msg_dec = msg_dec["ID"]
     else:
-        print('No llegó nada unu')
+        if topic == b'SI/Validar':
+            msg_dec = msg_dec["Nombre"]
+        elif topic == b'SI/Easyrun/Prestar':
+            msg_dec = msg_dec["ID"]
+        elif topic == b'SI/Easyrun/Devolver':
+            msg_dec = msg_dec["ID"]
+        else:
+            msg_dec = msg_dec["ID"]
+    print(msg_dec)
 
 
 def connect_and_subscribe():
