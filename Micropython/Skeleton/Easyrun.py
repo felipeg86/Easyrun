@@ -1,6 +1,7 @@
 
 import Perifericos
 import json
+import machine
 from Clases_Easyrun import Bicicleta, Candado, Persona
 
 from displayLib import MyDisplay
@@ -59,8 +60,15 @@ for i in range(1, len(Bike_avail)):
 
 Bike_avail[0].estado=True
 
-Bike_avail[0].candado.estado = 'vacio'
+Bike_avail[0].candado.estado = 'ocupado'
 Bike_avail[1].candado.estado = 'vacio'
+
+#import machine
+#servo=machine.PWM(machine.Pin(17), freq=50, duty=50)
+
+
+#print(servo)
+#print(servo.duty())
 
 
 
@@ -119,7 +127,7 @@ while True:
         else:
             disp.printShortText('Resgistrate wuon') #Fino
     else:
-        disp.printShortText('Porque eres tan linda') #Fino
+        disp.printShortText('No leo nada ') #Fino
         #imprimir "acerque su carnet de nuevo"
         for k in range(0, len(Bike_avail)):
             card_id_Bike = Perifericos.lectura(k+2)
