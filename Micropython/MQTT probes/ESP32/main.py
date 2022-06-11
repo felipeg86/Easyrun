@@ -6,7 +6,7 @@ user_mqtt = "JuanFelipe"
 password_mqtt = "xr8_G!pQiw2R6fC"
 
 last_message = 0
-message_interval = 0.5
+message_interval = 1
 received = True
 ID = {"Source": client_id,
     "ID": "CH10537T"}
