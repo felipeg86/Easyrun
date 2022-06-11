@@ -1,4 +1,5 @@
 from MQTTconnection import *
+from Messages import *
 
 client_id = "ESP32"
 mqtt_server = "broker.mqttdashboard.com"
@@ -8,8 +9,7 @@ password_mqtt = "xr8_G!pQiw2R6fC"
 last_message = 0
 message_interval = 1
 received = True
-ID = {"Source": client_id,
-    "ID": "CH10537T"}
+ID = "CH10537T"
 
 #conect_to("Juan F","qwertyuiop")
 conect_to("Carlos Mario Gonzalez","Carmar15")
@@ -23,7 +23,7 @@ while True:
   try:
     if (time.time() - last_message) > message_interval:
         if received:
-            client.publish(b'SI/Validar', json.dumps(ID),True,1)
+            client.publish(b'SI/Validar', id(ID),True,1)
             received = False
         else:
             client.check_msg()

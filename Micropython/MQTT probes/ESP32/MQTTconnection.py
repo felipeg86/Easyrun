@@ -35,22 +35,22 @@ def sub_cb(topic, msg):
     msg_dec = json.loads(msg)
     if msg_dec["Source"] == client_id:
         if topic == b'SI/Validar':
-            msg_dec = msg_dec["ID"]
+            msg_dec = msg_dec["ID_person"]
         elif topic == b'SI/Easyrun/Prestar':
-            msg_dec = msg_dec["ID"]
+            msg_dec = msg_dec["ID_person"]
         elif topic == b'SI/Easyrun/Devolver':
-            msg_dec = msg_dec["ID"]
+            msg_dec = msg_dec["ID_person"]
         else:
-            msg_dec = msg_dec["ID"]
+            msg_dec = msg_dec["ID_person"]
     else:
         if topic == b'SI/Validar':
             msg_dec = msg_dec["Nombre"]
         elif topic == b'SI/Easyrun/Prestar':
-            msg_dec = msg_dec["ID"]
+            msg_dec = msg_dec["ID_person"]
         elif topic == b'SI/Easyrun/Devolver':
-            msg_dec = msg_dec["ID"]
+            msg_dec = msg_dec["ID_person"]
         else:
-            msg_dec = msg_dec["ID"]
+            msg_dec = msg_dec["ID_person"]
     print(msg_dec)
 
 
