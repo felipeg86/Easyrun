@@ -1,10 +1,10 @@
 
 import Perifericos
+from Perifericos import MyDisplay
 import json
 import machine
 from Clases_Easyrun import Bicicleta, Candado, Persona
 
-from displayLib import MyDisplay
 from ili9341 import Display, color565
 from machine import Pin, SPI
 from xglcd_font import XglcdFont
@@ -63,8 +63,11 @@ Bike_avail[0].estado=True
 Bike_avail[0].candado.estado = 'ocupado'
 Bike_avail[1].candado.estado = 'vacio'
 
-#import machine
-#servo=machine.PWM(machine.Pin(17), freq=50, duty=50)
+
+
+#frecuency=50
+#duty_cicle=0
+#servo=machine.PWM(machine.Pin(17), frecuency, duty_cicle)
 
 
 #print(servo)

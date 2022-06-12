@@ -3,6 +3,10 @@ from machine import Pin
 from machine import SPI
 from machine import SoftSPI
 from machine import PWM
+
+from ili9341 import Display, color565
+from xglcd_font import XglcdFont
+import math
 import time
 
 sck=18
@@ -86,7 +90,10 @@ def servo_close(num_servo):
 
 class MyDisplay:
     def __init__(self):
-        self.display=Display(spi, dc=Pin(dc), cs=Pin(cs), rst=Pin(rst))
+        self.dc=15
+        self.cs=12
+        self.rst=14
+        self.display=Display(spi, dc=Pin(self.dc), cs=Pin(self.cs), rst=Pin(self.rst))
         self.font = XglcdFont('Broadway17x15.c', 17, 15)
         self.message='Bienvenido'
     def spiInit(self, sck, mosi, miso, dc, cs, rst, baudrate):
