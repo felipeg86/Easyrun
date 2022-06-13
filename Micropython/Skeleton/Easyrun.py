@@ -123,18 +123,12 @@ def Interrupt_T2(timer_2):
         data_send_devolucion['punto_de_prestamo'] = Bike_avail[i].candado.ubicacion
         
 
-
 Bike_avail[0].estado=True
+Bike_avail[1].estado=True
 
-Bike_avail[0].candado.estado = 'ocupado'
+
+Bike_avail[0].candado.estado = 'vacio'
 Bike_avail[1].candado.estado = 'vacio'
-
-#frecuency=50
-#duty_cicle=0
-#servo=machine.PWM(machine.Pin(17), frecuency, duty_cicle)
-
-#print(servo)
-#print(servo.duty())
 
 #Abran el Jhonny
 
@@ -153,11 +147,10 @@ while True:
         with open('Prueba_persona.json') as Prueba_persona:
             data_prueba_persona = json.load(Prueba_persona)
         if(data_prueba_persona['cedula'] != "0"): ##NO OLVIDAR: COMPARACIONES CON JSON SE HACEN EN STRING
-            #print(data_prueba_persona['restricciones'] != "True")
-            if(data_prueba_persona['user_type'] == "Estudiante"):  
+            if(data_prueba_persona['user_type'] == "Estudiante"):
                 if((data_prueba_persona['restricciones'] != "True") and (data_prueba_persona['current_use'] == "False")):
                     for i in range(0, len(Bike_avail)):
-                        if ((Bike_avail[i].estado != False)):
+                        if ((Bike_avail[i].estado == False)):
                             Bike_avail[i].persona.cedula = data_prueba_persona['cedula']
                             print(Bike_avail[i].estado != False)
                             disp.printShortText('Buenas') #Fino
