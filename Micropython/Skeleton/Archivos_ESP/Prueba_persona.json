@@ -1,6 +1,7 @@
 {
-"nombre": "Ana",
-"cedula": "123456789",
-"iDcarnet": "0x99dc293c",
-"restricciones": "False"
+"iDcarnet" : "0x99dc293c",
+"cedula" : "123456789",
+"current_use" : "False",
+"restricciones" : "False",
+"user_type" : "Estudiante"
 }

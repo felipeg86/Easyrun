@@ -24,8 +24,6 @@ def lectura(numero_lector):
 
     print("Place card")
 
-    #int lector_activado;
-    #int numero_lector=2;
     card_id="0"
     if(numero_lector==1):
         for i in range(1,10):
