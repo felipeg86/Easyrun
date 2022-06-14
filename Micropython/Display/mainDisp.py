@@ -6,5 +6,11 @@ from machine import SoftSPI
 import math
 import time
 
-disp=MyDisplay()
-disp.printShortText('Por que eres tan crack?')
+sck=22
+mosi=19
+miso=23
+
+spi=SoftSPI(baudrate=1000000, polarity=0, phase=0, sck=Pin(sck, Pin.OUT), mosi=Pin(mosi, Pin.OUT), miso=Pin(miso, Pin.OUT))
+disp=MyDisplay(spi)
+disp.printLogo()
+disp.printText('UN Campus', vspace=1, hspace=8)
