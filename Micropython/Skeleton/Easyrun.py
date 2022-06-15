@@ -14,13 +14,6 @@ import math
 import time
 
 
-lector_1 = 1
-lector_2 = 2
-lector_3 = 3
-
-card_id_L_1 = "0"
-card_id_L_3 = "0"
-card_id_L_2 = "0"
 
 Puesto_de_prestamo = 'CyT' 
 #Puesto_de_prestamo = '30' 
@@ -44,11 +37,10 @@ Bicicleta_2.persona = Persona_2
 
 Bike_avail = [Bicicleta_1, Bicicleta_2]
 
-Bike_avail[1].candado.ubicacion = 'CyT'
 
 for i in range(1, len(Bike_avail)):
-    Bike_avail[1].candado.n_candado = i
-
+    Bike_avail[i].candado.ubicacion = 'CyT'
+    Bike_avail[i].candado.n_candado = i+1
 
 
 timer_1 = machine.Timer(0)
@@ -59,6 +51,7 @@ interruptCounter_1 = 0
 
 def Reporte_bike_1(pin):
     Bike_avail[0].danos = True # No dañada = False/ Dañada = True
+    Bike_avail[0].estado = False
     with open('Devolucion_auto.json') as Devolucion:
             data_send_devolucion = json.load(Devolucion)
             data_send_devolucion['id_bike'] = Bike_avail[0].iD
@@ -72,6 +65,7 @@ Danos_Bike_1.irq(trigger=machine.Pin.IRQ_FALLING, handler=Reporte_bike_1)
 
 def Reporte_bike_2(pin):
     Bike_avail[1].danos = True # No dañada = False/ Dañada = True
+    Bike_avail[1].estado = False
     with open('Devolucion_auto.json') as Devolucion:
             data_send_devolucion = json.load(Devolucion)
             data_send_devolucion['id_bike'] = Bike_avail[1].iD
@@ -91,7 +85,7 @@ def Interrupt_T1(timer_1):
     card_id_Bike_interr_1 = Perifericos.lectura(Bicicleta_entrega+2)
     if(card_id_Bike_interr_1 == None):
         timer_1.deinit()
-        Bike_avail[i].candado.estado = 'vacio'
+        Bike_avail[Bicicleta_entrega].candado.estado = 'vacio'
         interruptCounter_1 = 0
         print("Se llevaron la cicla sumercé")
         with open('Prestamo_normal.json') as Prestamo_normal:
@@ -99,6 +93,7 @@ def Interrupt_T1(timer_1):
             data_send_prestamo_normal['id_bike'] = Bike_avail[Bicicleta_entrega].iD
             data_send_prestamo_normal['cedula'] = Bike_avail[Bicicleta_entrega].persona.cedula
             #### Enviar data_send_prestamo_normal de carnet al SI, hacer un while para esperar confirmacion de receprcion
+        Bike_avail[Bicicleta_entrega].persona.reset()
         
     if(interruptCounter_1>=3):
         Perifericos.servo_close(Bicicleta_entrega+1)
@@ -109,6 +104,7 @@ def Interrupt_T1(timer_1):
             data_send_devolucion['danos'] = Bike_avail[Bicicleta_entrega].danos
             data_send_devolucion['punto_de_prestamo'] = Bike_avail[Bicicleta_entrega].candado.ubicacion
             #### Enviar data_send_devolucion de carnet al SI, hacer un while para esperar confirmacion de receprcion
+        Bike_avail[Bicicleta_entrega].persona.reset()
         timer_1.deinit()
      
 def Interrupt_T2(timer_2):
@@ -121,21 +117,27 @@ def Interrupt_T2(timer_2):
         data_send_prestamo_normal['cedula'] = Bike_avail[0].persona.cedula
         data_send_devolucion['id_bikes'] = vect_aux
         data_send_devolucion['punto_de_prestamo'] = Bike_avail[i].candado.ubicacion
-        
+    Bike_avail[i].persona.reset()    
 
+
+#Se dan las condiciones iniciales, no hay bicicletas en el puesto
 Bike_avail[0].estado=True
 Bike_avail[1].estado=True
 
+Bike_avail[0].danos=False
+Bike_avail[1].danos=False
 
 Bike_avail[0].candado.estado = 'vacio'
 Bike_avail[1].candado.estado = 'vacio'
+
+
 
 #Abran el Jhonny
 
 while True:  
     ##Aqui va la revision de las interrupciones por hardware
     #Poner RST
-    card_id_L_1 = Perifericos.lectura(lector_1)
+    card_id_L_1 = Perifericos.lectura(1)
     if(card_id_L_1 != None):
         print (card_id_L_1)
         with open('IDcarnet.json') as IDcarnet:
@@ -150,7 +152,7 @@ while True:
             if(data_prueba_persona['user_type'] == "Estudiante"):
                 if((data_prueba_persona['restricciones'] != "True") and (data_prueba_persona['current_use'] == "False")):
                     for i in range(0, len(Bike_avail)):
-                        if ((Bike_avail[i].estado == False)):
+                        if ((Bike_avail[i].estado == False) and (Bike_avail[i].danos != False)):
                             Bike_avail[i].persona.cedula = data_prueba_persona['cedula']
                             print(Bike_avail[i].estado != False)
                             disp.printShortText('Buenas') #Fino

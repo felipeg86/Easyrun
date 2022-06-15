@@ -1,7 +1,7 @@
 class Bicicleta:
     def __init__ (self):
         self.iD = 0 # Nro. Tag bicicleta
-        self.estado = False # No disponible(Prestada) = True/  Disponible(No prestada)= False
+        self.estado = True # No disponible(Prestada) = True/  Disponible(No prestada)= False
         self.danos = False # No dañada = False/ Dañada = True
         self.candado = 'Indefinido' #instanciaciones de objetos
         self.persona = 'Indefinido' #instanciaciones de objetos
@@ -9,7 +9,7 @@ class Bicicleta:
     def reset(self):
         self.iD = 0
         self.estado = False
-        self.persona = 'Indefinido' 
+
 
 
 
@@ -20,7 +20,7 @@ class Candado:
         self.n_candado = 0 #Nro. del candado 
 
     def reset(self):
-        self.estado = False
+        self.estado = 'indefinido'
         
 
 class Persona:
