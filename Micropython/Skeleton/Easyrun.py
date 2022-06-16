@@ -38,7 +38,7 @@ Bicicleta_2.persona = Persona_2
 Bike_avail = [Bicicleta_1, Bicicleta_2]
 
 
-for i in range(1, len(Bike_avail)):
+for i in range(0, len(Bike_avail)):
     Bike_avail[i].candado.ubicacion = 'CyT'
     Bike_avail[i].candado.n_candado = i+1
 
@@ -112,6 +112,8 @@ def Interrupt_T2(timer_2):
     vect_aux = ["Buenos", "dias"]
     for k in range(0, len(Bike_avail)):
         vect_aux[k] = Perifericos.lectura(k+2)
+        if (vect_aux[k]!=None):
+            Perifericos.servo_close(k+1)    
     with open('Prestamo_operario.json') as Prestamo_operario:
         data_send_devolucion = json.load(Prestamo_operario)
         data_send_prestamo_normal['cedula'] = Bike_avail[0].persona.cedula
@@ -152,10 +154,10 @@ while True:
             if(data_prueba_persona['user_type'] == "Estudiante"):
                 if((data_prueba_persona['restricciones'] != "True") and (data_prueba_persona['current_use'] == "False")):
                     for i in range(0, len(Bike_avail)):
-                        if ((Bike_avail[i].estado == False) and (Bike_avail[i].danos != False)):
+                        if ((Bike_avail[i].estado == False) and (Bike_avail[i].danos != True)):
                             Bike_avail[i].persona.cedula = data_prueba_persona['cedula']
                             print(Bike_avail[i].estado != False)
-                            disp.printShortText('Buenas') #Fino
+                            disp.printShortText("Tome la bicicleta en "+ str(Bike_avail[i].candado.n_candado)) #Fino
                             #mostrar en pantalla el numero de la bicicleta escogido
                             
                             Perifericos.servo_open(i+1)
@@ -177,7 +179,7 @@ while True:
                         Bike_avail[i].candado.estado = 'en_espera'
                         Bike_avail[i].estado = True
 
-                    timer_2.init(period=20000, mode=machine.Timer.PERIODIC, callback=Interrupt_T2) #Activación de interrupción para prestamo a operario 
+                    timer_2.init(period=600000, mode=machine.Timer.PERIODIC, callback=Interrupt_T2) #Activación de interrupción para prestamo a operario 
         else:
             disp.printShortText('No esta registrado') #Fino
     else:
