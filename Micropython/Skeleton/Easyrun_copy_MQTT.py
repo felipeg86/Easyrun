@@ -1,7 +1,10 @@
 
+from Archivos_ESP.Messages import *
 import Perifericos
 from Perifericos import MyDisplay
 import json
+from MQTTconnection import *
+from Messages import *
 import machine
 from Clases_Easyrun import Bicicleta, Candado, Persona
 from ili9341 import Display, color565
@@ -48,15 +51,32 @@ timer_2 = machine.Timer(0)
 Bicicleta_entrega = 0
 interruptCounter_1 = 0
 
+# MQTT
+
+client_id = 'ESP32'
+mqtt_server = 'broker.mqttdashboard.com'
+last_message = 0
+message_interval = 1
+received = True
+
+conect_to("Nombre de la red","Contraseña")
+
+try:
+  client = connect_and_subscribe()
+except OSError as e:
+  restart_and_reconnect()
+
+
 def Reporte_bike_1(pin):
     Bike_avail[0].danos = True # No dañada = False/ Dañada = True
     Bike_avail[0].estado = False
     with open('Devolucion_auto.json') as Devolucion:
-            data_send_devolucion = json.load(Devolucion)
-            data_send_devolucion['id_bike'] = Bike_avail[0].iD
-            data_send_devolucion['danos'] = Bike_avail[0].danos
-            data_send_devolucion['punto_de_prestamo'] = Bike_avail[0].candado.ubicacion
-            #### Enviar data_send_devolucion de carnet al SI, hacer un while para esperar confirmacion
+        data_send_devolucion = json.load(Devolucion)
+        data_send_devolucion['id_bike'] = Bike_avail[0].iD
+        data_send_devolucion['danos'] = Bike_avail[0].danos
+        data_send_devolucion['punto_de_prestamo'] = Bike_avail[0].candado.ubicacion
+        #### Enviar data_send_devolucion de carnet al SI, hacer un while para esperar confirmacion
+    client.publish(b'SI/Easyrun/Devolver',receive(Bike_avail[0].iD, Bike_avail[0].candado.ubicacion, Bike_avail[0].danos), True, 1) 
     print("Esto es una interrupcion externa")
 
 Danos_Bike_1 = machine.Pin(25, machine.Pin.IN, machine.Pin.PULL_DOWN)
@@ -66,11 +86,16 @@ def Reporte_bike_2(pin):
     Bike_avail[1].danos = True # No dañada = False/ Dañada = True
     Bike_avail[1].estado = False
     with open('Devolucion_auto.json') as Devolucion:
-            data_send_devolucion = json.load(Devolucion)
-            data_send_devolucion['id_bike'] = Bike_avail[1].iD
-            data_send_devolucion['danos'] = Bike_avail[1].danos
-            data_send_devolucion['punto_de_prestamo'] = Bike_avail[1].candado.ubicacion
-            #### Enviar data_send_devolucion de carnet al SI, hacer un while para esperar confirmacion
+        data_send_devolucion = json.load(Devolucion)
+        data_send_devolucion['id_bike'] = Bike_avail[1].iD
+        data_send_devolucion['danos'] = Bike_avail[1].danos
+        data_send_devolucion['punto_de_prestamo'] = Bike_avail[1].candado.ubicacion
+        #### Enviar data_send_devolucion de carnet al SI, hacer un while para esperar confirmacion
+    client.publish(b'SI/Easyrun/Devolver',
+        recieve(Bike_avail[1].iD, 
+        Bike_avail[1].candado.ubicacion, 
+        Bike_avail[1].danos), 
+        True, 1) 
     print("Esto es una interrupcion externa_B2")
 
 Danos_Bike_2 = machine.Pin(26, machine.Pin.IN, machine.Pin.PULL_DOWN)
@@ -92,6 +117,10 @@ def Interrupt_T1(timer_1):
             data_send_prestamo_normal['id_bike'] = Bike_avail[Bicicleta_entrega].iD
             data_send_prestamo_normal['cedula'] = Bike_avail[Bicicleta_entrega].persona.cedula
             #### Enviar data_send_prestamo_normal de carnet al SI, hacer un while para esperar confirmacion de receprcion
+        client.publish(b'SI/Easyrun/Prestar',
+            borrow(Bike_avail[Bicicleta_entrega].persona.cedula, 
+            Bike_avail[Bicicleta_entrega].iD),
+            True, 1) 
         Bike_avail[Bicicleta_entrega].persona.reset()
         
     if(interruptCounter_1>=3):
@@ -103,6 +132,10 @@ def Interrupt_T1(timer_1):
             data_send_devolucion['danos'] = Bike_avail[Bicicleta_entrega].danos
             data_send_devolucion['punto_de_prestamo'] = Bike_avail[Bicicleta_entrega].candado.ubicacion
             #### Enviar data_send_devolucion de carnet al SI, hacer un while para esperar confirmacion de receprcion
+        client.publish(b'SI/Easyrun/Devolver',
+            recieve(Bike_avail[Bicicleta_entrega].iD, 
+            Bike_avail[Bicicleta_entrega].candado.ubicacion, 
+            Bike_avail[Bicicleta_entrega].danos), True, 1) 
         Bike_avail[Bicicleta_entrega].persona.reset()
         timer_1.deinit()
      
@@ -114,10 +147,14 @@ def Interrupt_T2(timer_2):
         if (vect_aux[k]!=None):
             Perifericos.servo_close(k+1)    
     with open('Prestamo_operario.json') as Prestamo_operario:
-        data_send_devolucion = json.load(Prestamo_operario)
-        data_send_prestamo_normal['cedula'] = Bike_avail[0].persona.cedula
-        data_send_devolucion['id_bikes'] = vect_aux
-        data_send_devolucion['punto_de_prestamo'] = Bike_avail[i].candado.ubicacion
+        data_send_devolucion_operario = json.load(Prestamo_operario)
+        data_send_prestamo_operario['cedula'] = Bike_avail[0].persona.cedula
+        data_send_devolucion_operario['id_bikes'] = vect_aux
+        data_send_devolucion_operario['punto_de_prestamo'] = Bike_avail[0].candado.ubicacion
+    client.publish(b'SI/Easyrun/Prestar',
+        distribute(Bike_avail[0].persona.cedula, 
+        vect_aux, Bike_avail[0].candado.ubicacion), 
+        True, 1) 
     Bike_avail[i].persona.reset()    
 
 
@@ -145,7 +182,10 @@ while True:
             data = json.load(IDcarnet)
             data['id'] = card_id_L_1  ###################### DATO PARA MANDAR POR WIFI EN SI1
             #### Enviar dato de carnet al SI, hacer un while para esperar la recepcion del dato y
-            #### cuando este llegue seguir con el codigo
+            #### cuando este llegue seguir con el codigo        
+        client.publish(b'SI/Validar',id(str(card_id_L_1)))
+        ## Cuidado en dado caso poner un time.sleep pero desesperado 
+        client.check_msg()
 
         with open('Prueba_persona.json') as Prueba_persona:
             data_prueba_persona = json.load(Prueba_persona)
@@ -202,4 +242,9 @@ while True:
                         data_send_devolucion['id_bike'] = Bike_avail[i].iD
                         data_send_devolucion['danos'] = Bike_avail[i].danos
                         data_send_devolucion['punto_de_prestamo'] = Bike_avail[i].candado.ubicacion
+                    client.publish(b'SI/Easyrun/Devolver',
+                        recieve(Bike_avail[i].iD, 
+                        Bike_avail[i].candado.ubicacion, 
+                        Bike_avail[i].danos), 
+                        True, 1) 
                         #### Enviar data_send_devolucion de carnet al SI, hacer un while para esperar confirmacion 
