@@ -20,6 +20,9 @@ rdr1 = MFRC522(spi=spi, gpioRst=4, gpioCs=5)
 rdr2 = MFRC522(spi=spi, gpioRst=27, gpioCs=2)
 rdr3 = MFRC522(spi=spi, gpioRst=21, gpioCs=22)
 
+def get_spi():
+    return spi
+
 def lectura(numero_lector):
 
     print("Place card")
@@ -86,46 +89,7 @@ def servo_close(num_servo):
         servo.duty(0)
     
 
-class MyDisplay:
-    def __init__(self):
-        self.dc=15
-        self.cs=12
-        self.rst=14
-        self.display=Display(spi, dc=Pin(self.dc), cs=Pin(self.cs), rst=Pin(self.rst))
-        self.font = XglcdFont('Broadway17x15.c', 17, 15)
-        self.message='Bienvenido'
-    def spiInit(self, sck, mosi, miso, dc, cs, rst, baudrate):
-        self.display = Display(spi, dc=Pin(dc), cs=Pin(cs), rst=Pin(rst))
-        self.font = XglcdFont('fonts/Broadway17x15.c', 17, 15)
-    def printShortText(self, text):
-        self.display.draw_text(0, 0, text, self.font, color565(255, 255, 255), color565(204, 53, 94))# x, y, texto, fuente, color de letra, color de fondo de letra
-    def printText(self, text):
-        print('Debe imprimir texto')
-        self.display.clear(color565(204, 53, 94)) # color de fondo en RGB de 24 bits
-        self.display.draw_text(0, 0, '5', self.font, color565(255, 255, 255), color565(204, 53, 94))# x, y, texto, fuente, color de letra, color de fondo de letra
-        self.display.draw_text(10, 0, '2', self.font, color565(255, 255, 255), color565(204, 53, 94))# x, y, texto, fuente, color de letra, color de fondo de letra
-        ceiling=math.ceil(len(text)/23)
-        counter=1
-        if ceiling>1:
-            aux_matrix=' '
-            while len(text)>23:
-                aux_matrix=[aux_matrix,
-                            text[1:23]]
-                text=text[24:len(text)]
-                counter+=1
-            if len(text)>0:
-                aux_matrix=[aux_matrix,
-                            text[1:len(text)]]
-                counter+=1
-        else:
-            aux_matrix=text
-            
-        for x in range(counter):
-            print(aux_matrix[counter])
-        time.sleep(15)
-        self.display.cleanup()
-        self.display.reset_mpy()
-        
+
 """
 About printing text:
 * 14 is recommended as difference between two lines 'y' coordinates for broadway font.

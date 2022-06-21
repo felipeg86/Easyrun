@@ -1,14 +1,13 @@
 
 import Perifericos
-from Perifericos import MyDisplay
 import json
 import machine
 from Clases_Easyrun import Bicicleta, Candado, Persona
 from ili9341 import Display, color565
-from machine import Pin, SPI
+from machine import Pin, SPI, PWM
 from xglcd_font import XglcdFont
 from machine import SoftSPI
-
+from displayLib import MyDisplay
 import math
 import time
 
@@ -17,7 +16,7 @@ import time
 Puesto_de_prestamo = 'CyT' 
 #Puesto_de_prestamo = '30' 
 
-disp=MyDisplay()
+disp=MyDisplay(Perifericos.get_spi())
 
 Persona_1 = Persona()
 Persona_2 = Persona()

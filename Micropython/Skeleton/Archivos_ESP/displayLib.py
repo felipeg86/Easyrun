@@ -10,57 +10,72 @@ import time
 #display = Display(spi, dc=Pin(4), cs=Pin(22), rst=Pin(15))
 
 class MyDisplay:
-    def __init__(self):
-        self.sck=18
-        self.mosi=23
-        self.miso=19
+    def __init__(self, spi):
         self.dc=15
         self.cs=12
         self.rst=14
-        self.baudrate=1000000
-        self.spi=SoftSPI(baudrate=1000000, polarity=0, phase=0, sck=Pin(self.sck, Pin.OUT), mosi=Pin(self.mosi, Pin.OUT), miso=Pin(self.miso, Pin.OUT))
+        self.spi=spi
         self.display=Display(self.spi, dc=Pin(self.dc), cs=Pin(self.cs), rst=Pin(self.rst))
-        self.font = XglcdFont('Broadway17x15.c', 17, 15)
+        self.font = XglcdFont('EspressoDolce18x24.c', 18, 24)
+        # Chévere unispace, espresso, arcade
         self.message='Bienvenido'
-    def spiInit(self, sck, mosi, miso, dc, cs, rst, baudrate):
-        self.sck = Pin(sck, Pin.OUT)
-        self.mosi = Pin(mosi, Pin.OUT)
-        self.miso = Pin(miso, Pin.OUT)
+    def spiInit(self, spi, dc=18, cs=15, rst=4, baudrate=1000000):
         self.dc=dc
         self.cs=cs
         self.rst=rst
         self.baudrate=baudrate
-        self.spi = SoftSPI(baudrate=baudrate, polarity=0, phase=0, sck=Pin(sck, Pin.OUT), mosi=Pin(mosi, Pin.OUT), miso=Pin(miso, Pin.OUT))
+        self.spi = spi
         self.display = Display(spi, dc=Pin(dc), cs=Pin(cs), rst=Pin(rst))
-        self.font = XglcdFont('fonts/Broadway17x15.c', 17, 15)
+        self.font = XglcdFont('fonts/EspressoDolce18x24.c', 18, 24)
     def printShortText(self, text):
         self.display.draw_text(0, 0, text, self.font, color565(255, 255, 255), color565(204, 53, 94))# x, y, texto, fuente, color de letra, color de fondo de letra
-    def printText(self, text):
+    def printText(self, text, vspace=0, hspace=0):
         print('Debe imprimir texto')
-        self.display.clear(color565(204, 53, 94)) # color de fondo en RGB de 24 bits
-        self.display.draw_text(0, 0, '5', self.font, color565(255, 255, 255), color565(204, 53, 94))# x, y, texto, fuente, color de letra, color de fondo de letra
-        self.display.draw_text(10, 0, '2', self.font, color565(255, 255, 255), color565(204, 53, 94))# x, y, texto, fuente, color de letra, color de fondo de letra
-        ceiling=math.ceil(len(text)/23)
-        counter=1
+        
+        # Font depending parameters
+        lineCharacters=20-hspace; # Set 23 for Broadway
+        ypoints=20 # 14 for Broadway
+        xpoints=11 # 9 for Broadway
+        #
+        
+        ceiling=math.ceil(len(text)/lineCharacters)
+        counter=0
         if ceiling>1:
-            aux_matrix=' '
-            while len(text)>23:
-                aux_matrix=[aux_matrix,
-                            text[1:23]]
-                text=text[24:len(text)]
+            aux_matrix=['']*ceiling
+            while len(text)>lineCharacters:
+                aux_matrix[counter]=text[0:lineCharacters]
+                text=text[lineCharacters:len(text)]
                 counter+=1
             if len(text)>0:
-                aux_matrix=[aux_matrix,
-                            text[1:len(text)]]
+                aux_matrix[counter]=text[0:len(text)]
                 counter+=1
+                
+            for x in range(counter):
+                spaces=lineCharacters-len(aux_matrix[x])
+               # print(aux_matrix[x][1])
+                spaces=math.floor(spaces/2)
+                char=' '
+                if x>0:
+                    if x<counter-1:
+                        if(aux_matrix[x+1][0]!=' ')&(aux_matrix[x][len(aux_matrix[x])-1]!=' '):
+                            char='-'
+                else:
+                    if aux_matrix[x+1][1]!=' ':
+                        char='-'
+                self.display.draw_text((hspace+spaces)*xpoints, (vspace+x)*ypoints, aux_matrix[x]+char, self.font, color565(0, 0, 0), color565(255, 255, 255))
+
         else:
-            aux_matrix=text
-            
-        for x in range(counter):
-            print(aux_matrix[counter])
+            self.display.draw_text((hspace)*xpoints, (vspace)*ypoints, text, self.font, color565(0, 0, 0), color565(255, 255, 255))
+
         time.sleep(15)
-        self.display.cleanup()
-        self.display.reset_mpy()
+      #  self.display.cleanup()
+       # self.display.reset_mpy()
+       
+    def printLogo(self):
+        self.display.clear(color565(255, 255, 255)) # color de fondo en RGB de 24 bits
+        self.display.draw_image('images/unlogo64x64.raw', 4, 4, 64, 64)
+        
+        
         
 """
 About printing text:
