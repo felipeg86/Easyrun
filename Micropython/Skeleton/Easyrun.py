@@ -154,7 +154,7 @@ while True:
                     for i in range(0, len(Bike_avail)):
                         if ((Bike_avail[i].estado == False) and (Bike_avail[i].danos != True)):
                             Bike_avail[i].persona.cedula = data_prueba_persona['cedula']
-                            print(Bike_avail[i].estado != False)
+                            #print(Bike_avail[i].estado != False)
                             disp.printShortText("Tome la bicicleta en "+ str(Bike_avail[i].candado.n_candado)) #Fino
                             #mostrar en pantalla el numero de la bicicleta escogido
                             

@@ -64,28 +64,33 @@ def servo_open(num_servo):
     if num_servo == 1:
         servo = PWM(Pin(16))
         servo.freq(50)  #Hz
-        servo.duty(25)
-        time.sleep_ms(400)
+        for j in range (120,20,-5):
+            servo.duty(j)
+            time.sleep_ms(50)
         servo.duty(0)
     elif num_servo == 2:
         servo = PWM(Pin(17))  #configurar pin 21 para trabajar con PWM
         servo.freq(50)  #Hz
-        servo.duty(25)
-        time.sleep_ms(400)
+        for j in range (120,20,-5):
+            servo.duty(j)
+            time.sleep_ms(50)
+        servo.duty(0)
         servo.duty(0)
 
 def servo_close(num_servo):
     if num_servo == 1:
         servo = PWM(Pin(16))  #configurar pin 21 para trabajar con PWM
         servo.freq(50)  #Hz
-        servo.duty(135)
-        time.sleep_ms(400)
+        for j in range (20,120,5):
+            servo.duty(j)
+            time.sleep_ms(50)
         servo.duty(0)
     elif num_servo == 2:
         servo = PWM(Pin(17))  #configurar pin 21 para trabajar con PWM
         servo.freq(50)  #Hz
-        servo.duty(135)
-        time.sleep_ms(400)
+        for j in range (20,120,5):
+            servo.duty(j)
+            time.sleep_ms(50)
         servo.duty(0)
     
 
