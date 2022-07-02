@@ -130,6 +130,8 @@ Bike_avail[1].danos=False
 Bike_avail[0].candado.estado = 'vacio'
 Bike_avail[1].candado.estado = 'vacio'
 
+disp.printLogo()
+disp.printText('UN Campus', vspace=1, hspace=8)
 
 
 #Abran el Jhonny
@@ -155,7 +157,8 @@ while True:
                         if ((Bike_avail[i].estado == False) and (Bike_avail[i].danos != True)):
                             Bike_avail[i].persona.cedula = data_prueba_persona['cedula']
                             #print(Bike_avail[i].estado != False)
-                            disp.printShortText("Tome la bicicleta en "+ str(Bike_avail[i].candado.n_candado)) #Fino
+                            disp.printText('                ', vspace=6, hspace=1) 
+                            disp.printText("Tome la bicicleta en "+ str(Bike_avail[i].candado.n_candado), vspace=5, hspace=1) #Fino
                             #mostrar en pantalla el numero de la bicicleta escogido
                             
                             Perifericos.servo_open(i+1)
@@ -166,11 +169,12 @@ while True:
                             timer_1.init(period=10000, mode=machine.Timer.PERIODIC, callback=Interrupt_T1) #Activación de interrupción para prestamo   
                             break
                 else:
-                    disp.printShortText('Tiene restricciones') #Fino
+                    disp.printText('                ', vspace=6, hspace=1) 
+                    disp.printText('Tiene restricciones', vspace=5, hspace=1) #Fino
             elif (data_prueba_persona['user_type'] == "Operario"):
                 if(data_prueba_persona['restricciones'] != "True"):
-                    
-                    disp.printShortText('Puede retirar las bicicletas') #Fino
+                    disp.printText('                ', vspace=6, hspace=1) 
+                    disp.printText('Puede retirar las bicicletas', vspace=5, hspace=1) #Fino
                     for i in range(0, len(Bike_avail)):
                         Bike_avail[i].persona.cedula = data_prueba_persona['cedula']
                         Perifericos.servo_open(i+1)
@@ -179,11 +183,15 @@ while True:
 
                     timer_2.init(period=600000, mode=machine.Timer.PERIODIC, callback=Interrupt_T2) #Activación de interrupción para prestamo a operario 
         else:
-            disp.printShortText('No esta registrado') #Fino
+            disp.printText('                ', vspace=6, hspace=1) 
+            disp.printText('No esta registrado', vspace=5, hspace=1) #Fino
     else:
-        disp.printShortText('Aceque su carnet') #Fino
-        #imprimir "acerque su carnet de nuevo"
+        disp.printText('                ', vspace=6, hspace=1) 
+        disp.printText('Acerque su carnet ', vspace=5, hspace=1) #Fino
+        #print('El demorado soy yo')
+#imprimir "acerque su carnet de nuevo"
         for k in range(0, len(Bike_avail)):
+
             card_id_Bike = Perifericos.lectura(k+2)
             #print ("El ", k+2, "      ",card_id_Bike)
             if(card_id_Bike != None):

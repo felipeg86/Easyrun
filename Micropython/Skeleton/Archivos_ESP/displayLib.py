@@ -19,14 +19,14 @@ class MyDisplay:
         self.font = XglcdFont('EspressoDolce18x24.c', 18, 24)
         # Chévere unispace, espresso, arcade
         self.message='Bienvenido'
-    def spiInit(self, spi, dc=18, cs=15, rst=4, baudrate=1000000):
+    def spiInit(self, spi, dc=15, cs=12, rst=14, baudrate=1000000):
         self.dc=dc
         self.cs=cs
         self.rst=rst
         self.baudrate=baudrate
         self.spi = spi
         self.display = Display(spi, dc=Pin(dc), cs=Pin(cs), rst=Pin(rst))
-        self.font = XglcdFont('fonts/EspressoDolce18x24.c', 18, 24)
+        self.font = XglcdFont('EspressoDolce18x24.c', 18, 24)
     def printShortText(self, text):
         self.display.draw_text(0, 0, text, self.font, color565(255, 255, 255), color565(204, 53, 94))# x, y, texto, fuente, color de letra, color de fondo de letra
     def printText(self, text, vspace=0, hspace=0):
@@ -62,18 +62,20 @@ class MyDisplay:
                 else:
                     if aux_matrix[x+1][1]!=' ':
                         char='-'
+                #clearing=' '*len(aux_matrix[x]+char)
+                #self.display.draw_text((hspace+spaces)*xpoints, (vspace+x)*ypoints, clearing, self.font, color565(0, 0, 0), color565(255, 255, 255))
                 self.display.draw_text((hspace+spaces)*xpoints, (vspace+x)*ypoints, aux_matrix[x]+char, self.font, color565(0, 0, 0), color565(255, 255, 255))
 
         else:
             self.display.draw_text((hspace)*xpoints, (vspace)*ypoints, text, self.font, color565(0, 0, 0), color565(255, 255, 255))
 
-        time.sleep(15)
       #  self.display.cleanup()
        # self.display.reset_mpy()
        
     def printLogo(self):
+        print('Imprime logo')
         self.display.clear(color565(255, 255, 255)) # color de fondo en RGB de 24 bits
-        self.display.draw_image('images/unlogo64x64.raw', 4, 4, 64, 64)
+        self.display.draw_image('unlogo64x64.raw', 4, 4, 64, 64)
         
         
         
