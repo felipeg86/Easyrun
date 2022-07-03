@@ -138,77 +138,77 @@ disp.printText('UN Campus', vspace=1, hspace=8)
 
 
 
-while True:  
-    ##Aqui va la revision de las interrupciones por hardware
-    #Poner RST
-    card_id_L_1 = Perifericos.lectura(1)
-    if(card_id_L_1 != None):
-        print (card_id_L_1)
-        with open('IDcarnet.json') as IDcarnet:
-            data = json.load(IDcarnet)
-            data['id'] = card_id_L_1  ###################### DATO PARA MANDAR POR WIFI EN SI1
-            #### Enviar dato de carnet al SI, hacer un while para esperar la recepcion del dato y
-            #### cuando este llegue seguir con el codigo
-
-        with open('Prueba_persona.json') as Prueba_persona:
-            data_prueba_persona = json.load(Prueba_persona)
-        if(data_prueba_persona['cedula'] != "0"): ##NO OLVIDAR: COMPARACIONES CON JSON SE HACEN EN STRING
-            if(data_prueba_persona['user_type'] == "Estudiante"):
-                if((data_prueba_persona['restricciones'] != "True") and (data_prueba_persona['current_use'] == "False")):
-                    for i in range(0, len(Bike_avail)):
-                        if ((Bike_avail[i].estado == False) and (Bike_avail[i].danos != True)):
-                            Bike_avail[i].persona.cedula = data_prueba_persona['cedula']
-                            #print(Bike_avail[i].estado != False)
-                            disp.printText('                ', vspace=6, hspace=1) 
-                            disp.printText("Tome la bicicleta en "+ str(Bike_avail[i].candado.n_candado), vspace=5, hspace=1) #Fino
-                            #mostrar en pantalla el numero de la bicicleta escogido
-                            
-                            Perifericos.servo_open(i+1)
-                            Bike_avail[i].candado.estado = 'en_espera'
-                            Bike_avail[i].estado = True
-                            
-                            Bicicleta_entrega=i
-                            timer_1.init(period=10000, mode=machine.Timer.PERIODIC, callback=Interrupt_T1) #Activación de interrupción para prestamo   
-                            break
-                else:
-                    disp.printText('                ', vspace=6, hspace=1) 
-                    disp.printText('Tiene restricciones', vspace=5, hspace=1) #Fino
-            elif (data_prueba_persona['user_type'] == "Operario"):
-                if(data_prueba_persona['restricciones'] != "True"):
-                    disp.printText('                ', vspace=6, hspace=1) 
-                    disp.printText('Puede retirar las bicicletas', vspace=5, hspace=1) #Fino
-                    for i in range(0, len(Bike_avail)):
-                        Bike_avail[i].persona.cedula = data_prueba_persona['cedula']
-                        Perifericos.servo_open(i+1)
-                        Bike_avail[i].candado.estado = 'en_espera'
-                        Bike_avail[i].estado = True
-
-                    timer_2.init(period=600000, mode=machine.Timer.PERIODIC, callback=Interrupt_T2) #Activación de interrupción para prestamo a operario 
-        else:
-            disp.printText('                ', vspace=6, hspace=1) 
-            disp.printText('No esta registrado', vspace=5, hspace=1) #Fino
-    else:
-        disp.printText('                ', vspace=6, hspace=1) 
-        disp.printText('Acerque su carnet ', vspace=5, hspace=1) #Fino
-        #print('El demorado soy yo')
-#imprimir "acerque su carnet de nuevo"
-        for k in range(0, len(Bike_avail)):
-
-            card_id_Bike = Perifericos.lectura(k+2)
-            #print ("El ", k+2, "      ",card_id_Bike)
-            if(card_id_Bike != None):
-                print(k+2, "Lector    ", card_id_Bike)
-                if(Bike_avail[k].candado.estado == 'vacio'):
-                    
-                    Perifericos.servo_close(k+1)
-                    Bike_avail[k].candado.estado = 'ocupado'
-                    print(Bike_avail[k].candado.estado)
-                    Bike_avail[k].iD = card_id_Bike
-                    Bike_avail[k].estado = False # No disponible(Prestada) = True/  Disponible(No prestada)= False
-                    Bike_avail[k].danos = False # No dañada = False/ Dañada = True
-                    with open('Devolucion_auto.json') as Devolucion:
-                        data_send_devolucion = json.load(Devolucion)
-                        data_send_devolucion['id_bike'] = Bike_avail[i].iD
-                        data_send_devolucion['danos'] = Bike_avail[i].danos
-                        data_send_devolucion['punto_de_prestamo'] = Bike_avail[i].candado.ubicacion
-                        #### Enviar data_send_devolucion de carnet al SI, hacer un while para esperar confirmacion 
+# while True:  
+#     ##Aqui va la revision de las interrupciones por hardware
+#     #Poner RST
+#     card_id_L_1 = Perifericos.lectura(1)
+#     if(card_id_L_1 != None):
+#         print (card_id_L_1)
+#         with open('IDcarnet.json') as IDcarnet:
+#             data = json.load(IDcarnet)
+#             data['id'] = card_id_L_1  ###################### DATO PARA MANDAR POR WIFI EN SI1
+#             #### Enviar dato de carnet al SI, hacer un while para esperar la recepcion del dato y
+#             #### cuando este llegue seguir con el codigo
+# 
+#         with open('Prueba_persona.json') as Prueba_persona:
+#             data_prueba_persona = json.load(Prueba_persona)
+#         if(data_prueba_persona['cedula'] != "0"): ##NO OLVIDAR: COMPARACIONES CON JSON SE HACEN EN STRING
+#             if(data_prueba_persona['user_type'] == "Estudiante"):
+#                 if((data_prueba_persona['restricciones'] != "True") and (data_prueba_persona['current_use'] == "False")):
+#                     for i in range(0, len(Bike_avail)):
+#                         if ((Bike_avail[i].estado == False) and (Bike_avail[i].danos != True)):
+#                             Bike_avail[i].persona.cedula = data_prueba_persona['cedula']
+#                             #print(Bike_avail[i].estado != False)
+#                             disp.printText('                ', vspace=6, hspace=1) 
+#                             disp.printText("Tome la bicicleta en "+ str(Bike_avail[i].candado.n_candado), vspace=5, hspace=1) #Fino
+#                             #mostrar en pantalla el numero de la bicicleta escogido
+#                             
+#                             Perifericos.servo_open(i+1)
+#                             Bike_avail[i].candado.estado = 'en_espera'
+#                             Bike_avail[i].estado = True
+#                             
+#                             Bicicleta_entrega=i
+#                             timer_1.init(period=10000, mode=machine.Timer.PERIODIC, callback=Interrupt_T1) #Activación de interrupción para prestamo   
+#                             break
+#                 else:
+#                     disp.printText('                ', vspace=6, hspace=1) 
+#                     disp.printText('Tiene restricciones', vspace=5, hspace=1) #Fino
+#             elif (data_prueba_persona['user_type'] == "Operario"):
+#                 if(data_prueba_persona['restricciones'] != "True"):
+#                     disp.printText('                ', vspace=6, hspace=1) 
+#                     disp.printText('Puede retirar las bicicletas', vspace=5, hspace=1) #Fino
+#                     for i in range(0, len(Bike_avail)):
+#                         Bike_avail[i].persona.cedula = data_prueba_persona['cedula']
+#                         Perifericos.servo_open(i+1)
+#                         Bike_avail[i].candado.estado = 'en_espera'
+#                         Bike_avail[i].estado = True
+# 
+#                     timer_2.init(period=600000, mode=machine.Timer.PERIODIC, callback=Interrupt_T2) #Activación de interrupción para prestamo a operario 
+#         else:
+#             disp.printText('                ', vspace=6, hspace=1) 
+#             disp.printText('No esta registrado', vspace=5, hspace=1) #Fino
+#     else:
+#         disp.printText('                ', vspace=6, hspace=1) 
+#         disp.printText('Acerque su carnet ', vspace=5, hspace=1) #Fino
+#         #print('El demorado soy yo')
+# #imprimir "acerque su carnet de nuevo"
+#         for k in range(0, len(Bike_avail)):
+# 
+#             card_id_Bike = Perifericos.lectura(k+2)
+#             #print ("El ", k+2, "      ",card_id_Bike)
+#             if(card_id_Bike != None):
+#                 print(k+2, "Lector    ", card_id_Bike)
+#                 if(Bike_avail[k].candado.estado == 'vacio'):
+#                     
+#                     Perifericos.servo_close(k+1)
+#                     Bike_avail[k].candado.estado = 'ocupado'
+#                     print(Bike_avail[k].candado.estado)
+#                     Bike_avail[k].iD = card_id_Bike
+#                     Bike_avail[k].estado = False # No disponible(Prestada) = True/  Disponible(No prestada)= False
+#                     Bike_avail[k].danos = False # No dañada = False/ Dañada = True
+#                     with open('Devolucion_auto.json') as Devolucion:
+#                         data_send_devolucion = json.load(Devolucion)
+#                         data_send_devolucion['id_bike'] = Bike_avail[i].iD
+#                         data_send_devolucion['danos'] = Bike_avail[i].danos
+#                         data_send_devolucion['punto_de_prestamo'] = Bike_avail[i].candado.ubicacion
+#                         #### Enviar data_send_devolucion de carnet al SI, hacer un while para esperar confirmacion 

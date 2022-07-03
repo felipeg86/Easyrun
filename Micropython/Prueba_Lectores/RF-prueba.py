@@ -28,7 +28,7 @@ spi1.init()
 #spi2.init()
 
 rdr1 = MFRC522(spi=spi1, gpioRst=4, gpioCs=5)
-rdr2 = MFRC522(spi=spi1, gpioRst=15, gpioCs=22)
+rdr2 = MFRC522(spi=spi1, gpioRst=27, gpioCs=2)
 print("Place card")
 
 # RST_Lector3=Pin 21

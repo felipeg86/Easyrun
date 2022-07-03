@@ -9,8 +9,9 @@ from machine import SoftSPI
 # display
 from time import sleep
 from ili9341 import Display, color565
+from displayLib import MyDisplay
 from machine import Pin, SPI
-from xglcd_font import XglcdFont
+import xglcd_font
 
 sck1 = Pin(18, Pin.OUT)
 mosi1 = Pin(23, Pin.OUT)
@@ -22,26 +23,21 @@ spi1 = SoftSPI(baudrate=100000, polarity=0, phase=0, sck=sck1, mosi=mosi1, miso=
 sckd = Pin(18, Pin.OUT)
 mosid = Pin(23, Pin.OUT)
 misod = Pin(19, Pin.OUT)
-spid = SoftSPI(baudrate=100000, polarity=0, phase=0, sck=sckd, mosi=mosid, miso=misod)
-display = Display(spid, dc=Pin(4), cs=Pin(15), rst=Pin(21))
-broadway = XglcdFont('fonts/Broadway17x15.c', 17, 15)
+spid = SoftSPI(baudrate=1000000, polarity=0, phase=0, sck=sckd, mosi=mosid, miso=misod)
+disp=MyDisplay(spid)
+disp.printLogo()
+disp.printText('UN Campus', vspace=1, hspace=8)
 
 
 spi1.init()
 #spi2.init()
 
-rdr1 = MFRC522(spi=spi1, gpioRst=22, gpioCs=5)
+rdr1 = MFRC522(spi=spi1, gpioRst=4, gpioCs=5)
 #rdr2 = MFRC522(spi=spi1, gpioRst=15, gpioCs=22)
 #rdr3 = MFRC522(spi=spi1, gpioRst=21, gpioCs=14)
 print("Place card")
 
-display.clear(color565(204, 53, 94)) # color de fondo en RGB de 24 bits
-display.draw_text(55, 90, 'Hola', broadway, color565(255, 255, 255), color565(204, 53, 94))# x, y, texto, fuente, color de letra, color de fondo de letra
-display.draw_text(110, 120, 'que', broadway, color565(255, 255, 255), color565(204, 53, 94))
-display.draw_text(75, 150, 'mas', broadway, color565(255, 255, 255), color565(204, 53, 94))
     
-sleep(20)
-display.cleanup()
 
 while True:
     (stat, tag_type) = rdr1.request(rdr1.REQIDL)
