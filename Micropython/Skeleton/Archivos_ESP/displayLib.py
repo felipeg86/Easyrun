@@ -30,7 +30,7 @@ class MyDisplay:
     def printShortText(self, text):
         self.display.draw_text(0, 0, text, self.font, color565(255, 255, 255), color565(204, 53, 94))# x, y, texto, fuente, color de letra, color de fondo de letra
     def printText(self, text, vspace=0, hspace=0):
-        print('Debe imprimir texto')
+        #print('Debe imprimir texto')
         
         # Font depending parameters
         lineCharacters=20-hspace; # Set 23 for Broadway
@@ -73,7 +73,7 @@ class MyDisplay:
        # self.display.reset_mpy()
        
     def printLogo(self):
-        print('Imprime logo')
+        #print('Imprime logo')
         self.display.clear(color565(255, 255, 255)) # color de fondo en RGB de 24 bits
         self.display.draw_image('unlogo64x64.raw', 4, 4, 64, 64)
         

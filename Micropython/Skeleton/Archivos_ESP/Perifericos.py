@@ -13,7 +13,7 @@ sck=18
 mosi=23
 miso=19
 
-spi=SoftSPI(baudrate=1000000, polarity=0, phase=0, sck=Pin(sck, Pin.OUT), mosi=Pin(mosi, Pin.OUT), miso=Pin(miso, Pin.OUT))
+spi=SoftSPI(baudrate=200000, polarity=0, phase=0, sck=Pin(sck, Pin.OUT), mosi=Pin(mosi, Pin.OUT), miso=Pin(miso, Pin.OUT))
 spi.init()
 
 rdr1 = MFRC522(spi=spi, gpioRst=4, gpioCs=5)

@@ -81,6 +81,7 @@ def Interrupt_T1(timer_1):
     global interruptCounter_1
     interruptCounter_1 = interruptCounter_1 + 1
     card_id_Bike_interr_1 = Perifericos.lectura(Bicicleta_entrega+2)
+    print("Detectada aun Bicicleta para prestamo",card_id_Bike_interr_1)
     if(card_id_Bike_interr_1 == None):
         timer_1.deinit()
         Bike_avail[Bicicleta_entrega].candado.estado = 'vacio'
@@ -131,7 +132,7 @@ Bike_avail[0].candado.estado = 'vacio'
 Bike_avail[1].candado.estado = 'vacio'
 
 disp.printLogo()
-disp.printText('UN Campus', vspace=1, hspace=8)
+disp.printText('Easyrun', vspace=1, hspace=9)
 
 
 #Abran el Jhonny
