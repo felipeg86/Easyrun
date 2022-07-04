@@ -28,10 +28,9 @@ def borrow(source, ID_person, ID_cycle, place):
 # Function id is used to send the message needed in a get back
 # process to SI.
 
-def getBack(source, ID_person, ID_cycle, place, condition):
+def getBack(source, ID_cycle, place, condition):
     msg = {
         "Source": source,
-        "ID_person": ID_person,
         "ID_cycle": ID_cycle,
         "Place": place,
         "condition": condition

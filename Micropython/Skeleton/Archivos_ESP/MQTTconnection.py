@@ -11,6 +11,7 @@ mqtt_server = "broker.mqttdashboard.com"
 
 # Global variable use to save the information of the message income
 global msg_received
+msg_received = "Probe"
 
 # Function to restart the devices in case of failure
 def restart_and_reconnect():
@@ -22,6 +23,7 @@ def restart_and_reconnect():
 # Inside this, there is a while loop to ensure the connection
 def conect_to(SSID, PASSWORD):
     try:
+        print("Try")
         sta_if = nt.WLAN(nt.STA_IF)
         sta_if.active(True)
         led = Pin(2,Pin.OUT)
@@ -42,10 +44,14 @@ def conect_to(SSID, PASSWORD):
 # topic.
 
 def sub_cb(topic, msg):
+    global msg_received
     msg_dec = json.loads(msg)
     if msg_dec["Source"] == "SI":
         if topic == b'SI/Validate':
             msg_received = msg_dec
+
+def msgFromSI():
+    return msg_received
 
 # connect_and_subscribe connect the device to a MQTT broker ans set the
 # call back to received messages. Then, it's subscribe to the topics of

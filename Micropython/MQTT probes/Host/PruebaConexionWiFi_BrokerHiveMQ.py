@@ -51,31 +51,34 @@ def on_message(client, userdata, msg):
             print("-----------------------")
             print("Información recibida: ")
             print("-----------------------")
-            print('Carnet: ' + str(msg_dec["ID_Carnet"]))
-            print('ID del usuario: ' + str(msg_dec["ID"]))
-            print('¿Tiene una bici en prestamo? ' + str(msg_dec["Current_Use"]))
-            print('¿Tiene restricciones? ' + str(msg_dec["Restriction"]))
-            print('Tipo de usuario: ' + str(msg_dec["User_Type"]))
+            print(msg_dec)
+            # print('Carnet: ' + str(msg_dec["ID_Carnet"]))
+            # print('ID del usuario: ' + str(msg_dec["ID"]))
+            # print('¿Tiene una bici en prestamo? ' + str(msg_dec["Current_Use"]))
+            # print('¿Tiene restricciones? ' + str(msg_dec["Restriction"]))
+            # print('Tipo de usuario: ' + str(msg_dec["User_Type"]))
     elif msg.topic == 'SI/Easyrun/GetBack':
         if msg_dec["Source"] == "ESP32":
             print("-----------------------")
             print("Información recibida: ")
             print("-----------------------")
-            print('Carnet: ' + str(msg_dec["ID_Carnet"]))
-            print('ID del usuario: ' + str(msg_dec["ID"]))
-            print('¿Tiene una bici en prestamo? ' + str(msg_dec["Current_Use"]))
-            print('¿Tiene restricciones? ' + str(msg_dec["Restriction"]))
-            print('Tipo de usuario: ' + str(msg_dec["User_Type"]))
+            print(msg_dec)
+            # print('Carnet: ' + str(msg_dec["ID_Carnet"]))
+            # print('ID del usuario: ' + str(msg_dec["ID"]))
+            # print('¿Tiene una bici en prestamo? ' + str(msg_dec["Current_Use"]))
+            # print('¿Tiene restricciones? ' + str(msg_dec["Restriction"]))
+            # print('Tipo de usuario: ' + str(msg_dec["User_Type"]))
     elif msg.topic == 'SI/Easyrun/Distribute':
         if msg_dec["Source"] == "ESP32":
             print("-----------------------")
             print("Información recibida: ")
             print("-----------------------")
-            print('Carnet: ' + str(msg_dec["ID_Carnet"]))
-            print('ID del usuario: ' + str(msg_dec["ID"]))
-            print('¿Tiene una bici en prestamo? ' + str(msg_dec["Current_Use"]))
-            print('¿Tiene restricciones? ' + str(msg_dec["Restriction"]))
-            print('Tipo de usuario: ' + str(msg_dec["User_Type"]))
+            print(msg_dec)
+            # print('Carnet: ' + str(msg_dec["ID_Carnet"]))
+            # print('ID del usuario: ' + str(msg_dec["ID"]))
+            # print('¿Tiene una bici en prestamo? ' + str(msg_dec["Current_Use"]))
+            # print('¿Tiene restricciones? ' + str(msg_dec["Restriction"]))
+            # print('Tipo de usuario: ' + str(msg_dec["User_Type"]))
     else:
         print("No llegó nada")
 
@@ -91,7 +94,7 @@ client.on_message = on_message
 
 # subscribe 
 client.subscribe("SI/Validate", qos=1)
-client.subscribe("SI/Esayrun/#", qos=1)
+client.subscribe("SI/Easyrun/#", qos=1)
 
 client.loop_start()
 
