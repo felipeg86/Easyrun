@@ -45,10 +45,6 @@ def sub_cb(topic, msg):
     else:
         if topic == b'SI/Validar':
             msg_dec = msg_dec["Nombre"]
-        elif topic == b'SI/Easyrun/Prestar':
-            msg_dec = msg_dec["ID_person"]
-        elif topic == b'SI/Easyrun/Devolver':
-            msg_dec = msg_dec["ID_person"]
         else:
             msg_dec = msg_dec["ID_person"]
     print(msg_dec)

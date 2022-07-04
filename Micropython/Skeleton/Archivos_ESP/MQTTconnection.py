@@ -4,11 +4,9 @@ from machine import *
 import network as nt
 import json
 
-
 client_id = "ESP32"
 mqtt_server = "broker.mqttdashboard.com"
-user_mqtt = "JuanFelipe"
-password_mqtt = "xr8_G!pQiw2R6fC"
+global msg_received
 
 def restart_and_reconnect():
     print('Failed to connect. Reconnecting...')
@@ -33,33 +31,16 @@ def conect_to(SSID, PASSWORD):
 
 def sub_cb(topic, msg):
     msg_dec = json.loads(msg)
-    if msg_dec["Source"] == client_id:
+    if msg_dec["Source"] == "SI":
         if topic == b'SI/Validar':
-            msg_dec = msg_dec["ID_person"]
-        elif topic == b'SI/Easyrun/Prestar':
-            msg_dec = msg_dec["ID_person"]
-        elif topic == b'SI/Easyrun/Devolver':
-            msg_dec = msg_dec["ID_person"]
-        else:
-            msg_dec = msg_dec["ID_person"]
-    else:
-        if topic == b'SI/Validar':
-            msg_dec = msg_dec["Nombre"]
-        elif topic == b'SI/Easyrun/Prestar':
-            msg_dec = msg_dec["ID_person"]
-        elif topic == b'SI/Easyrun/Devolver':
-            msg_dec = msg_dec["ID_person"]
-        else:
-            msg_dec = msg_dec["ID_person"]
-    print(msg_dec)
-
+            msg_received = msg_dec["ID_person"]
 
 def connect_and_subscribe():
     global client_id, mqtt_server
     client = MQTTClient(client_id,"broker.mqttdashboard.com")
     client.connect()
     client.set_callback(sub_cb)
-    client.subscribe(b'SI/Validar',1)
+    client.subscribe(b'SI/Validate',1)
     client.subscribe(b'SI/Easyrun/#',1)
     print('Connected to %s MQTT broker' % (mqtt_server))
     return client

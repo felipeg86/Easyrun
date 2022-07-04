@@ -30,9 +30,7 @@ def on_subscribe(client, userdata, mid, granted_qos, properties=None):
 
 # print message, useful for checking if it was successful
 def on_message(client, userdata, msg):
-    
     msg_dec = json.loads(msg.payload)
-    
     if msg.topic == 'SI/Validar':
         if msg_dec["Source"] == "ESP32":
             print("Si está en la base de datos")
@@ -68,7 +66,4 @@ client.loop_start()
 
 
 while True:
-    #(rc, mid) = client.publish("SI/Validar", "False", qos=1)
-    #time.sleep(5)
-    #(rc, mid) = client.publish("notification/holu", "100", qos = 1)
     client.on_message = on_message 

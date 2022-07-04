@@ -1,21 +1,21 @@
 import json
-def id(ID_person):
+def id(source, ID_person):
     msg = {
-        "Source": "ESP32",
+        "Source": source,
         "ID_person": ID_person
     }
     return json.dumps(msg)
-def borrow(ID_person, ID_cycle, place):
+def borrow(source, ID_person, ID_cycle, place):
     msg = {
-        "Source": "ESP32",
+        "Source": source,
         "ID_person": ID_person,
         "ID_cycle": ID_cycle,
         "Place": place
     }
     return json.dumps(msg)
-def receive(ID_person, ID_cycle, place, condition):
+def receive(source, ID_person, ID_cycle, place, condition):
     msg = {
-        "Source": "ESP32",
+        "Source": source,
         "ID_person": ID_person,
         "ID_cycle": ID_cycle,
         "Place": place,
@@ -23,9 +23,9 @@ def receive(ID_person, ID_cycle, place, condition):
     }
     return json.dumps(msg)
 
-def distribute(ID_stuff,ID_cycle,place):
+def distribute(source, ID_stuff,ID_cycle,place):
     msg = {
-        "Source": "ESP32",
+        "Source": source,
         "ID_stuff": ID_stuff,
         "ID_cycle": ID_cycle,
         "#Cycles": len(ID_cycle),
