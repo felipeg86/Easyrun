@@ -1,31 +1,52 @@
 import json
-def id(ID_person):
+
+# Here are made four functions (for each topic) to build the
+# structure of the sended messages to SI. Then the dictionary
+# is codificated with json.
+
+
+# Function id is used to send the message of the identification
+# readed by the RFID sensor in the topic Validate
+def id(source, ID_Carnet):
     msg = {
-        "Source": "ESP32",
-        "ID_person": ID_person
+        "Source": source,
+        "ID_Carnet": ID_Carnet
     }
     return json.dumps(msg)
-def borrow(ID_person, ID_cycle):
+
+# Function id is used to send the message needed in a borrow
+# process to SI.
+def borrow(source, ID_person, ID_cycle, place):
     msg = {
-        "Source": "ESP32",
+        "Source": source,
         "ID_person": ID_person,
-        "ID_cycle": ID_cycle
+        "ID_cycle": ID_cycle,
+        "Place": place
     }
     return json.dumps(msg)
-def recieve(ID_cycle, place, condition):
+
+# Function id is used to send the message needed in a get back
+# process to SI.
+
+def getBack(source, ID_person, ID_cycle, place, condition):
     msg = {
-        "Source": "ESP32",
+        "Source": source,
+        "ID_person": ID_person,
         "ID_cycle": ID_cycle,
         "Place": place,
         "condition": condition
     }
     return json.dumps(msg)
 
-def distribute(ID_stuff,ID_cycle,place):
+# Function id is used to send the message needed when the stuff
+# need move a group of bike from a station to another.
+
+def distribute(source, ID_stuff,ID_cycle,place):
     msg = {
-        "Source": "ESP32",
+        "Source": source,
         "ID_stuff": ID_stuff,
         "ID_cycle": ID_cycle,
+        "#Cycles": len(ID_cycle),
         "Place": place
     }
     return json.dumps(msg)

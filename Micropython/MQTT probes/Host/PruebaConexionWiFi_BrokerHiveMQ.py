@@ -7,13 +7,12 @@ client_id = "SI"
 ID = ['CH10537T','Cjadgyieb','wdbhef']
 m = {
     "Source": client_id,
-    "Nombre": "Juan Felipe",
-    "Permisos": "Si"
+    "ID_Carnet": 'CH10537T',
+    "ID": "1000596512",
+    "Current_Use": False,
+    "Restriction": False,
+    "User_Type": "Estudiante"
 }
-m1 = ['Juan','Si']
-m2_bytes = b'[\'Hola\',\'bien\']'
-m2 = m2_bytes.decode('utf8').replace("'", '"')
-a = 1
 
 
 # setting callbacks for different events to see if it works, print the message etc.
@@ -31,22 +30,54 @@ def on_subscribe(client, userdata, mid, granted_qos, properties=None):
 # print message, useful for checking if it was successful
 def on_message(client, userdata, msg):
     msg_dec = json.loads(msg.payload)
-    if msg.topic == 'SI/Validar':
+    if msg.topic == 'SI/Validate':
         if msg_dec["Source"] == "ESP32":
-            print("Si está en la base de datos")
-            print(msg_dec)
-            print(type(msg_dec))
+            print("-----------------------")
+            print("Información recibida: " + str(msg_dec["ID_Carnet"]))
+            print("-----------------------")
             time.sleep(1)
-            (rc, mid)= client.publish(msg.topic,json.dumps(m),qos= 1)
-    elif msg.topic == 'SI/Easyrun/Prestar':
-        a = 1
-    elif msg.topic == 'SI/Easyrun/Devolver':
-        a = 2
-    elif msg.topic == 'SI/Easyrun/Distribuir':
-        a = 3
+            print("-----------------------")
+            print("Información enviada: ")
+            print("-----------------------")
+            print('Carnet: ' + str(m["ID_Carnet"]))
+            print('ID del usuario: ' + str(m["ID"]))
+            print('¿Tiene una bici en prestamo? ' + str(m["Current_Use"]))
+            print('¿Tiene restricciones? ' + str(m["Restriction"]))
+            print('Tipo de usuario: ' + str(m["User_Type"]))
+            
+            (rc, mid)= client.publish(msg.topic,json.dumps(m))
+    elif msg.topic == 'SI/Easyrun/Borrow':
+        if msg_dec["Source"] == "ESP32":
+            print("-----------------------")
+            print("Información recibida: ")
+            print("-----------------------")
+            print('Carnet: ' + str(msg_dec["ID_Carnet"]))
+            print('ID del usuario: ' + str(msg_dec["ID"]))
+            print('¿Tiene una bici en prestamo? ' + str(msg_dec["Current_Use"]))
+            print('¿Tiene restricciones? ' + str(msg_dec["Restriction"]))
+            print('Tipo de usuario: ' + str(msg_dec["User_Type"]))
+    elif msg.topic == 'SI/Easyrun/GetBack':
+        if msg_dec["Source"] == "ESP32":
+            print("-----------------------")
+            print("Información recibida: ")
+            print("-----------------------")
+            print('Carnet: ' + str(msg_dec["ID_Carnet"]))
+            print('ID del usuario: ' + str(msg_dec["ID"]))
+            print('¿Tiene una bici en prestamo? ' + str(msg_dec["Current_Use"]))
+            print('¿Tiene restricciones? ' + str(msg_dec["Restriction"]))
+            print('Tipo de usuario: ' + str(msg_dec["User_Type"]))
+    elif msg.topic == 'SI/Easyrun/Distribute':
+        if msg_dec["Source"] == "ESP32":
+            print("-----------------------")
+            print("Información recibida: ")
+            print("-----------------------")
+            print('Carnet: ' + str(msg_dec["ID_Carnet"]))
+            print('ID del usuario: ' + str(msg_dec["ID"]))
+            print('¿Tiene una bici en prestamo? ' + str(msg_dec["Current_Use"]))
+            print('¿Tiene restricciones? ' + str(msg_dec["Restriction"]))
+            print('Tipo de usuario: ' + str(msg_dec["User_Type"]))
     else:
-        print("No se envió nada")
-        (rc, mid) = client.publish('SI/Validar',json.dumps("Hola"),qos = 1)
+        print("No llegó nada")
 
 
 client = paho.Client(client_id)
@@ -59,7 +90,7 @@ client.on_message = on_message
 #client.on_publish = on_publish
 
 # subscribe 
-client.subscribe("SI/Validar", qos=1)
+client.subscribe("SI/Validate", qos=1)
 client.subscribe("SI/Esayrun/#", qos=1)
 
 client.loop_start()
