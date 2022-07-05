@@ -12,7 +12,8 @@ miso=19
 
 spi=SoftSPI(baudrate=1000000, polarity=0, phase=0, sck=Pin(sck, Pin.OUT), mosi=Pin(mosi, Pin.OUT), miso=Pin(miso, Pin.OUT))
 disp=MyDisplay(spi)
-disp.printLogo()
-disp.printText('UN Campus', vspace=1, hspace=8)
+#disp.printLogo()
+disp.printShortText('Hola')
+#disp.printText('UN Campus', vspace=1, hspace=8)
 
-print("Prueba Exitosa")
+#print("Prueba Exitosa")

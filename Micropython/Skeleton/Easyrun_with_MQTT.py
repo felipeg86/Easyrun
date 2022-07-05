@@ -38,7 +38,6 @@ Bicicleta_2.persona = Persona_2
 Bike_avail = [Bicicleta_1, Bicicleta_2]
 
 # MQTT
-
 client_id = "ESP32"
 last_message = 0
 send = True
@@ -53,6 +52,10 @@ for i in range(0, len(Bike_avail)):
     Bike_avail[i].candado.ubicacion = 'CyT'
     Bike_avail[i].candado.n_candado = i+1
 
+client.publish(b'SI/Validate',send_id(client_id, "0"),True,1)
+time.sleep(1)
+client.check_msg()
+msg_r= msgFromSI()
 
 timer_1 = machine.Timer(0)
 timer_2 = machine.Timer(0)
@@ -170,19 +173,20 @@ disp.printText('Easyrun', vspace=1, hspace=9)
 while True:
     ##Aqui va la revision de las interrupciones por hardware
     #Poner RST
-    card_id_L_1 = Perifericos.lectura(1)
+    card_id_L_1  = Perifericos.lectura(1)
     if(card_id_L_1 != None):
         print (card_id_L_1)
         # with open('IDcarnet.json') as IDcarnet:
         #     data = json.load(IDcarnet)
         #     data['id'] = card_id_L_1  ###################### DATO PARA MANDAR POR WIFI EN SI1
         #     #### Enviar dato de carnet al SI, hacer un while para esperar la recepcion del dato y
-        #     #### cuando este llegue seguir con el codigo`
-        client.publish(b'SI/Validate', id(client_id, card_id_L_1),True,1)
+        #     #### cuando este llegue seguir con el codigo
+        # send_id(client_id, card_id_L_1)`
+        client.publish(b'SI/Validate',send_id(client_id, card_id_L_1),True,1)
         time.sleep(1)
         client.check_msg()
-        msg_received = msgFromSI()
-        print(msg_received)
+        msg_r= msgFromSI()
+        print(msg_r)
 
         with open('Prueba_persona.json') as Prueba_persona:
             data_prueba_persona = json.load(Prueba_persona)
