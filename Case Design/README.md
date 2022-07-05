@@ -10,7 +10,7 @@ La presenta carpeta contiene los siguientes archivos:
 
 ## Diseño Final Caja para la PCB
 
-<img src="https://github.com/felipeg86/Easyrun/blob/main/Images/picture_compress.gif" width="600" height="400" />
+<img src="https://github.com/felipeg86/Easyrun/blob/main/Images/pcb4%20gif.gif.gif" width="600" height="400" />
 
 
 ## Diseño Final Caja para el Sistema de Bloqueo
