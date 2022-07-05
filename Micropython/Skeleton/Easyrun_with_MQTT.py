@@ -38,24 +38,25 @@ Bicicleta_2.persona = Persona_2
 Bike_avail = [Bicicleta_1, Bicicleta_2]
 
 # MQTT
-client_id = "ESP32"
+client_id = "ESP32_Easyrun"
 last_message = 0
 send = True
-conect_to("Juan F","qwertyuiop")
-
+#conect_to("Juan F","qwertyuiop")
+conect_to("Omega-9523","12345678")
 try:
   client = connect_and_subscribe()
 except OSError as e:
   restart_and_reconnect()
 
+client.publish(b'SI/Validate',send_id(client_id, "0"),True,1)
+time.sleep(1)
+client.check_msg()
+msg_received= msgFromSI()
+
 for i in range(0, len(Bike_avail)):
     Bike_avail[i].candado.ubicacion = 'CyT'
     Bike_avail[i].candado.n_candado = i+1
 
-client.publish(b'SI/Validate',send_id(client_id, "0"),True,1)
-time.sleep(1)
-client.check_msg()
-msg_r= msgFromSI()
 
 timer_1 = machine.Timer(0)
 timer_2 = machine.Timer(0)
@@ -66,7 +67,7 @@ interruptCounter_1 = 0
 def Reporte_bike_1(pin):
     Bike_avail[0].danos = True # No dañada = False/ Dañada = True
     Bike_avail[0].estado = False
-    client.publish(b'SI/Easyrun/GetBack',
+    client.publish(b'Easyrun/GetBack',
             getBack(client_id, Bike_avail[0].iD, Bike_avail[0].candado.ubicacion,
                 Bike_avail[0].danos),True,1)
     # with open('Devolucion_auto.json') as Devolucion:
@@ -83,7 +84,7 @@ Danos_Bike_1.irq(trigger=machine.Pin.IRQ_FALLING, handler=Reporte_bike_1)
 def Reporte_bike_2(pin):
     Bike_avail[1].danos = True # No dañada = False/ Dañada = True
     Bike_avail[1].estado = False
-    client.publish(b'SI/Easyrun/GetBack',
+    client.publish(b'Easyrun/GetBack',
             getBack(client_id, Bike_avail[1].iD, Bike_avail[1].candado.ubicacion,
                 Bike_avail[1].danos),True,1)
     # with open('Devolucion_auto.json') as Devolucion:
@@ -109,7 +110,7 @@ def Interrupt_T1(timer_1):
         Bike_avail[Bicicleta_entrega].candado.estado = 'vacio'
         interruptCounter_1 = 0
         print("Se llevaron la cicla sumercé")
-        client.publish(b'SI/Easyrun/Borrow',
+        client.publish(b'Easyrun/Borrow',
             borrow(client_id, str(Bike_avail[Bicicleta_entrega].persona.cedula),
                 Bike_avail[Bicicleta_entrega].iD,
                 Bike_avail[Bicicleta_entrega].candado.ubicacion),True,1)
@@ -123,7 +124,7 @@ def Interrupt_T1(timer_1):
     if(interruptCounter_1>=3):
         Perifericos.servo_close(Bicicleta_entrega+1)
         interruptCounter_1 = 0
-        client.publish(b'SI/Easyrun/GetBack',
+        client.publish(b'Easyrun/GetBack',
             getBack(client_id, Bike_avail[Bicicleta_entrega].iD, Bike_avail[Bicicleta_entrega].candado.ubicacion,
                 Bike_avail[Bicicleta_entrega].danos),True,1)
         # with open('Devolucion_auto.json') as Devolucion:
@@ -142,7 +143,7 @@ def Interrupt_T2(timer_2):
         vect_aux[k] = Perifericos.lectura(k+2)
         if (vect_aux[k]!=None):
             Perifericos.servo_close(k+1)
-    client.publish(b'SI/Easyrun/Distribute',
+    client.publish(b'Easyrun/Distribute',
         distribute(client_id, Bike_avail[0].persona.cedula, vect_aux, Bike_avail[0].candado.ubicacion),True,1)
     # with open('Prestamo_operario.json') as Prestamo_operario:
     #     data_send_devolucion = json.load(Prestamo_operario)
@@ -185,14 +186,15 @@ while True:
         client.publish(b'SI/Validate',send_id(client_id, card_id_L_1),True,1)
         time.sleep(1)
         client.check_msg()
-        msg_r= msgFromSI()
-        print(msg_r)
+        msg_received= msgFromSI()
+        print(msg_received)
 
         with open('Prueba_persona.json') as Prueba_persona:
             data_prueba_persona = json.load(Prueba_persona)
         if(msg_received['ID'] != "0"): ##NO OLVIDAR: COMPARACIONES CON JSON SE HACEN EN STRING
             if(msg_received['User_Type'] == "Estudiante"):
                 if((msg_received['Restriction'] != "True") and (msg_received['Current_Use'] == "False")):
+                    
                     for i in range(0, len(Bike_avail)):
                         if ((Bike_avail[i].estado == False) and (Bike_avail[i].danos != True)):
                             Bike_avail[i].persona.cedula = data_prueba_persona['cedula']
@@ -250,3 +252,4 @@ while True:
                         data_send_devolucion['danos'] = Bike_avail[i].danos
                         data_send_devolucion['punto_de_prestamo'] = Bike_avail[i].candado.ubicacion
                         #### Enviar data_send_devolucion de carnet al SI, hacer un while para esperar confirmacion
+

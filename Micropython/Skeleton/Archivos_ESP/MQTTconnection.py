@@ -6,24 +6,31 @@ import json
 
 # Client's identification and direction of the MQTT broker
 # We use a public broker to comunicate the devices
-client_id = "ESP32"
-mqtt_server = "broker.mqttdashboard.com"
+client_id = "ESP32_Easyrun"
+#mqtt_server = "broker.mqttdashboard.com"
+mqtt_server = "192.168.3.1"
 
 # Global variable use to save the information of the message income
 global msg_received
-msg_received = "Probe"
+msg_received = {
+    "Source": client_id,
+    "ID_Carnet": "0",
+    "ID": "0",
+    "Current_Use": False,
+    "Restriction": False,
+    "User_Type": "0"
+}
 
 # Function to restart the devices in case of failure
 def restart_and_reconnect():
     print('Failed to connect. Reconnecting...')
     time.sleep(5)
-    machine.reset()
+    reset()
 
 # Function to connect the device to a WiFi Network.
 # Inside this, there is a while loop to ensure the connection
 def conect_to(SSID, PASSWORD):
     try:
-        print("Try")
         sta_if = nt.WLAN(nt.STA_IF)
         sta_if.active(True)
         led = Pin(2,Pin.OUT)
@@ -50,6 +57,7 @@ def sub_cb(topic, msg):
         if topic == b'SI/Validate':
             msg_received = msg_dec
 
+
 def msgFromSI():
     return msg_received
 
@@ -59,11 +67,12 @@ def msgFromSI():
 # With the comand SI/Easyrun/# the ESP is subscribed to al the topics
 # that have the same structure at the begin.
 def connect_and_subscribe():
-    global client_id, mqtt_server
-    client = MQTTClient(client_id,"broker.mqttdashboard.com")
+    global client_id, mqtt_server 
+    client = MQTTClient(client_id,mqtt_server,1883)
     client.connect()
     client.set_callback(sub_cb)
     client.subscribe(b'SI/Validate',1)
-    client.subscribe(b'SI/Easyrun/#',1)
+    #client.subscribe(b'SI/Easyrun/#',1)
     print('Connected to %s MQTT broker' % (mqtt_server))
     return client
+

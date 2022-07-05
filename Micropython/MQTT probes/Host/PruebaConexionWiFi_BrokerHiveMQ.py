@@ -46,39 +46,34 @@ def on_message(client, userdata, msg):
             print('Tipo de usuario: ' + str(m["User_Type"]))
             
             (rc, mid)= client.publish(msg.topic,json.dumps(m))
-    elif msg.topic == 'SI/Easyrun/Borrow':
+    elif msg.topic == 'Easyrun/Borrow':
         if msg_dec["Source"] == "ESP32":
             print("-----------------------")
-            print("Información recibida: ")
+            print("Tema: Borrow - Información recibida: ")
             print("-----------------------")
-            print(msg_dec)
-            # print('Carnet: ' + str(msg_dec["ID_Carnet"]))
-            # print('ID del usuario: ' + str(msg_dec["ID"]))
-            # print('¿Tiene una bici en prestamo? ' + str(msg_dec["Current_Use"]))
-            # print('¿Tiene restricciones? ' + str(msg_dec["Restriction"]))
-            # print('Tipo de usuario: ' + str(msg_dec["User_Type"]))
-    elif msg.topic == 'SI/Easyrun/GetBack':
+            print('ID del usuario: ' + str(msg_dec["ID_person"]))
+            print('ID de la bicicleta: ' + str(msg_dec["ID_cycle"]))
+            print('Estación: ' + str(msg_dec["Place"]))
+    elif msg.topic == 'Easyrun/GetBack':
         if msg_dec["Source"] == "ESP32":
             print("-----------------------")
-            print("Información recibida: ")
+            print("Tema: Get Back - Información recibida: ")
             print("-----------------------")
-            print(msg_dec)
-            # print('Carnet: ' + str(msg_dec["ID_Carnet"]))
-            # print('ID del usuario: ' + str(msg_dec["ID"]))
-            # print('¿Tiene una bici en prestamo? ' + str(msg_dec["Current_Use"]))
-            # print('¿Tiene restricciones? ' + str(msg_dec["Restriction"]))
-            # print('Tipo de usuario: ' + str(msg_dec["User_Type"]))
-    elif msg.topic == 'SI/Easyrun/Distribute':
+            print('ID del usuario: ' + str(msg_dec["ID_person"]))
+            print('ID de la bicicleta: ' + str(msg_dec["ID_cycle"]))
+            print('Estación: ' + str(msg_dec["Place"]))
+            print('Condición: ' + str(msg_dec["Condition"]))
+            
+    elif msg.topic == 'Easyrun/Distribute':
         if msg_dec["Source"] == "ESP32":
             print("-----------------------")
-            print("Información recibida: ")
+            print("Tema: Distribute - Información recibida: ")
             print("-----------------------")
-            print(msg_dec)
-            # print('Carnet: ' + str(msg_dec["ID_Carnet"]))
-            # print('ID del usuario: ' + str(msg_dec["ID"]))
-            # print('¿Tiene una bici en prestamo? ' + str(msg_dec["Current_Use"]))
-            # print('¿Tiene restricciones? ' + str(msg_dec["Restriction"]))
-            # print('Tipo de usuario: ' + str(msg_dec["User_Type"]))
+            print('ID del funcionario: ' + str(msg_dec["ID_stuff"]))
+            print('ID de la bicicleta: ' + str(msg_dec["ID_cycle"]))
+            print('Condición: ' + str(msg_dec["#Cycles"]))
+            print('Estación: ' + str(msg_dec["Place"]))
+            
     else:
         print("No llegó nada")
 
@@ -94,7 +89,7 @@ client.on_message = on_message
 
 # subscribe 
 client.subscribe("SI/Validate", qos=1)
-client.subscribe("SI/Easyrun/#", qos=1)
+client.subscribe("Easyrun/#", qos=1)
 
 client.loop_start()
 

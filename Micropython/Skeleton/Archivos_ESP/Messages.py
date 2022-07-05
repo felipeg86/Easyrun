@@ -7,7 +7,7 @@ import json
 
 # Function id is used to send the message of the identification
 # readed by the RFID sensor in the topic Validate
-def id(source, ID_Carnet):
+def send_id(source, ID_Carnet):
     msg = {
         "Source": source,
         "ID_Carnet": ID_Carnet
@@ -33,7 +33,7 @@ def getBack(source, ID_cycle, place, condition):
         "Source": source,
         "ID_cycle": ID_cycle,
         "Place": place,
-        "condition": condition
+        "Condition": condition
     }
     return json.dumps(msg)
 
@@ -49,3 +49,4 @@ def distribute(source, ID_stuff,ID_cycle,place):
         "Place": place
     }
     return json.dumps(msg)
+
