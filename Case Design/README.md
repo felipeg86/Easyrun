@@ -1,5 +1,5 @@
 # Diseño de la carcasa
-Para el diseño de las carcasas del sistema, se descargó el modelo 3D de la placa del circuito en KiCad y se cargaron los componentes en 3D, lo cual permitió diseñar en el programa Fusion 360 una caja para la PCB y otra para el seguro. El procedimiento de estops diseños se encuentra en el apartado "Diseño de la Caja" en la wiki del proyecto.
+Para el diseño de las carcasas del sistema, se descargó el modelo 3D de la placa del circuito en KiCad y se cargaron los componentes en 3D, lo cual permitió diseñar en el programa Fusion 360 una caja para la PCB y otra para el seguro. El procedimiento de estos diseños se encuentra en el apartado "Diseño de la Caja" en la wiki del proyecto.
 
 ## Contenido Carpeta
 La presenta carpeta contiene los siguientes archivos:
